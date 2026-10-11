@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T01:20:04.609Z",
+  "updated_at": "2026-10-11T01:20:13.387Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156971:5807025463:2026-10-10T20:08:52Z:clawsweeper_needs_human",
-      "comment_id": "5807025463",
-      "comment_version_key": "5807025463:2026-10-10T20:08:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156971#issuecomment-5807025463",
-      "comment_created_at": "2026-09-24T03:31:58Z",
-      "comment_updated_at": "2026-10-10T20:08:52Z",
-      "comment_body_sha256": "774c59cecd8fa311e08c81210cf23af0de134164acabecb73c48a881c1a4d313",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156971,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: The bridge tests mock both the hook runner and CLI runner. Show a real loaded-plugin bridge turn selecting claude-sonnet-4-5, the spawned child's model...; Review finding: [P1] [P1] Authorize the hook-selected logical model before CLI execution — src/agents/embedded-agent-runner/cli-backend-dispatch.ts:299-302 - [high] Effective mode... (sha=bc8b12765926e34b8774c58119b257c6051ce377)",
-      "expected_head_sha": "bc8b12765926e34b8774c58119b257c6051ce377",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T20:24:13.788Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/156038-cli-hook-model-resolve",
-        "head_sha": "bc8b12765926e34b8774c58119b257c6051ce377",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157025:5808018875:2026-10-10T20:14:10Z:clawsweeper_needs_human",
       "comment_id": "5808018875",
@@ -33339,6 +33306,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168692:6104131227:2026-10-11T01:19:21Z:re_review",
+      "comment_id": "6104131227",
+      "comment_version_key": "6104131227:2026-10-11T01:19:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168692#issuecomment-6104131227",
+      "comment_created_at": "2026-10-11T01:19:21Z",
+      "comment_updated_at": "2026-10-11T01:19:21Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168692,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T01:20:12.234Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-recency-eligibility",
+        "head_sha": "7e89cf9873df4d56d08d17306313e8b8dc9206c6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
