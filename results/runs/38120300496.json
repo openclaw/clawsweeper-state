@@ -1,0 +1,106 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-168959",
+  "mode": "autonomous",
+  "run_id": "38120300496",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38120300496",
+  "head_sha": "d14447b3cfb4e0ab8a0cb1a44278f39955032b5a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-168959.md",
+  "published_at": "2026-10-11T08:45:54.505Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/168959",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/168959",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the missing canonical oauthRef guard on preflight main 35b6b308f6cb8d9e37ce56a707a6eeba062ca731. A narrow fix artifact is prepared. Implementation and runtime reproduction are blocked by read-only filesystem permissions and unavailable test dependencies; no code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#168959",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#168959",
+      "candidate_fix": null,
+      "reason": "The source establishes a narrow existing-behavior defect. Runtime reproduction remains required before implementation or PR publication."
+    },
+    {
+      "target": "#163186",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#168959",
+      "candidate_fix": null,
+      "reason": "Preserve the completed retirement; do not restore its removed importers."
+    },
+    {
+      "target": "#165420",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#168959",
+      "candidate_fix": null,
+      "reason": "Related historical admission repair; no close or branch-repair action applies."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-168959",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#168959",
+      "candidate_fix": null,
+      "reason": "The repair plan is concrete and narrow; publication must wait for demonstrated baseline failure and validated implementation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation command failed (pnpm check:changed): validation command left 1 background process(es) after exit",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#168959",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
