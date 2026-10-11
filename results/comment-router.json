@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T12:26:48.952Z",
+  "updated_at": "2026-10-11T12:29:17.498Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117144:5148867933:2026-10-02T08:11:08Z:clawsweeper_needs_human",
-      "comment_id": "5148867933",
-      "comment_version_key": "5148867933:2026-10-02T08:11:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117144#issuecomment-5148867933",
-      "comment_created_at": "2026-08-01T01:32:05Z",
-      "comment_updated_at": "2026-10-02T08:11:08Z",
-      "comment_body_sha256": "ccb7c4d36bcb6603e4fe1757a2cdc25dfe756bc6aaf5b14e4223793a67309cb8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117144,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Produce dependencies for the intended consumer platform (P1)** - The artifact producer runs on Ubuntu, but this staging flow copies its deployed dependency closure into the downloadable archive. The reported con...; Review finding: [P1] Produce dependencies for the intended consumer platform — scripts/lib/workspace-bootstrap-smoke.mts:125-130 (sha=6824d737491e864a69bb602a650b5e694974f0fa)",
-      "expected_head_sha": "6824d737491e864a69bb602a650b5e694974f0fa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T06:38:36.397Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-98276",
-        "head_sha": "6824d737491e864a69bb602a650b5e694974f0fa",
-        "cluster_id": "automerge-openclaw-openclaw-117144",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117144.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118303:5160944009:2026-10-10T19:30:24Z:clawsweeper_auto_repair",
       "comment_id": "5160944009",
@@ -33277,6 +33244,53 @@
       "status": "skipped",
       "processed_at": "2026-10-11T12:26:48.952Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:169026:6109019966:2026-10-11T12:28:18Z:re_review",
+      "comment_id": "6109019966",
+      "comment_version_key": "6109019966:2026-10-11T12:28:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/169026#issuecomment-6109019966",
+      "comment_created_at": "2026-10-11T12:28:18Z",
+      "comment_updated_at": "2026-10-11T12:28:18Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 169026,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T12:29:16.061Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/command-transcript-parity",
+        "head_sha": "a21891122ef123df2f1e2c4bde1ed5e8c5a20035",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
