@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T19:33:37.641Z",
+  "updated_at": "2026-10-11T19:34:15.522Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168995:6106959402:2026-10-11T08:35:19Z:clawsweeper_needs_human",
-      "comment_id": "6106959402",
-      "comment_version_key": "6106959402:2026-10-11T08:35:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168995#issuecomment-6106959402",
-      "comment_created_at": "2026-10-11T08:05:31Z",
-      "comment_updated_at": "2026-10-11T08:35:19Z",
-      "comment_body_sha256": "a992d031b797965fbb2887c8d95309f4a46134a07595b59a4ae36bee92ee536b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168995,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the changed standing-grant reader feeds final node transport authorization, but the inspected body and discussion provide no after-change trace showing...; Review finding: [P2] Preserve the explicitly selected database in synchronous grant reads — src/gateway/operator-approval-placement-grants.ts:183-185 (sha=b60c2bb48c6ba4cafab351b662571bd6d2c7c626)",
-      "expected_head_sha": "b60c2bb48c6ba4cafab351b662571bd6d2c7c626",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T08:36:11.768Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/t1gateway",
-        "head_sha": "b60c2bb48c6ba4cafab351b662571bd6d2c7c626",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:2136:6106601308:2026-10-11T08:36:34Z:clawsweeper_needs_human",
       "comment_id": "6106601308",
@@ -32931,6 +32898,51 @@
         "kind": "pull_request",
         "branch": "fix/models-auth-login-via-gateway",
         "head_sha": "d0b9c83a53d6e785c1dae0f97ea315718b1e1016"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:169189:6112877177:2026-10-11T19:33:19Z:re_review",
+      "comment_id": "6112877177",
+      "comment_version_key": "6112877177:2026-10-11T19:33:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/169189#issuecomment-6112877177",
+      "comment_created_at": "2026-10-11T19:33:19Z",
+      "comment_updated_at": "2026-10-11T19:33:19Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 169189,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T19:34:13.963Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/lmstudio-context-overflow",
+        "head_sha": "6fcec683a8bcf8193de92e6cf7d3c621dd4cdd5d"
       },
       "actions": [
         {
