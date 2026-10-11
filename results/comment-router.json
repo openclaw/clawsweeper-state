@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T13:01:22.894Z",
+  "updated_at": "2026-10-11T13:01:58.799Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158140:5833684341:2026-10-11T06:37:40Z:clawsweeper_needs_human",
-      "comment_id": "5833684341",
-      "comment_version_key": "5833684341:2026-10-11T06:37:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158140#issuecomment-5833684341",
-      "comment_created_at": "2026-09-25T14:01:41Z",
-      "comment_updated_at": "2026-10-11T06:37:40Z",
-      "comment_body_sha256": "ad04b8ee0ca695bd38c09d2175e855e4a3463b292791d3e9d69f31cbd1f148b2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158140,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The supplied terminal output exercises startInboxMonitor with a mocked socket and mocked LID lookup, recovering on the first drain normalization; linked production reports establish t... (sha=6174f1605e16501496b011a5bec3bd9b19ef3c10)",
-      "expected_head_sha": "6174f1605e16501496b011a5bec3bd9b19ef3c10",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T06:38:47.101Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/whatsapp-dm-lid-transient-drop",
-        "head_sha": "6174f1605e16501496b011a5bec3bd9b19ef3c10",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168931:6106115452:2026-10-11T06:38:04Z:clawsweeper_auto_repair",
       "comment_id": "6106115452",
@@ -33375,6 +33342,53 @@
         "kind": "pull_request",
         "branch": "fix/codex-migration-marketplace-discovery-deadline-wall-clock",
         "head_sha": "afd8d6ee308d617ab8e1bdd2e5bbb49b34197542",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:169026:6109290979:2026-10-11T13:01:07Z:re_review",
+      "comment_id": "6109290979",
+      "comment_version_key": "6109290979:2026-10-11T13:01:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/169026#issuecomment-6109290979",
+      "comment_created_at": "2026-10-11T13:01:07Z",
+      "comment_updated_at": "2026-10-11T13:01:07Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 169026,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T13:01:57.695Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/command-transcript-parity",
+        "head_sha": "1750a69f5aec121e124ae11422f76b97d7d635c1",
         "cluster_id": null,
         "job_path": null
       },
