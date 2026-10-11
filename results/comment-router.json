@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-11T02:32:14.136Z",
+  "updated_at": "2026-10-11T02:32:19.614Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/collab:1:6069607413:2026-10-08T21:42:19Z:re_review",
-      "comment_id": "6069607413",
-      "comment_version_key": "6069607413:2026-10-08T21:42:19Z",
-      "comment_url": "https://github.com/openclaw/collab/pull/1#issuecomment-6069607413",
-      "comment_created_at": "2026-10-08T21:42:19Z",
-      "comment_updated_at": "2026-10-08T21:42:19Z",
-      "comment_body_sha256": "124c38e2aaedcf4e248ad9c6230fc1cd86315f688b35abd75f926a42aa9b7449",
-      "repo": "openclaw/collab",
-      "issue_number": 1,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T21:27:21.320Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/empty-anchor-outside-projected-text",
-        "head_sha": "f08c9a0745e715983f3330cb2e6543e1115de038",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/collab:1:6038915360:2026-10-10T21:22:17Z:clawsweeper_needs_human",
       "comment_id": "6038915360",
@@ -33441,6 +33394,39 @@
         "kind": "pull_request",
         "branch": "codex/qa1025-question-shortcut",
         "head_sha": "73f23ad8a54dac80ad287f0aaa7ece8b68eb2eb1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138087:5538784861:2026-10-11T02:31:15Z:clawsweeper_needs_human",
+      "comment_id": "5538784861",
+      "comment_version_key": "5538784861:2026-10-11T02:31:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138087#issuecomment-5538784861",
+      "comment_created_at": "2026-09-04T09:54:57Z",
+      "comment_updated_at": "2026-10-11T02:31:15Z",
+      "comment_body_sha256": "acf94dd7580b948d7e376dee29d23aedb16db525d7c0ef6b4abc65d9d5ceac82",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138087,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The current layer has reported regression and harness results; RomneyDa's earlier Windows turns and snotty's inspected cold-process artifact remain valid for their recorded inputs but... (sha=c3d80d522fce8e22195db91542948b7b48ac6ddf)",
+      "expected_head_sha": "c3d80d522fce8e22195db91542948b7b48ac6ddf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-11T02:32:19.614Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/problem-context-tokens-bundled-catalog-fallback",
+        "head_sha": "c3d80d522fce8e22195db91542948b7b48ac6ddf",
         "cluster_id": null,
         "job_path": null
       }
