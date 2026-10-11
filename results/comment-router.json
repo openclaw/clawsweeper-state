@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-11T03:23:27.743Z",
+  "updated_at": "2026-10-11T03:24:18.906Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167796:6100557972:2026-10-10T21:46:44Z:re_review",
-      "comment_id": "6100557972",
-      "comment_version_key": "6100557972:2026-10-10T21:46:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167796#issuecomment-6100557972",
-      "comment_created_at": "2026-10-10T18:03:06Z",
-      "comment_updated_at": "2026-10-10T21:46:44Z",
-      "comment_body_sha256": "fa5cb44d0bcfa7e6babeb812454caeb0bb0b97b98af1abacd4f805a9a8ae0680",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167796,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T21:47:37.072Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/heartbeat-s3-land-20261009",
-        "head_sha": "c8152a8a7097478cdbb9c9c9cb88abd150f9cc14",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/mcporter:436:6101859406:2026-10-10T21:46:10Z:clawsweeper_needs_human",
       "comment_id": "6101859406",
@@ -33814,6 +33767,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168849:6104989245:2026-10-11T03:23:27Z:clawsweeper_needs_human",
+      "comment_id": "6104989245",
+      "comment_version_key": "6104989245:2026-10-11T03:23:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168849#issuecomment-6104989245",
+      "comment_created_at": "2026-10-11T03:23:27Z",
+      "comment_updated_at": "2026-10-11T03:23:27Z",
+      "comment_body_sha256": "c6b0429d8209cc387d4e0dc50feafc1869d111875d4b7c8ad4729b9cbcdc6971",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168849,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=b2276e6d84aacae4b9f92e627ed5b02ceab94452)",
+      "expected_head_sha": "b2276e6d84aacae4b9f92e627ed5b02ceab94452",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-11T03:24:18.906Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-cleanup-stable-driver",
+        "head_sha": "b2276e6d84aacae4b9f92e627ed5b02ceab94452",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
