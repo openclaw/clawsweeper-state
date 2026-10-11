@@ -1,64 +1,6 @@
 {
-  "updated_at": "2026-10-11T10:33:28.418Z",
+  "updated_at": "2026-10-11T10:33:32.531Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168753:6106091543:2026-10-11T06:06:20Z:request_proof",
-      "comment_id": "6106091543",
-      "comment_version_key": "6106091543:2026-10-11T06:06:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168753#issuecomment-6106091543",
-      "comment_created_at": "2026-10-11T06:06:20Z",
-      "comment_updated_at": "2026-10-11T06:06:20Z",
-      "comment_body_sha256": "6c7c5461f69f3e53bd8e091c7514f3717b29b76f62d6247a98b69d314d436243",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168753,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "proof telegram-bot-e2e-proof",
-      "intent": "request_proof",
-      "proof_admission": {
-        "status": "queued",
-        "reason": "Queued one review with requested proof focus. The reviewer selects relevant supported checks and uses their observations before its final decision; no separate follow-up review is scheduled.",
-        "request": {
-          "repository": "openclaw/openclaw",
-          "pullRequest": 168753,
-          "headSha": "a68b9381133f3753b25e099fa15975fb2c91bd0b",
-          "scenarioId": "telegram-bot-e2e-proof",
-          "requestId": "0bca2ff44db678f0c30ebb890985c83e1a3347a89dfa52a659ebea03ea8dc296"
-        }
-      },
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-11T06:07:05.702Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/p13-channels-20261010",
-        "head_sha": "a68b9381133f3753b25e099fa15975fb2c91bd0b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168913:6106024603:2026-10-11T06:06:26Z:clawsweeper_needs_human",
       "comment_id": "6106024603",
@@ -33128,6 +33070,39 @@
       "status": "skipped",
       "processed_at": "2026-10-11T10:33:28.418Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:949:6108109189:2026-10-11T10:32:35Z:clawsweeper_needs_human",
+      "comment_id": "6108109189",
+      "comment_version_key": "6108109189:2026-10-11T10:32:35Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/949#issuecomment-6108109189",
+      "comment_created_at": "2026-10-11T10:32:35Z",
+      "comment_updated_at": "2026-10-11T10:32:35Z",
+      "comment_body_sha256": "414ede47860c249807cc55074309d43c4bc4db5380eada4fadfff60d24b85dea",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 949,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: publication and directory identity owners are covered by synthetic metadata tests and reported focused passes, but the supplied body still marks Window... (sha=53c41bda7525f0de8d811a4c26d99687caac9e42)",
+      "expected_head_sha": "53c41bda7525f0de8d811a4c26d99687caac9e42",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-11T10:33:32.531Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/identity-number-precision-work",
+        "head_sha": "53c41bda7525f0de8d811a4c26d99687caac9e42",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
