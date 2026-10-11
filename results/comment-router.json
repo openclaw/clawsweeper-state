@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-11T05:47:24.397Z",
+  "updated_at": "2026-10-11T05:47:30.187Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168726:6103726000:2026-10-11T00:24:16Z:re_review",
-      "comment_id": "6103726000",
-      "comment_version_key": "6103726000:2026-10-11T00:24:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168726#issuecomment-6103726000",
-      "comment_created_at": "2026-10-11T00:24:16Z",
-      "comment_updated_at": "2026-10-11T00:24:16Z",
-      "comment_body_sha256": "b2d14db052e1eeac93dea534ed1b7d240d426b32c0256f9387f4810664f1e20e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168726,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-11T00:25:59.726Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-cli-switch-back-context",
-        "head_sha": "54dbf3c03ce1d4dc3df280366221e2d2516d8621",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:2112:6103728549:2026-10-11T00:24:36Z:clawsweeper_needs_human",
       "comment_id": "6103728549",
@@ -33228,6 +33181,39 @@
         "kind": "pull_request",
         "branch": "fix/context-engine-fit-preflight",
         "head_sha": "e89d1360eea7985895dd7e6858a6c00596fd51ef",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168857:6105148232:2026-10-11T05:46:35Z:clawsweeper_needs_human",
+      "comment_id": "6105148232",
+      "comment_version_key": "6105148232:2026-10-11T05:46:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168857#issuecomment-6105148232",
+      "comment_created_at": "2026-10-11T03:46:42Z",
+      "comment_updated_at": "2026-10-11T05:46:35Z",
+      "comment_body_sha256": "e06c096b6f69a6e90954d2050c813927e8132d8616c1a8718e5cbec17405f077",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168857,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: provide redacted production-boundary logs or live output showing an allowed V2 write and retained or queued calls refused after owner revocation or dat...; Review finding: [P2] Include the deprecation helper in the wrapper inventory — src/state/openclaw-agent-worker-store.ts:29 (sha=ff9db73e9e07e2938340d88750dd626f5b78e590)",
+      "expected_head_sha": "ff9db73e9e07e2938340d88750dd626f5b78e590",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-11T05:47:30.187Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/sw7c-sqlite-land",
+        "head_sha": "ff9db73e9e07e2938340d88750dd626f5b78e590",
         "cluster_id": null,
         "job_path": null
       }
