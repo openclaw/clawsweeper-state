@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T10:49:48.039Z",
+  "updated_at": "2026-10-11T10:55:32.818Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168922:6106068977:2026-10-11T06:14:03Z:clawsweeper_needs_human",
-      "comment_id": "6106068977",
-      "comment_version_key": "6106068977:2026-10-11T06:14:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168922#issuecomment-6106068977",
-      "comment_created_at": "2026-10-11T06:03:09Z",
-      "comment_updated_at": "2026-10-11T06:14:03Z",
-      "comment_body_sha256": "49593a9c55e19c3b7a084beed982e99d1052534bdffc6b0f21b9e2d8f8f437d0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168922,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=e4e0cd2d2375c11d54b5bbec7790018c0f924023)",
-      "expected_head_sha": "e4e0cd2d2375c11d54b5bbec7790018c0f924023",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T06:14:50.665Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/nodew-r4-deterministic-boundaries",
-        "head_sha": "e4e0cd2d2375c11d54b5bbec7790018c0f924023",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165991:6011706251:2026-10-11T06:14:26Z:clawsweeper_auto_repair",
       "comment_id": "6011706251",
@@ -33090,6 +33057,53 @@
         "kind": "pull_request",
         "branch": "fix/llm-task-codex-output-schema",
         "head_sha": "cae92b187157840e7159e7886473ee6690aca89d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168401:6108278017:2026-10-11T10:54:43Z:re_review",
+      "comment_id": "6108278017",
+      "comment_version_key": "6108278017:2026-10-11T10:54:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168401#issuecomment-6108278017",
+      "comment_created_at": "2026-10-11T10:54:43Z",
+      "comment_updated_at": "2026-10-11T10:54:43Z",
+      "comment_body_sha256": "46cd5f4a57022f722937e3a57277e3d326c2d1c890888d1fb92569678b495bc6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168401,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T10:55:31.717Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/comparing-server-side-compaction-approaches",
+        "head_sha": "e9021240e8c608c023e6461948b939b0ff897217",
         "cluster_id": null,
         "job_path": null
       },
