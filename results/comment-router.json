@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-11T09:16:35.364Z",
+  "updated_at": "2026-10-11T09:16:55.078Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145839:6105443785:2026-10-11T04:29:47Z:re_review",
-      "comment_id": "6105443785",
-      "comment_version_key": "6105443785:2026-10-11T04:29:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145839#issuecomment-6105443785",
-      "comment_created_at": "2026-10-11T04:29:47Z",
-      "comment_updated_at": "2026-10-11T04:29:47Z",
-      "comment_body_sha256": "97062afc229caba59f70de7f1fab3a2e4b383f42ee21e6dc3569b7a390b50e6e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145839,
-      "author": "Finn763",
-      "author_id": 165816600,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — the previous head's evidence is anchored to `7d5550f4`; please re-run against `cceb23c16d7`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-11T04:30:41.122Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/oc-141355-descr",
-        "head_sha": "cceb23c16d79359fd426e535ec230fcc7c364d42",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164607:5974524801:2026-10-11T04:31:05Z:clawsweeper_needs_human",
       "comment_id": "5974524801",
@@ -33091,6 +33044,39 @@
         "kind": "pull_request",
         "branch": "perf/windows-security-helper-transport",
         "head_sha": "621325e001956b72d646dc5a86d860b1e6ce0ca4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154286:5754574996:2026-10-11T09:15:54Z:clawsweeper_needs_human",
+      "comment_id": "5754574996",
+      "comment_version_key": "5754574996:2026-10-11T09:15:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154286#issuecomment-5754574996",
+      "comment_created_at": "2026-09-21T02:21:29Z",
+      "comment_updated_at": "2026-10-11T09:15:54Z",
+      "comment_body_sha256": "3c4d777142d115f27e373834d70a6cc24e94b6df6e010baf4ffb258624350e19",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154286,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The new test checks an existing source entry and preload arguments through a mocked Worker constructor; the published Crabbox run is still a plan. Provide completed redacted output sh... (sha=ca38ba12776742345cd039712cab206dadef932a)",
+      "expected_head_sha": "ca38ba12776742345cd039712cab206dadef932a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-11T09:16:55.078Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-154180-telegram-ingress-worker-resolution",
+        "head_sha": "ca38ba12776742345cd039712cab206dadef932a",
         "cluster_id": null,
         "job_path": null
       }
