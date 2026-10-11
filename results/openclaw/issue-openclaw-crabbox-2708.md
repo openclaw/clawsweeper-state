@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
-mode: "autonomous"
-run_id: "38096498855"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38096498855"
+mode: "plan"
+run_id: "38101192126"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38101192126"
 head_sha: "3e3ac1fffea21e8f0b237313887ae81309b4d76c"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-10T23:55:15.763Z"
-canonical: "https://github.com/openclaw/crabbox/issues/2708"
-canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
+published_at: "2026-10-11T01:17:22.583Z"
+canonical: "#2708"
+canonical_issue: "#2708"
 canonical_pr: null
-actions_total: 7
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38096498855](https://github.com/openclaw/clawsweeper/actions/runs/38096498855)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38101192126](https://github.com/openclaw/clawsweeper/actions/runs/38101192126)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/crabbox/issues/2708
+Canonical: #2708
 
 ## Summary
 
-Implementation requires a supported Blacksmith pre-worker Testbox-to-workflow binding and terminal-status contract. Current main preserves the reported observation gap; supplied triage explicitly rejects inferring run identity or settlement. No code changes or PR are appropriate with the available contract.
+Implementation remains blocked on a supported Blacksmith pre-worker dispatch association and terminal-status contract. Current main preserves the reported observation gap. No code changes or PR are proposed; keep the issue open.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,13 +66,7 @@ Implementation requires a supported Blacksmith pre-worker Testbox-to-workflow bi
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_canonical | planned | canonical | Keep the provider capability request open. The merged historical repairs cover settlement, status, and ownership lookup rather than pre-worker dispatch identity. |
-| cluster:issue-openclaw-crabbox-2708 | fix_needed | blocked |  | External provider capability blocker, not an unresolved maintainer judgment or security report. |
-| #2669 | keep_closed | skipped | related | Historical context only. |
-| #2670 | keep_closed | skipped | related | Historical context only. |
-| #2682 | keep_closed | skipped | related | Historical context only. |
-| #2683 | keep_closed | skipped | related | Historical context only. |
-| #2719 | keep_closed | skipped | independent | Historical context only; distinct root cause. |
+| #2708 | keep_related | blocked | related | Keep the issue open as the canonical tracking thread, with a non-mutating classification because no safe fix artifact can be established from the supplied evidence. No supported binding between the Testbox request and its pre-worker workflow run is established by the supplied evidence or current adapter. Guessing by workflow, ref, or time, or accepting native completion as settlement, would violate the existing exact-association contract. Resume implementation when Blacksmith supplies durable request-to-run identity and authoritative terminal status through cancellation and admission failure. |
 
 ## Needs Human
 
