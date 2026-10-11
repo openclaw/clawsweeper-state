@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T21:20:29.039Z",
+  "updated_at": "2026-10-11T21:21:17.537Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168975:6106687113:2026-10-11T08:42:53Z:clawsweeper_needs_human",
-      "comment_id": "6106687113",
-      "comment_version_key": "6106687113:2026-10-11T08:42:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168975#issuecomment-6106687113",
-      "comment_created_at": "2026-10-11T07:29:30Z",
-      "comment_updated_at": "2026-10-11T08:42:53Z",
-      "comment_body_sha256": "c2c190d1ca66b5e70f2380f72a4301711b132e2474e40445c149ec66e910bfdf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168975,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=881607b3c51f87f00349723ad753f6c8853dc583)",
-      "expected_head_sha": "881607b3c51f87f00349723ad753f6c8853dc583",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T08:43:51.172Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/worker-owner-facts-r4",
-        "head_sha": "881607b3c51f87f00349723ad753f6c8853dc583",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139999:5558459871:2026-10-11T08:43:08Z:clawsweeper_needs_human",
       "comment_id": "5558459871",
@@ -33101,6 +33068,51 @@
         "kind": "pull_request",
         "branch": "verify-automatic-rollback",
         "head_sha": "1f53d3d526104831393b790b862027823f6e46c6"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:169347:6113891755:2026-10-11T21:20:19Z:re_review",
+      "comment_id": "6113891755",
+      "comment_version_key": "6113891755:2026-10-11T21:20:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/169347#issuecomment-6113891755",
+      "comment_created_at": "2026-10-11T21:20:19Z",
+      "comment_updated_at": "2026-10-11T21:20:19Z",
+      "comment_body_sha256": "3d6bb916d4e88d541f8a9422d1c3d42abe941f26a486a369db85b3c9bbfb6f08",
+      "repo": "openclaw/openclaw",
+      "issue_number": 169347,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review — source head dcfeac82d8b740faf431af6303f7cef88d59a21d only corrects the stale default-off labs menu expectation since your completed 962fca4ade0e review. the 8 bundled composer scenarios now pass; production source remains unchanged",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T21:21:16.204Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/bubble-identity-and-activity-refinements",
+        "head_sha": "dcfeac82d8b740faf431af6303f7cef88d59a21d"
       },
       "actions": [
         {
