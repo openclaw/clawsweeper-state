@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-168843",
+  "mode": "autonomous",
+  "run_id": "38107356383",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38107356383",
+  "head_sha": "3e3ac1fffea21e8f0b237313887ae81309b4d76c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-168843.md",
+  "published_at": "2026-10-11T05:00:44.193Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/168843",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/168843",
+  "canonical_pr": null,
+  "summary": "Current source confirms the fixture mismatch. A narrow four-file fix artifact is ready for the executor; local implementation and Gateway validation are blocked by the read-only filesystem and missing dependencies/build artifacts. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#168843",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#168843",
+      "candidate_fix": null,
+      "reason": "The test-support defect remains source-proven; no hydrated PR implements this narrow repair. Executor must establish the real Gateway baseline before editing."
+    },
+    {
+      "target": "#168401",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#168843",
+      "candidate_fix": null,
+      "reason": "Related CI context, with distinct feature scope; do not repair, replace, merge, or close it in this issue implementation job."
+    },
+    {
+      "target": "#163471",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#168843",
+      "candidate_fix": null,
+      "reason": "Retain as historical context without any mutation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-168843",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#168843",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete; implementation requires a writable executor checkout with dependencies and matching built artifacts."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
