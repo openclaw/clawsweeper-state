@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-11T08:51:13.954Z",
+  "updated_at": "2026-10-11T08:51:39.528Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123837:5509125371:2026-09-02T11:55:36Z:re_review",
-      "comment_id": "5509125371",
-      "comment_version_key": "5509125371:2026-09-02T11:55:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123837#issuecomment-5509125371",
-      "comment_created_at": "2026-09-02T11:55:36Z",
-      "comment_updated_at": "2026-09-02T11:55:36Z",
-      "comment_body_sha256": "adcd916e2573c0dc6376ba85932aff18690917e013759b58bf8907104788c325",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123837,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T04:00:47.156Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123837:5601425559:2026-09-09T11:55:57Z:re_review",
       "comment_id": "5601425559",
@@ -33049,6 +33022,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:2145:6107299683:2026-10-11T08:50:39Z:clawsweeper_needs_human",
+      "comment_id": "6107299683",
+      "comment_version_key": "6107299683:2026-10-11T08:50:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/2145#issuecomment-6107299683",
+      "comment_created_at": "2026-10-11T08:50:39Z",
+      "comment_updated_at": "2026-10-11T08:50:39Z",
+      "comment_body_sha256": "25fc88e34127405e7f3bcba268214502c994156069feab0428c7265882853ebb",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 2145,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: supply redacted logs or terminal output from the shipped worker and real Kubernetes Compute showing an authorized stop yielding to another Agent's due... (sha=8e5bc91a3870038d766fbc2c270886f8b03be807)",
+      "expected_head_sha": "8e5bc91a3870038d766fbc2c270886f8b03be807",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-11T08:51:39.528Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-1088",
+        "head_sha": "8e5bc91a3870038d766fbc2c270886f8b03be807",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
