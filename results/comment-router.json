@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-11T04:28:26.242Z",
+  "updated_at": "2026-10-11T04:28:46.321Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168726:6103217836:2026-10-10T23:15:14Z:re_review",
-      "comment_id": "6103217836",
-      "comment_version_key": "6103217836:2026-10-10T23:15:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168726#issuecomment-6103217836",
-      "comment_created_at": "2026-10-10T23:15:14Z",
-      "comment_updated_at": "2026-10-10T23:15:14Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168726,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T23:16:12.711Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-cli-switch-back-context",
-        "head_sha": "6cc99a4d0e89c957132567590fe90537c6689e1f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168707:6103177328:2026-10-10T23:15:22Z:clawsweeper_needs_human",
       "comment_id": "6103177328",
@@ -33246,6 +33199,39 @@
         "kind": "pull_request",
         "branch": "codex/thirty-logs-05-oct10",
         "head_sha": "8a5bf0e9f3a1a1a2de8a9685df60f43bc66e360d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168747:6103671452:2026-10-11T04:27:50Z:clawsweeper_needs_human",
+      "comment_id": "6103671452",
+      "comment_version_key": "6103671452:2026-10-11T04:27:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168747#issuecomment-6103671452",
+      "comment_created_at": "2026-10-11T00:17:11Z",
+      "comment_updated_at": "2026-10-11T04:27:50Z",
+      "comment_body_sha256": "643f802b9d0ff99bc4a126fd7535fc138a66902cdc195784140f7cc83b0eecd7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168747,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: show authorized localWorkspace.mutate completion and rejection after caller authority or the workspace.local-reconciliation lease is revoked, expired,...; Review finding: [medium] Verify rejection at the durable workspace effect — src/gateway/worker-environments/local-workspace-store.worker.ts:34 (sha=5bce2ca567b028908596199d8b37947269cbaa63)",
+      "expected_head_sha": "5bce2ca567b028908596199d8b37947269cbaa63",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-11T04:28:46.321Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/p04-worker-envs-20261010",
+        "head_sha": "5bce2ca567b028908596199d8b37947269cbaa63",
         "cluster_id": null,
         "job_path": null
       }
