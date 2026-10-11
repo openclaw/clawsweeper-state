@@ -1,0 +1,117 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-168969",
+  "mode": "autonomous",
+  "run_id": "38121281064",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38121281064",
+  "head_sha": "d14447b3cfb4e0ab8a0cb1a44278f39955032b5a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-168969.md",
+  "published_at": "2026-10-11T08:33:03.503Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/168969",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/168969",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the classification defect on checkout main 43c68c34df71bed694fc4b1de0725f5e7495b8c1, newer than preflight main. A narrow fix artifact is prepared. Implementation and runtime reproduction are blocked by the read-only host and unavailable dependencies; the focused test command failed before discovery with EROFS. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#168969",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#168969",
+      "candidate_fix": null,
+      "reason": "The existing retry owner contains a narrow, source-confirmed contradiction that suppresses completion recovery."
+    },
+    {
+      "target": "#122853",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#168969",
+      "candidate_fix": null,
+      "reason": "Historical merged context only."
+    },
+    {
+      "target": "#126812",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#168969",
+      "candidate_fix": null,
+      "reason": "Preserve the landed causality safeguards while repairing the remaining exhaustion defect."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-168969",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#168969",
+      "candidate_fix": null,
+      "reason": "The fix path is clear despite this host's execution limitations."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-168969",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#168969",
+      "candidate_fix": null,
+      "reason": "The deterministic executor needs a writable, dependency-equipped checkout to establish baseline failure, implement, validate, review, and open the PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation command failed (pnpm check:changed): validation command left 1 background process(es) after exit",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#168969",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
