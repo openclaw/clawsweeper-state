@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-11T07:42:42.826Z",
+  "updated_at": "2026-10-11T07:43:36.861Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167796:6100557972:2026-10-11T03:05:27Z:re_review",
-      "comment_id": "6100557972",
-      "comment_version_key": "6100557972:2026-10-11T03:05:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167796#issuecomment-6100557972",
-      "comment_created_at": "2026-10-10T18:03:06Z",
-      "comment_updated_at": "2026-10-11T03:05:27Z",
-      "comment_body_sha256": "849a84b9a05880ddb439c86eccdc66af47c3f5556190198340bf9f4299a23882",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167796,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-11T03:06:20.271Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/heartbeat-s3-land-20261009",
-        "head_sha": "debdf5c798772385219100ba9fb6e9a7d318d2c9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:164825:5989792415:2026-10-05T07:09:35Z:re_review",
       "comment_id": "5989792415",
@@ -32528,6 +32481,39 @@
         "kind": "pull_request",
         "branch": "steipete/coldload-dashboard-route-prehello",
         "head_sha": "f9c80db74d2fb7499835ed4cd6e09ed2837119b7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168972:6106786679:2026-10-11T07:42:41Z:clawsweeper_needs_human",
+      "comment_id": "6106786679",
+      "comment_version_key": "6106786679:2026-10-11T07:42:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168972#issuecomment-6106786679",
+      "comment_created_at": "2026-10-11T07:42:41Z",
+      "comment_updated_at": "2026-10-11T07:42:41Z",
+      "comment_body_sha256": "172004ba6f0beb3d14b470c01cfe6859af169be0b88d41e7ef837b6c9bcc0c89",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168972,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: The body reports image, audio, and search calls from a v2026.10.1 container with an equivalent change, but no inspectable terminal trace shows approved...; Review finding: [P1] Prevent config values from granting Google proxy trust — extensions/google/src/google-trusted-origins.ts:56-60 - [P2] Explain the supported opt-in when reject... (sha=9dc5713140b4abaf39fabb7e89d93292d1025430)",
+      "expected_head_sha": "9dc5713140b4abaf39fabb7e89d93292d1025430",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-11T07:43:36.861Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/google-operator-trusted-origins",
+        "head_sha": "9dc5713140b4abaf39fabb7e89d93292d1025430",
         "cluster_id": null,
         "job_path": null
       }
