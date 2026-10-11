@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-168843"
-mode: "autonomous"
-run_id: "38107356383"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38107356383"
-head_sha: "3e3ac1fffea21e8f0b237313887ae81309b4d76c"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-11T05:00:44.193Z"
-canonical: "https://github.com/openclaw/openclaw/issues/168843"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/168843"
+mode: "plan"
+run_id: "38115073199"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38115073199"
+head_sha: "d14447b3cfb4e0ab8a0cb1a44278f39955032b5a"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-11T05:35:24.427Z"
+canonical: "#168843"
+canonical_issue: "#168843"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38107356383](https://github.com/openclaw/clawsweeper/actions/runs/38107356383)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38115073199](https://github.com/openclaw/clawsweeper/actions/runs/38115073199)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/168843
+Canonical: #168843
 
 ## Summary
 
-Current source confirms the fixture mismatch. A narrow four-file fix artifact is ready for the executor; local implementation and Gateway validation are blocked by the read-only filesystem and missing dependencies/build artifacts. No files or GitHub state were changed.
+Plan one narrow test-support fix PR. Baseline reproduction, implementation, review, and validation remain execution prerequisites; no files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Current source confirms the fixture mismatch. A narrow four-file fix artifact is
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #168843 | fix_needed | planned | canonical | The test-support defect remains source-proven; no hydrated PR implements this narrow repair. Executor must establish the real Gateway baseline before editing. |
-| #168401 | keep_related | planned | related | Related CI context, with distinct feature scope; do not repair, replace, merge, or close it in this issue implementation job. |
-| #163471 | keep_closed | skipped | related | Retain as historical context without any mutation. |
-| cluster:issue-openclaw-openclaw-168843 | build_fix_artifact | planned | canonical | Artifact preparation is complete; implementation requires a writable executor checkout with dependencies and matching built artifacts. |
+| #168843 | fix_needed | planned | canonical | A focused fixture repair is justified. Reproduce through the actual Gateway/provider HTTP boundaries before editing; stop if the reported baseline cannot be established. |
+| #168401 | route_security | planned | security_sensitive | Quarantine this linked PR from repair automation under the supplied security rule. This routing makes no vulnerability determination and does not block the independent fixture fix. |
+| #163471 | keep_closed | skipped | related | Historical provenance only; no action on the closed PR is required. |
 
 ## Needs Human
 
