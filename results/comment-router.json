@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T17:30:33.228Z",
+  "updated_at": "2026-10-11T17:35:53.960Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:2141:6106898724:2026-10-11T07:57:33Z:clawsweeper_needs_human",
-      "comment_id": "6106898724",
-      "comment_version_key": "6106898724:2026-10-11T07:57:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/2141#issuecomment-6106898724",
-      "comment_created_at": "2026-10-11T07:57:33Z",
-      "comment_updated_at": "2026-10-11T07:57:33Z",
-      "comment_body_sha256": "de4479bd66eaf74dec60add49b64f654b95168f79771b1a09ef5c8f448e10a43",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 2141,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Select Gateway lifecycle records before retaining raw log text (P2)** - On a stop timeout, a reply record such as {\"level\":\"info\",\"message\":\"received SIGTERM; confidential calendar details\"} passes this whole-li...; Review finding: [P2] Select Gateway lifecycle records before retaining raw log text — tests/helpers/qa-repository.mjs:491-492 - [medium] Conversation classification is bypassed du... (sha=6c5cbbe233ceee05cf56f7b90e553aeeba36b6f6)",
-      "expected_head_sha": "6c5cbbe233ceee05cf56f7b90e553aeeba36b6f6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T07:58:27.165Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "diag-1076",
-        "head_sha": "6c5cbbe233ceee05cf56f7b90e553aeeba36b6f6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157860:5826401030:2026-10-11T07:57:32Z:clawsweeper_needs_human",
       "comment_id": "5826401030",
@@ -32939,6 +32906,51 @@
       "status": "skipped",
       "processed_at": "2026-10-11T17:30:33.228Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:6111766369:2026-10-11T17:34:56Z:re_review",
+      "comment_id": "6111766369",
+      "comment_version_key": "6111766369:2026-10-11T17:34:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6111766369",
+      "comment_created_at": "2026-10-11T17:34:56Z",
+      "comment_updated_at": "2026-10-11T17:34:56Z",
+      "comment_body_sha256": "44bc950b73275e45efa7dedfd84e78935a58c7c2e3012e29d5fa423d40b2fe5b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review please — synced with upstream/main (95dcdf9358), resolved audit-event-store.ts retention refactor conflict preserving skill-selection contract. focused audit tests 55/55 green, tsgo:core clean",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T17:35:52.716Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "4d6c33b292974933ebb83b1c6575fa6c02df85ae"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
