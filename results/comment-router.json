@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T05:46:02.633Z",
+  "updated_at": "2026-10-11T05:46:33.962Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168583:6100605183:2026-10-11T00:23:10Z:clawsweeper_needs_human",
-      "comment_id": "6100605183",
-      "comment_version_key": "6100605183:2026-10-11T00:23:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168583#issuecomment-6100605183",
-      "comment_created_at": "2026-10-10T18:08:25Z",
-      "comment_updated_at": "2026-10-11T00:23:10Z",
-      "comment_body_sha256": "44206a89abf1de4f96a4c9b8ff38a954aaeb23f2c183553ded2fba5ed5296965",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168583,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=51e3d6135468461b62a83b8a2c72ce9f33c5d8f7)",
-      "expected_head_sha": "51e3d6135468461b62a83b8a2c72ce9f33c5d8f7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T00:24:10.943Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-wiki-utf8",
-        "head_sha": "51e3d6135468461b62a83b8a2c72ce9f33c5d8f7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166582:6037834622:2026-10-11T00:23:52Z:clawsweeper_needs_human",
       "comment_id": "6037834622",
@@ -33217,6 +33184,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167425:6105950814:2026-10-11T05:45:34Z:re_review",
+      "comment_id": "6105950814",
+      "comment_version_key": "6105950814:2026-10-11T05:45:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167425#issuecomment-6105950814",
+      "comment_created_at": "2026-10-11T05:45:34Z",
+      "comment_updated_at": "2026-10-11T05:45:34Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167425,
+      "author": "MoerAI",
+      "author_id": 26067127,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T05:46:32.379Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/feishu-synthetic-reply-anchor",
+        "head_sha": "db9e888b8e0b3baaf72c962904b6a73e3c85391a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
