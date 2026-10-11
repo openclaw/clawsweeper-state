@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 11, 2026, 06:49 UTC
+Last source update: Oct 11, 2026, 07:17 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Oct 11, 2026, 06:49 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Oct 11, 2026, 06:41 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38116240819) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Oct 11, 2026, 06:49 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38119284413) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Oct 11, 2026, 07:17 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38120717120) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 11, 2026, 07:03 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38119994812) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 11, 2026, 05:58 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38116514079) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 11, 2026, 06:50 UTC
+Last source update: Oct 11, 2026, 07:10 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1672 | 100% |
-| Run attempts archived | 5015 | audit |
+| Run attempts archived | 5016 | audit |
 | Latest successful clusters | 1255 | 75.1% |
 | Latest failed clusters | 413 | 24.7% |
 | Latest cancelled clusters | 4 | 0.2% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1672 clusters: 423 maintainer action, 460 automation snapshot, 725 intervention needed, 64 no pending action, 0 completed.
 - Maintainer first: [openclaw/agent-skills](https://github.com/openclaw/agent-skills) [#240](https://github.com/openclaw/agent-skills/issues/240) is maintainer_input: Quarantine this exact ref for central OpenClaw security handling. The #217 fix must preserve existing scanner policy..
-- Intervention first: [openclaw/esp-openclaw-node](https://github.com/openclaw/esp-openclaw-node) [issue-openclaw-esp-openclaw-node-67](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-esp-openclaw-node-67.md) is automation_blocked: No new PR is justified. Main already contains the confirmed handshake deadline fix from #68. The remaining customized-firmware recovery f....
+- Intervention first: [openclaw/esp-openclaw-node](https://github.com/openclaw/esp-openclaw-node) [issue-openclaw-esp-openclaw-node-67](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-esp-openclaw-node-67.md) is automation_blocked: No new PR is justified by the available evidence. Current main contains #68's confirmed handshake deadline repair; the remaining customiz....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#168870](https://github.com/openclaw/openclaw/pull/168870) is action_planned: The report and inspected source support a focused invocation-settlement bug. Establish the required failing regression before editing; no....
 - Completed latest: no completed action in the latest records.
 
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/esp-openclaw-node](https://github.com/openclaw/esp-openclaw-node) |  | automation_blocked | No new PR is justified. Main already contains the confirmed handshake deadline fix from #68. The remaining customized-firmware recovery failure lac... | Oct 11, 2026, 06:46 UTC | [issue-openclaw-esp-openclaw-node-67](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-esp-openclaw-node-67.md) | [38118976255](https://github.com/openclaw/clawsweeper/actions/runs/38118976255) |
+| [openclaw/esp-openclaw-node](https://github.com/openclaw/esp-openclaw-node) |  | automation_blocked | No new PR is justified by the available evidence. Current main contains #68's confirmed handshake deadline repair; the remaining customized-firmwar... | Oct 11, 2026, 07:10 UTC | [issue-openclaw-esp-openclaw-node-67](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-esp-openclaw-node-67.md) | [38120279241](https://github.com/openclaw/clawsweeper/actions/runs/38120279241) |
 | [openclaw/gogcli](https://github.com/openclaw/gogcli) | [#1199](https://github.com/openclaw/gogcli/pull/1199) | automation_failed | The missing query path and oversized positional request remain present. The implementation is narrow and does not require a product or security dec... | Oct 11, 2026, 05:58 UTC | [issue-openclaw-gogcli-1199](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-gogcli-1199.md) | [38116318814](https://github.com/openclaw/clawsweeper/actions/runs/38116318814) |
 | [openclaw/peekaboo](https://github.com/openclaw/peekaboo) |  | automation_blocked | The capability remains unresolved on preflight main 5afcafb5ca7e4f3fe524ce1139d624e811cf3043. No receiver-proven implementation mechanism was ident... | Oct 11, 2026, 05:33 UTC | [issue-openclaw-peekaboo-922](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-922.md) | [38114885924](https://github.com/openclaw/clawsweeper/actions/runs/38114885924) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/... | Oct 11, 2026, 05:21 UTC | [automerge-openclaw-openclaw-166269](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-166269.md) | [38111629865](https://github.com/openclaw/clawsweeper/actions/runs/38111629865) |
