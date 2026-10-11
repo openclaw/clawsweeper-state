@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T04:18:15.683Z",
+  "updated_at": "2026-10-11T04:19:40.433Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127000:5365235719:2026-10-10T23:00:19Z:clawsweeper_needs_human",
-      "comment_id": "5365235719",
-      "comment_version_key": "5365235719:2026-10-10T23:00:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127000#issuecomment-5365235719",
-      "comment_created_at": "2026-08-21T04:34:10Z",
-      "comment_updated_at": "2026-10-10T23:00:19Z",
-      "comment_body_sha256": "5060e2da168277ff94b7966e025a14f1e771f3c0807443410cf9ca313c7a88b7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127000,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: Historical tests inject a verify callback around the VCR publisher's create calls, but no controlled run shows an allowed Release Publish attempt reach...; Review finding: [P1] Revalidate authority immediately before Vercel login — .github/workflows/vercel-container-registry-publish.yml:79-82 - [P1] Reject a cancelled parent run befo... (sha=f39fdcd4aee2c03b924c725c65d4d2641ca8b093)",
-      "expected_head_sha": "f39fdcd4aee2c03b924c725c65d4d2641ca8b093",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T23:09:38.385Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/vcr-writer-trust",
-        "head_sha": "f39fdcd4aee2c03b924c725c65d4d2641ca8b093",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127091:5367081444:2026-10-10T22:58:21Z:clawsweeper_needs_human",
       "comment_id": "5367081444",
@@ -33207,6 +33174,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-enterprise:1981:6105367657:2026-10-11T04:18:38Z:re_review",
+      "comment_id": "6105367657",
+      "comment_version_key": "6105367657:2026-10-11T04:18:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1981#issuecomment-6105367657",
+      "comment_created_at": "2026-10-11T04:18:38Z",
+      "comment_updated_at": "2026-10-11T04:18:38Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 1981,
+      "author": "ericcaiwx-star",
+      "author_id": 287630876,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T04:19:38.558Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/thirty-logs-05-oct10",
+        "head_sha": "8a5bf0e9f3a1a1a2de8a9685df60f43bc66e360d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
