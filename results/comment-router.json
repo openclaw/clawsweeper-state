@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T10:41:29.194Z",
+  "updated_at": "2026-10-11T10:49:48.039Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168912:6105961284:2026-10-11T06:13:29Z:clawsweeper_needs_human",
-      "comment_id": "6105961284",
-      "comment_version_key": "6105961284:2026-10-11T06:13:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168912#issuecomment-6105961284",
-      "comment_created_at": "2026-10-11T05:47:06Z",
-      "comment_updated_at": "2026-10-11T06:13:29Z",
-      "comment_body_sha256": "515dd51b97c80731790a78de2c946292e443a352f596cef2872a05287cea52af",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168912,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step** - Determine whether the sqlite-session-lifecycle failure in https://github.com/openclaw/openclaw/actions/runs/38115486349/job/114399602413 is inherited or caused by the introduced diff, usin... (sha=32592d1cf45a2370ff166a9884c8ebec188ba45f)",
-      "expected_head_sha": "32592d1cf45a2370ff166a9884c8ebec188ba45f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T06:14:23.801Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/captured-session-source-167266",
-        "head_sha": "32592d1cf45a2370ff166a9884c8ebec188ba45f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168922:6106068977:2026-10-11T06:14:03Z:clawsweeper_needs_human",
       "comment_id": "6106068977",
@@ -33093,6 +33060,53 @@
       "status": "skipped",
       "processed_at": "2026-10-11T10:41:29.194Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137450:6108233883:2026-10-11T10:49:03Z:re_review",
+      "comment_id": "6108233883",
+      "comment_version_key": "6108233883:2026-10-11T10:49:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137450#issuecomment-6108233883",
+      "comment_created_at": "2026-10-11T10:49:03Z",
+      "comment_updated_at": "2026-10-11T10:49:03Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137450,
+      "author": "cavit99",
+      "author_id": 35897738,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T10:49:46.819Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/llm-task-codex-output-schema",
+        "head_sha": "cae92b187157840e7159e7886473ee6690aca89d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
