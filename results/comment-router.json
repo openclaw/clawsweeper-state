@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T13:04:14.351Z",
+  "updated_at": "2026-10-11T13:04:20.353Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168607:6101227770:2026-10-11T06:38:07Z:clawsweeper_auto_repair",
-      "comment_id": "6101227770",
-      "comment_version_key": "6101227770:2026-10-11T06:38:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168607#issuecomment-6101227770",
-      "comment_created_at": "2026-10-10T19:17:03Z",
-      "comment_updated_at": "2026-10-11T06:38:07Z",
-      "comment_body_sha256": "a87792b9e1440c02aaff606ac7e82acf8645374e737b4b57636cdabba14442a8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168607,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=496404f9d39f8774ab860b13f4b5c148aa853819)",
-      "expected_head_sha": "496404f9d39f8774ab860b13f4b5c148aa853819",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-10-11T06:39:09.098Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/actorb2",
-        "head_sha": "496404f9d39f8774ab860b13f4b5c148aa853819",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168772:6104041181:2026-10-11T06:39:01Z:clawsweeper_needs_human",
       "comment_id": "6104041181",
@@ -33403,6 +33370,53 @@
         "kind": "pull_request",
         "branch": "codex/fix-169042-memory-search-loop",
         "head_sha": "6197168674052c5caf0d2fe33cbfa38147b6b278",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168735:6109310391:2026-10-11T13:03:27Z:re_review",
+      "comment_id": "6109310391",
+      "comment_version_key": "6109310391:2026-10-11T13:03:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168735#issuecomment-6109310391",
+      "comment_created_at": "2026-10-11T13:03:27Z",
+      "comment_updated_at": "2026-10-11T13:03:27Z",
+      "comment_body_sha256": "8ded7a4a471409c089f3429712fc992f11397d0c867318727d698c009b3a8aef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168735,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T13:04:19.019Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-migration-marketplace-discovery-deadline-wall-clock",
+        "head_sha": "afd8d6ee308d617ab8e1bdd2e5bbb49b34197542",
         "cluster_id": null,
         "job_path": null
       },
