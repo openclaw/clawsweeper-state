@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-12T09:50:18.216Z",
+  "updated_at": "2026-10-12T09:51:34.772Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:169061:6108012095:2026-10-11T10:35:38Z:clawsweeper_needs_human",
-      "comment_id": "6108012095",
-      "comment_version_key": "6108012095:2026-10-11T10:35:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/169061#issuecomment-6108012095",
-      "comment_created_at": "2026-10-11T10:20:01Z",
-      "comment_updated_at": "2026-10-11T10:35:38Z",
-      "comment_body_sha256": "9331b7e2b53c4e0708713cdccccb251712d8f9dfa720b434465df9fdcc5620d7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 169061,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=59f5968e163be0c9e0d06d55d5816ca4c0e683af)",
-      "expected_head_sha": "59f5968e163be0c9e0d06d55d5816ca4c0e683af",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T10:37:13.158Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/stab-steer-transcript-conflict",
-        "head_sha": "59f5968e163be0c9e0d06d55d5816ca4c0e683af",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:169062:6108074500:2026-10-11T10:35:30Z:clawsweeper_auto_repair",
       "comment_id": "6108074500",
@@ -34100,6 +34067,51 @@
       "status": "skipped",
       "processed_at": "2026-10-12T09:50:18.216Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:169778:6121836548:2026-10-12T09:50:41Z:re_review",
+      "comment_id": "6121836548",
+      "comment_version_key": "6121836548:2026-10-12T09:50:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/169778#issuecomment-6121836548",
+      "comment_created_at": "2026-10-12T09:50:41Z",
+      "comment_updated_at": "2026-10-12T09:50:41Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 169778,
+      "author": "htjworld",
+      "author_id": 116538001,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-12T09:51:33.566Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/startup-webhook-readiness-rescan",
+        "head_sha": "ab045a82f14df6f6147b1d75137e85891c6c1d80"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
