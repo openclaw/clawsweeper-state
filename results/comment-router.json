@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-12T05:12:08.000Z",
+  "updated_at": "2026-10-12T05:19:28.108Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168815:6104447719:2026-10-11T09:38:37Z:clawsweeper_auto_repair",
-      "comment_id": "6104447719",
-      "comment_version_key": "6104447719:2026-10-11T09:38:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168815#issuecomment-6104447719",
-      "comment_created_at": "2026-10-11T02:03:49Z",
-      "comment_updated_at": "2026-10-11T09:38:37Z",
-      "comment_body_sha256": "11cb8912ab58363f231aeb66fe05e35156045ccc5d1b5fed1f7c2198883f48d9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168815,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=80b78b87fa800cfe0ee9a6c0811e47498c2d9d62)",
-      "expected_head_sha": "80b78b87fa800cfe0ee9a6c0811e47498c2d9d62",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-10-11T09:39:30.054Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "solid2/w-pg-2a",
-        "head_sha": "80b78b87fa800cfe0ee9a6c0811e47498c2d9d62",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158915:5846914488:2026-10-11T09:38:48Z:clawsweeper_needs_human",
       "comment_id": "5846914488",
@@ -34114,6 +34081,51 @@
       "status": "skipped",
       "processed_at": "2026-10-12T05:12:08.000Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163908:5981767553:2026-10-04T15:48:35Z:re_review",
+      "comment_id": "5981767553",
+      "comment_version_key": "5981767553:2026-10-04T15:48:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163908#issuecomment-5981767553",
+      "comment_created_at": "2026-10-04T15:48:35Z",
+      "comment_updated_at": "2026-10-04T15:48:35Z",
+      "comment_body_sha256": "ba4b97316748508c6bf881f065a20922efc634db35efa4d0e84a8e31610715ff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163908,
+      "author": "Cyb3rb1ade",
+      "author_id": 84099452,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-12T05:19:26.734Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/telegram-model-picker-runtime-choices",
+        "head_sha": "983fd9c5a6108f0921152517d37ab8398b14ce39"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
