@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-12T09:51:34.772Z",
+  "updated_at": "2026-10-12T09:52:34.532Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:169062:6108074500:2026-10-11T10:35:30Z:clawsweeper_auto_repair",
-      "comment_id": "6108074500",
-      "comment_version_key": "6108074500:2026-10-11T10:35:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/169062#issuecomment-6108074500",
-      "comment_created_at": "2026-10-11T10:28:06Z",
-      "comment_updated_at": "2026-10-11T10:35:30Z",
-      "comment_body_sha256": "c327a7159273830598600ebf10a0784bfe0bfe89e63d05f5cb1e1ddcaff28056",
-      "repo": "openclaw/openclaw",
-      "issue_number": 169062,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=72bd7ae10a2ddf32e0fb81b5f574641424c1dbb7)",
-      "expected_head_sha": "72bd7ae10a2ddf32e0fb81b5f574641424c1dbb7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T10:37:13.158Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-micro-dashboard-sessions-list-payload-20260919",
-        "head_sha": "72bd7ae10a2ddf32e0fb81b5f574641424c1dbb7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:169064:6108125521:2026-10-11T10:34:47Z:clawsweeper_needs_human",
       "comment_id": "6108125521",
@@ -34097,6 +34064,51 @@
         "kind": "pull_request",
         "branch": "fix/startup-webhook-readiness-rescan",
         "head_sha": "ab045a82f14df6f6147b1d75137e85891c6c1d80"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167585:6121850775:2026-10-12T09:51:38Z:re_review",
+      "comment_id": "6121850775",
+      "comment_version_key": "6121850775:2026-10-12T09:51:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167585#issuecomment-6121850775",
+      "comment_created_at": "2026-10-12T09:51:38Z",
+      "comment_updated_at": "2026-10-12T09:51:38Z",
+      "comment_body_sha256": "6c4ef645214f3dc87b9a71e2f4f8f84a825a525c40eb7587dff5f573b0c98d26",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167585,
+      "author": "Linux2010",
+      "author_id": 35169750,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-12T09:52:32.790Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/167365-effective-tool-inventory",
+        "head_sha": "f5d301668bf85456f0de80d5617d75a65cc0128f"
       },
       "actions": [
         {
