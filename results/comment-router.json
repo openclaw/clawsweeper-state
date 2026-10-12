@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-12T02:04:49.004Z",
+  "updated_at": "2026-10-12T02:06:15.224Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:169005:6107159822:2026-10-11T09:12:57Z:clawsweeper_needs_human",
-      "comment_id": "6107159822",
-      "comment_version_key": "6107159822:2026-10-11T09:12:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/169005#issuecomment-6107159822",
-      "comment_created_at": "2026-10-11T08:32:04Z",
-      "comment_updated_at": "2026-10-11T09:12:57Z",
-      "comment_body_sha256": "ecf3e83e5d87394efff2ae00cf18b42570950e42347c607a24cd3e1e9aecf511",
-      "repo": "openclaw/openclaw",
-      "issue_number": 169005,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: exercise tools.github.configure with an allowed operator.admin requester, an initially unauthorized requester, and requester revocation or reassignment...; Review finding: [P1] Carry live requester authority into handoff consumption — src/gateway/server-methods/tools-github.ts:85 - [P2] Migrate every fixture using the removed audit r... (sha=855b10be602615837ae5468df9ff4d3ec50563fe)",
-      "expected_head_sha": "855b10be602615837ae5468df9ff4d3ec50563fe",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T09:13:44.792Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/t1infra",
-        "head_sha": "855b10be602615837ae5468df9ff4d3ec50563fe",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:169019:6107291097:2026-10-11T09:13:24Z:clawsweeper_auto_repair",
       "comment_id": "6107291097",
@@ -33961,6 +33928,51 @@
         "kind": "pull_request",
         "branch": "fix/tools-effective-plugin-inventory",
         "head_sha": "7ca8b5136b5eb2486f36353449bb2c6fd973fd58"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:169518:6116457223:2026-10-12T02:05:17Z:re_review",
+      "comment_id": "6116457223",
+      "comment_version_key": "6116457223:2026-10-12T02:05:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/169518#issuecomment-6116457223",
+      "comment_created_at": "2026-10-12T02:05:17Z",
+      "comment_updated_at": "2026-10-12T02:05:17Z",
+      "comment_body_sha256": "14a698681d459e74b6152891ea602fc7ed0291b6ace263f61d7ccd3e2bee731a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 169518,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-12T02:06:13.874Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/updater-runtime-npm-parent-169463",
+        "head_sha": "768bb080ac1df90eb339a0887752beda56d8d467"
       },
       "actions": [
         {
