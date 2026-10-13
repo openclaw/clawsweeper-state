@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 13, 2026, 21:20 UTC
+Last source update: Oct 13, 2026, 21:30 UTC
 
 ### Fleet
 
@@ -23,7 +23,7 @@ Last source update: Oct 13, 2026, 21:20 UTC
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Oct 13, 2026, 21:20 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38466213466) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 13, 2026, 21:19 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38469563305) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 13, 2026, 21:30 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38470954416) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 13, 2026, 21:17 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38469413119) |
 
 ### Repositories
