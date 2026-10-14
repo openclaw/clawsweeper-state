@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-14T14:28:42.138Z",
+  "updated_at": "2026-10-14T14:31:42.429Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168036:6093488776:2026-10-10T03:52:53Z:re_review",
-      "comment_id": "6093488776",
-      "comment_version_key": "6093488776:2026-10-10T03:52:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168036#issuecomment-6093488776",
-      "comment_created_at": "2026-10-10T03:52:53Z",
-      "comment_updated_at": "2026-10-10T03:52:53Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168036,
-      "author": "Deltawerks",
-      "author_id": 239865961,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-13T16:22:07.360Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:168036:6093857563:2026-10-10T04:40:33Z:re_review",
       "comment_id": "6093857563",
@@ -38427,6 +38400,51 @@
         "kind": "pull_request",
         "branch": "codex/mattermost-reply-owner",
         "head_sha": "a6eb69342a032b5988036d37e78512e9b3945327"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:172173:6170761851:2026-10-14T14:30:41Z:re_review",
+      "comment_id": "6170761851",
+      "comment_version_key": "6170761851:2026-10-14T14:30:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/172173#issuecomment-6170761851",
+      "comment_created_at": "2026-10-14T14:30:41Z",
+      "comment_updated_at": "2026-10-14T14:30:41Z",
+      "comment_body_sha256": "b613440d872b04568c719fede592f59d683593a5053bf1b876650e3eded3a2de",
+      "repo": "openclaw/openclaw",
+      "issue_number": 172173,
+      "author": "skyzhao1223",
+      "author_id": 15373810,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — the p2 finding is addressed at the owner it named: haslongwindowratelimitevidence in retry-evidence.ts now matches the chinese usage-cap phrasing (checked separately from the ascii pattern because cjk has no word boundaries), and the new regression drives the recovery controller with the exact reported 429 body — red before it returned { action: 'retry' }, green after with zero same-model retries",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-14T14:31:39.957Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/failover-cjk-periodic-usage-limit",
+        "head_sha": "f36e4901627b82c4a281294ad3102563bf7bbe9c"
       },
       "actions": [
         {
