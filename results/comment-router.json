@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-14T09:10:59.841Z",
+  "updated_at": "2026-10-14T09:14:46.838Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5947466882:2026-10-02T07:35:35Z:re_review",
-      "comment_id": "5947466882",
-      "comment_version_key": "5947466882:2026-10-02T07:35:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5947466882",
-      "comment_created_at": "2026-10-02T07:35:35Z",
-      "comment_updated_at": "2026-10-02T07:35:35Z",
-      "comment_body_sha256": "6e57a79a3049f3dfc9fb53de5276f52a034f5229814db350b480540103eaafdd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — fixed the 2 ci failures on this head: (1) added `// safety:` invariant comment for the legacy `status:\"observed\"` cast in `src/gateway/server-methods/audit.ts`, (2) raised the schema-repair read-query budget 860→870 in `openclaw-state-db.test.ts` to cover the new `audit_skill_selection_events` table + 5 indexes. focused tests (74) + the budget test pass locally; the other ci failure mode (query count 865) was our own growth, not a flake. branch is current with main (0 behind)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-13T09:49:39.920Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5949299816:2026-10-02T09:34:38Z:re_review",
       "comment_id": "5949299816",
@@ -39052,6 +39025,51 @@
         "kind": "pull_request",
         "branch": "fix/playback-transcode-budget",
         "head_sha": "02cf2ea78fe5d70744b801b0cb56c069cbc3bf80"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:171588:6164978976:2026-10-14T09:13:59Z:re_review",
+      "comment_id": "6164978976",
+      "comment_version_key": "6164978976:2026-10-14T09:13:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/171588#issuecomment-6164978976",
+      "comment_created_at": "2026-10-14T09:13:59Z",
+      "comment_updated_at": "2026-10-14T09:13:59Z",
+      "comment_body_sha256": "378607dde836e7d074fb00155d03b4f1728f7ad24ad95f7ee358b33a483e6d3d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 171588,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-14T09:14:45.645Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/local-model-lean-prompt",
+        "head_sha": "1eaf5cd0d3319908bc054f5eda0a9ed3a773073c"
       },
       "actions": [
         {
