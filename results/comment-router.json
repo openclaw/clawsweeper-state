@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-14T13:15:39.411Z",
+  "updated_at": "2026-10-14T13:24:30.030Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157500:5937889782:2026-10-01T18:28:32Z:re_review",
-      "comment_id": "5937889782",
-      "comment_version_key": "5937889782:2026-10-01T18:28:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157500#issuecomment-5937889782",
-      "comment_created_at": "2026-10-01T18:28:32Z",
-      "comment_updated_at": "2026-10-01T18:28:32Z",
-      "comment_body_sha256": "4242a9cc929a35afd68cd918dbfbb974aa9d756a0186c851ac34bf1647563027",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157500,
-      "author": "galiniliev",
-      "author_id": 5711535,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-13T15:12:24.335Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157500:5941126574:2026-10-01T21:36:03Z:re_review",
       "comment_id": "5941126574",
@@ -38481,6 +38454,51 @@
         "kind": "pull_request",
         "branch": "fix/guest-own-preferences",
         "head_sha": "2a5f80bab885ba843688751a77661ccfce05303d"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:172127:6169385429:2026-10-14T13:23:28Z:re_review",
+      "comment_id": "6169385429",
+      "comment_version_key": "6169385429:2026-10-14T13:23:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/172127#issuecomment-6169385429",
+      "comment_created_at": "2026-10-14T13:23:28Z",
+      "comment_updated_at": "2026-10-14T13:23:28Z",
+      "comment_body_sha256": "52f955954119ab1e6b1639272cc053328bf38f6be87a7e9e12c9d7797e2d41c9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 172127,
+      "author": "skyzhao1223",
+      "author_id": 15373810,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — both findings are addressed: the divergent-duplicate-id refusal is preserved (the count expectation is untouched again; doctor-session-sqlite.retirement-disposal.test.ts passes unchanged), and the repeated-header normalization now happens in the shared transcript reader, so the populated-destination path described in the p2 finding is covered by the second regression case",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-14T13:24:28.373Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-duplicate-session-header",
+        "head_sha": "2c532b5c66554c0e2b116d2f272c17268b6b895f"
       },
       "actions": [
         {
