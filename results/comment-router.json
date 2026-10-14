@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-10-14T19:15:43.703Z",
+  "updated_at": "2026-10-14T19:17:34.484Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135480:6156545277:2026-10-13T22:26:45Z:re_review",
-      "comment_id": "6156545277",
-      "comment_version_key": "6156545277:2026-10-13T22:26:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135480#issuecomment-6156545277",
-      "comment_created_at": "2026-10-13T22:26:45Z",
-      "comment_updated_at": "2026-10-13T22:26:45Z",
-      "comment_body_sha256": "1d8a8e411801752e720b7428c868705b3547ff5cfd63184e82fd56e74bae6b66",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135480,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-13T22:27:36.854Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/subagent-shared-cwd-advisory",
-        "head_sha": "aa0c15c8bfd14f8120acf45b383903ae582b8121"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157806:6156562175:2026-10-13T22:27:52Z:re_review",
       "comment_id": "6156562175",
@@ -38191,6 +38146,51 @@
         "kind": "pull_request",
         "branch": "fix/catalog-input-diagnostics",
         "head_sha": "87bd09f4b4a1821176b2f38817985e85e0cf2287"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:172274:6176348234:2026-10-14T19:16:36Z:re_review",
+      "comment_id": "6176348234",
+      "comment_version_key": "6176348234:2026-10-14T19:16:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/172274#issuecomment-6176348234",
+      "comment_created_at": "2026-10-14T19:16:36Z",
+      "comment_updated_at": "2026-10-14T19:16:36Z",
+      "comment_body_sha256": "ca6bc94cffc0ca5a72c372358b23ccc52deab7e3eb74d5d80c9242a9c72986b0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 172274,
+      "author": "rubencu",
+      "author_id": 4742789,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — proof was added to the pr body (real-machine before/after cli output, hermetic sandbox status/inspect/verify, four desktop-card screenshots, failing-base/passing-head e2e) and both p2 findings are fixed on the current head `bf136641`. ci on this head is fully green (61 pass / 0 fail). a local `swift test --filter chromeextensionsetuptests` run for the macos bridge (ci's macos-swift skips fork prs) will be posted as a follow-up comment when it finishes",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-14T19:17:33.125Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chrome-extension-discovery-blocked",
+        "head_sha": "bf136641b2205244ed839ce9ee363d61500a7a9a"
       },
       "actions": [
         {
