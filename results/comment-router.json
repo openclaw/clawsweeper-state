@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-10-15T15:36:03.507Z",
+  "updated_at": "2026-10-15T15:37:34.948Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:172283:6173116718:2026-10-14T16:27:13Z:re_review",
-      "comment_id": "6173116718",
-      "comment_version_key": "6173116718:2026-10-14T16:27:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/172283#issuecomment-6173116718",
-      "comment_created_at": "2026-10-14T16:27:13Z",
-      "comment_updated_at": "2026-10-14T16:27:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 172283,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-14T16:28:09.049Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/buzz-credential-file-trim",
-        "head_sha": "f3fd6d43379f85d1f10a364e33870126fb371d1f"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:172256:6173137699:2026-10-14T16:28:21Z:re_review",
       "comment_id": "6173137699",
@@ -38266,6 +38221,51 @@
         "kind": "pull_request",
         "branch": "memorytunning-pr-v2",
         "head_sha": "1a7371d7743b65fe0df3dc9a68538535260c59d0"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:173164:6195956713:2026-10-15T15:36:39Z:re_review",
+      "comment_id": "6195956713",
+      "comment_version_key": "6195956713:2026-10-15T15:36:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/173164#issuecomment-6195956713",
+      "comment_created_at": "2026-10-15T15:36:39Z",
+      "comment_updated_at": "2026-10-15T15:36:39Z",
+      "comment_body_sha256": "8997bebcb9fe5dea7d1a5a444dac98276bba953fc71540a7afb486cd0b2a36fd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 173164,
+      "author": "midhunvnadh",
+      "author_id": 32438353,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review — fixed the p1 in `ce1b44b` (reproduced first: a `litellm` case-variant row lost its authored model, apikey, and request options; the fix resolves the row through the normalized lookup and now also preserves its baseurl, which main was resetting to localhost). added the registered-auth preservation case. also recorded a known limitation honestly: this pr does not add an in-wizard model picker, so the primary stays `litellm/claude-opus-4-6` rather than being picked from discovery",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-15T15:37:33.496Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/litellm-interactive-baseurl-prompt",
+        "head_sha": "ce1b44b2f202dba9992012d7401a19a452305ef7"
       },
       "actions": [
         {
