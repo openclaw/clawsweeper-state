@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-16T00:00:33.771Z",
+  "updated_at": "2026-10-16T00:01:30.071Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163267:6116683676:2026-10-12T02:30:30Z:re_review",
-      "comment_id": "6116683676",
-      "comment_version_key": "6116683676:2026-10-12T02:30:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163267#issuecomment-6116683676",
-      "comment_created_at": "2026-10-12T02:30:30Z",
-      "comment_updated_at": "2026-10-12T02:30:30Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163267,
-      "author": "shannon0430",
-      "author_id": 258282406,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-15T02:19:28.584Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:163267:6136935610:2026-10-13T02:33:45Z:re_review",
       "comment_id": "6136935610",
@@ -36657,6 +36630,45 @@
         {
           "action": "comment",
           "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:173565:6204825679:2026-10-16T00:00:35Z:retired",
+      "comment_id": "6204825679",
+      "comment_version_key": "6204825679:2026-10-16T00:00:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/173565#issuecomment-6204825679",
+      "comment_created_at": "2026-10-16T00:00:35Z",
+      "comment_updated_at": "2026-10-16T00:00:35Z",
+      "comment_body_sha256": "029b7c2c7033bb4f6d2ab087d2e0ae4cde4439f649ad0e996b61919a43d04559",
+      "repo": "openclaw/openclaw",
+      "issue_number": 173565,
+      "author": "Kimiyu-186",
+      "author_id": 202845257,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "please review the ready october backport at head 2ee7aa30aea3d62d55d6cdb1ac8b1f0c8e53a88d. the opened and ready dispatches returned cross-route deduplication, but there is still only the opening acknowledgment and no actual review-start or completion record. focused before/after tests and package/test types pass; ci failures are the same three documented dependency advisories. please assess this exact head before maintainer landing",
+      "intent": "retired",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-16T00:01:30.071Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/october-backport-app-inventory-refresh",
+        "head_sha": "2ee7aa30aea3d62d55d6cdb1ac8b1f0c8e53a88d"
+      },
+      "actions": [
+        {
+          "action": "comment",
+          "status": "executed",
           "label": null,
           "job_path": null
         }
