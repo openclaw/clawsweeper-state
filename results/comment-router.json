@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-16T18:22:49.409Z",
+  "updated_at": "2026-10-16T18:28:22.171Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:77184:5461373482:2026-08-29T08:45:31Z:re_review",
-      "comment_id": "5461373482",
-      "comment_version_key": "5461373482:2026-08-29T08:45:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/77184#issuecomment-5461373482",
-      "comment_created_at": "2026-08-29T08:45:31Z",
-      "comment_updated_at": "2026-08-29T08:45:31Z",
-      "comment_body_sha256": "120b24c79f76c93a9aa3e0ad26ba9d725e0843cc0b317623ec850c834805a427",
-      "repo": "openclaw/openclaw",
-      "issue_number": 77184,
-      "author": "lonexreb",
-      "author_id": 95570942,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — the p1 finding is addressed by redesign: the raw `statussummary`/`sessionstatus`/`heartbeatstatus` re-exports are gone; the entrypoint now defines bounded sdk-owned projections (`statussessionrow`, `statussessionsprojection`, `statusheartbeat`) with a compile-time host-assignability contract in the test (no `unknown` casts). head `e06332c90de` is a single squashed commit rebased on current main; pr body carries the built-dist external strict consumer proof",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-15T23:39:30.628Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:173486:6204553908:2026-10-15T23:38:46Z:re_review",
       "comment_id": "6204553908",
@@ -35931,6 +35904,51 @@
         "kind": "pull_request",
         "branch": "fix/update-snapshot-space-20261015",
         "head_sha": "f2174e4dbfb4d8084675fe9d29bcf56929737537"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:6222084973:2026-10-16T18:27:20Z:re_review",
+      "comment_id": "6222084973",
+      "comment_version_key": "6222084973:2026-10-16T18:27:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6222084973",
+      "comment_created_at": "2026-10-16T18:27:20Z",
+      "comment_updated_at": "2026-10-16T18:27:20Z",
+      "comment_body_sha256": "76396150f95ba9aee5fd7160edebe5567e3a80b62a980eeac3f1e94543a9dcfa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review please — synced with upstream/main `a1bdebdb9f` (merge dbb9bc23f6, was 107 commits behind, no conflicts). focused skill-selection audit tests pass 7/7. note: `tsgo:core` reports 128 errors repo-wide, all in upstream files (`exactidentity` refactor in infra/snapshot/tui) — none in our skill-selection/workspace-bootstrap/run-usage files",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-16T18:28:20.379Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "dbb9bc23f693758378478dd89b8a4157eb4ce585"
       },
       "actions": [
         {
