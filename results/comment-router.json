@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-16T14:29:27.764Z",
+  "updated_at": "2026-10-16T14:30:39.024Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159136:5911227137:2026-09-30T12:23:29Z:re_review",
-      "comment_id": "5911227137",
-      "comment_version_key": "5911227137:2026-09-30T12:23:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159136#issuecomment-5911227137",
-      "comment_created_at": "2026-09-30T12:23:29Z",
-      "comment_updated_at": "2026-09-30T12:23:29Z",
-      "comment_body_sha256": "27654fb44f82dc536b32ae05f21f17fc191d4dac5bd9ffb4324d0ab73f4fac5f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159136,
-      "author": "linhongyu510",
-      "author_id": 204567536,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review: rebased/merged current main. the only conflict was #159639's dry refactor of the spawn-context object (adopted; this pr's currentthreadts/currentconversationorigin now flow through the shared helper). #158992's channel gate and this pr's origin/provenance fail-closed compose orthogonally — both kept, both covered by the focused shards (thread-binding integration 9/9 incl. cli run-bound-grant bind, caller-token rejected before bind, explicit agentto wins; acp, openclaw-tools thread-binding, mcp-http provenance, sessions-spawn-hooks all green). new head: f1fefcba070",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-15T18:29:18.240Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:159136:5947062917:2026-10-02T07:00:56Z:re_review",
       "comment_id": "5947062917",
@@ -36049,6 +36022,51 @@
         "kind": "pull_request",
         "branch": "fix/cleanup-phantom-inventory",
         "head_sha": "dacf561690cf2a5720b32d3c36e6f8d3da1c04a6"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162501:6217698007:2026-10-16T14:29:37Z:re_review",
+      "comment_id": "6217698007",
+      "comment_version_key": "6217698007:2026-10-16T14:29:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162501#issuecomment-6217698007",
+      "comment_created_at": "2026-10-16T14:29:37Z",
+      "comment_updated_at": "2026-10-16T14:29:37Z",
+      "comment_body_sha256": "1c02a4f5cbfdd5d66800892fa413660f0f1080989e188ea1df85e8d93269c01b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162501,
+      "author": "kvnloo",
+      "author_id": 7121943,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-16T14:30:36.697Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "promote/156209-okf-preserve-type",
+        "head_sha": "97fb55a59217f45beec44012530128e7ca4e0c6b"
       },
       "actions": [
         {
