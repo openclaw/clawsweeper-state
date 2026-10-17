@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-17T01:42:48.165Z",
+  "updated_at": "2026-10-17T01:43:57.375Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97339:5336255100:2026-08-19T01:11:23Z:re_review",
-      "comment_id": "5336255100",
-      "comment_version_key": "5336255100:2026-08-19T01:11:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97339#issuecomment-5336255100",
-      "comment_created_at": "2026-08-19T01:09:47Z",
-      "comment_updated_at": "2026-08-19T01:11:23Z",
-      "comment_body_sha256": "74c44945954edee318127edf6febb100ddccb1ffe79caa33b5a2064e5aa53036",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97339,
-      "author": "LinuxMum",
-      "author_id": 287682120,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review - the august 19 live verification was performed after resync to pr head and rebuild of openclaw from my commit 02a8a015.  the proof provided was from my live openclaw log, openclaw does not reference git commit details in its output logs.  the supplied proofs cover successful flat add, persisted readback, flat update, subsequent persisted readback, rejection without creation, and cleanup. please reassess the existing evidence or specify precisely what additional proof you require",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-16T06:03:02.168Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:173142:6209254607:2026-10-16T06:07:34Z:re_review",
       "comment_id": "6209254607",
@@ -37166,6 +37139,51 @@
         "kind": "pull_request",
         "branch": "fix/sqlite-snapshot-integrity-once-20261017",
         "head_sha": "517c862a1cdfd8da281c8b894a4108d727a8118e"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:174933:6228090703:2026-10-17T01:43:12Z:re_review",
+      "comment_id": "6228090703",
+      "comment_version_key": "6228090703:2026-10-17T01:43:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/174933#issuecomment-6228090703",
+      "comment_created_at": "2026-10-17T01:43:12Z",
+      "comment_updated_at": "2026-10-17T01:43:12Z",
+      "comment_body_sha256": "09bfb66549382f2efab99a422cb952b6efe4fa43fec53ecd397e9ccfabc560ce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 174933,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-17T01:43:56.318Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-runtime-post-bind-startup-20260919",
+        "head_sha": "02f27d9b436ac0ddcac0015e71b5fd747862137e"
       },
       "actions": [
         {
