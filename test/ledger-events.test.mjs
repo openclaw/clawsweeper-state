@@ -191,6 +191,9 @@ test("ledger loading rejects privacy-unsafe values outside attributes", () => {
     "host:100.64.0.1",
     "host:0.0.0.0",
     "host:::ffff:127.0.0.1",
+    "http://169.254.169.254:foo",
+    "http://127.0.0.1:notaport",
+    "http://169.254.169.254:99999",
     ..."pousr".split("").map((kind) => `gh${kind}_${"a".repeat(36)}`),
     `github_pat_${"a".repeat(36)}`,
   ]) {
