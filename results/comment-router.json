@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-17T08:14:43.515Z",
+  "updated_at": "2026-10-17T08:18:56.072Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:101866:4920376805:2026-07-09T00:26:15Z:re_review",
-      "comment_id": "4920376805",
-      "comment_version_key": "4920376805:2026-07-09T00:26:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101866#issuecomment-4920376805",
-      "comment_created_at": "2026-07-09T00:26:15Z",
-      "comment_updated_at": "2026-07-09T00:26:15Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101866,
-      "author": "amittell",
-      "author_id": 1388680,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-16T15:58:00.826Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:101866:4931206475:2026-07-10T01:44:32Z:re_review",
       "comment_id": "4931206475",
@@ -40116,6 +40089,51 @@
         "kind": "pull_request",
         "branch": "pgprep/pg-mem-index",
         "head_sha": "461113d0fa134e281625b567594025f091111cfd"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:174990:6231647923:2026-10-17T08:18:05Z:re_review",
+      "comment_id": "6231647923",
+      "comment_version_key": "6231647923:2026-10-17T08:18:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/174990#issuecomment-6231647923",
+      "comment_created_at": "2026-10-17T08:18:05Z",
+      "comment_updated_at": "2026-10-17T08:18:05Z",
+      "comment_body_sha256": "e7cd4927af9b69bb7a79581422cd6b296eecd29390ddf66e0757abfda72e3982",
+      "repo": "openclaw/openclaw",
+      "issue_number": 174990,
+      "author": "wangmiao0668000666",
+      "author_id": 290215524,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — revision: rebased onto current main (`c86a972ac503`); diff unchanged (production +8/-1, test +30). the earlier `checks-node-changed-4` red was main's transient v1-assertion/v2-writer skew from #174665, resolved by the rebase; the `check-test-types-core-1` red was the same kind of main self-inconsistency, also cleared by rebasing. ci is green on the new head",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-17T08:18:55.077Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/config-health-utf8-guard",
+        "head_sha": "b30f2d87facc039c247e0701445669b31606eb78"
       },
       "actions": [
         {
