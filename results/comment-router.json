@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-17T15:36:28.646Z",
+  "updated_at": "2026-10-17T15:43:11.043Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154904:5958371278:2026-10-02T18:07:20Z:re_review",
-      "comment_id": "5958371278",
-      "comment_version_key": "5958371278:2026-10-02T18:07:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154904#issuecomment-5958371278",
-      "comment_created_at": "2026-10-02T18:07:20Z",
-      "comment_updated_at": "2026-10-02T18:07:20Z",
-      "comment_body_sha256": "c71a89a66f2f59c33ad3094357c451f0fbd1c05d4bac46937d3ceac147bec485",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154904,
-      "author": "linhongyu510",
-      "author_id": 204567536,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review: rev10 head 395efe0e2ca. dropped handwritten max-seq recursive cte; dirty-path revalidation now reuses canonical owner istranscriptentryonactivepathintransaction inside the same savepoint snapshot; clean path reuses readactivetranscriptentryanchorintransaction (no duplicated sql, db-worker t1 ratchet at base). test g uses a real appendleafcontrol branch switch with old heuristic proven red (hit=1) and new owner green; test h proves outer-write-tx real (raw begin throws, savepoint replay passes). anchor-dedup 8/8, tsgo:core 0, kysely 5/5, deadexport 0, ratchet ok",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-16T22:20:59.955Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:154904:5959056778:2026-10-02T18:45:06Z:re_review",
       "comment_id": "5959056778",
@@ -41859,6 +41832,51 @@
         "kind": "pull_request",
         "branch": "feat/cloudflare-clef-cli",
         "head_sha": "a4c924769e0084aa67a1da7c0a63a77488b1388c"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-enterprise:2760:6235949839:2026-10-17T15:42:15Z:re_review",
+      "comment_id": "6235949839",
+      "comment_version_key": "6235949839:2026-10-17T15:42:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/2760#issuecomment-6235949839",
+      "comment_created_at": "2026-10-17T15:42:15Z",
+      "comment_updated_at": "2026-10-17T15:42:15Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 2760,
+      "author": "freeqaz-openai",
+      "author_id": 323300293,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-17T15:43:10.051Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/console-show-diagnostics-request-pending",
+        "head_sha": "985ac034d56a0ed8caff4b9d1cb46dd78dde0f3e"
       },
       "actions": [
         {
