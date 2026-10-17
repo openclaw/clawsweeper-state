@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-17T11:41:59.248Z",
+  "updated_at": "2026-10-17T11:44:00.205Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:172750:6200599355:2026-10-15T19:32:26Z:re_review",
-      "comment_id": "6200599355",
-      "comment_version_key": "6200599355:2026-10-15T19:32:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/172750#issuecomment-6200599355",
-      "comment_created_at": "2026-10-15T19:32:26Z",
-      "comment_updated_at": "2026-10-15T19:32:26Z",
-      "comment_body_sha256": "0a451436cdadd542831574929180d5049c21d675e4fe56e2aca759c322b54cd6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 172750,
-      "author": "ExoHumann",
-      "author_id": 71651955,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-16T18:52:50.848Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:172750:6200877760:2026-10-15T19:47:38Z:re_review",
       "comment_id": "6200877760",
@@ -41180,6 +41153,51 @@
         "kind": "pull_request",
         "branch": "deslop/r06-2-log-residue-20261015",
         "head_sha": "53832206aeb3594ffcfe6e1c251d323542b6ce19"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:175451:6233479705:2026-10-17T11:43:07Z:re_review",
+      "comment_id": "6233479705",
+      "comment_version_key": "6233479705:2026-10-17T11:43:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/175451#issuecomment-6233479705",
+      "comment_created_at": "2026-10-17T11:43:07Z",
+      "comment_updated_at": "2026-10-17T11:43:07Z",
+      "comment_body_sha256": "698766b777094d10f55eba7a519fcf2434e3d75fb8ee8663dc3ed0b980f9ca23",
+      "repo": "openclaw/openclaw",
+      "issue_number": 175451,
+      "author": "LiuwqGit",
+      "author_id": 7065327,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — added real behavior proof: real npm registry install of @vectorize-io/hindsight-openclaw@1.0.0 via the shipped cli built from this patch, runtime inspection showing reason=third-party-npm (stable across reinstall of the same pinned version), and a real gateway startup with the plugin id in plugins.allow showing zero invalid-provenance/unverified-install warnings while the plugin loads. pr body evidence section updated accordingly",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-17T11:43:58.778Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-175429-npm-third-party-provenance",
+        "head_sha": "30664b2b4554d5b669d8d4d86f3e1fce18bed2ac"
       },
       "actions": [
         {
