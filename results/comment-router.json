@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-10-17T21:22:53.698Z",
+  "updated_at": "2026-10-17T21:23:04.783Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:174342:6230207245:2026-10-17T05:31:06Z:re_review",
-      "comment_id": "6230207245",
-      "comment_version_key": "6230207245:2026-10-17T05:31:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/174342#issuecomment-6230207245",
-      "comment_created_at": "2026-10-17T05:31:06Z",
-      "comment_updated_at": "2026-10-17T05:31:06Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 174342,
-      "author": "xiaopan-xydt",
-      "author_id": 295160915,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-17T05:32:20.500Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mcp-bridge-server-instructions-174272",
-        "head_sha": "943d89ccde9d4e4e4f58c739ef257910219df262"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:174568:6230214892:2026-10-17T05:31:48Z:re_review",
       "comment_id": "6230214892",
@@ -39427,6 +39382,51 @@
         "kind": "pull_request",
         "branch": "fix/clawhub-message-payload-guard-refresh-20261017",
         "head_sha": "980a08a346bfb0e417a60131c5e3675575b46209"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:175536:6241292156:2026-10-17T21:22:14Z:re_review",
+      "comment_id": "6241292156",
+      "comment_version_key": "6241292156:2026-10-17T21:22:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/175536#issuecomment-6241292156",
+      "comment_created_at": "2026-10-17T21:22:14Z",
+      "comment_updated_at": "2026-10-17T21:22:14Z",
+      "comment_body_sha256": "a886c72bb00508374617f4ad5a58f52b0a8d8b3506f89f3dee9245004c503e6d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 175536,
+      "author": "waynegault",
+      "author_id": 39455578,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review — added real behaviour proof to the body: a green `teamsmeetings setup --mode agent` (6/6) on the same wsl2/pulseaudio host, the capture device present as `openclaw_meeting_audio_in` while the sink keeps `openclaw_meeting_audio`, the collision reproduced with the identical `pactl load-module module-remap-source source_name=<sink name>` call (pulseaudio creates `.2`, exact-name predicate matches 0), and an idempotent re-run over an existing install (1 remap source before and after, settings retained). the §scope note states honestly that the pre-fix cli transcript would need the hosting service restarted onto an unpatched build, so the pre-fix side is the pactl reproduction plus the predicate rather than a failure transcript",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-17T21:23:03.706Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/meeting-audio-pulse-source-name",
+        "head_sha": "91087b92ee57cc1759cd4ee8a9d4facb0ed9e9a4"
       },
       "actions": [
         {
