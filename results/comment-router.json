@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-17T15:43:11.043Z",
+  "updated_at": "2026-10-17T15:44:43.761Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154904:5959056778:2026-10-02T18:45:06Z:re_review",
-      "comment_id": "5959056778",
-      "comment_version_key": "5959056778:2026-10-02T18:45:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154904#issuecomment-5959056778",
-      "comment_created_at": "2026-10-02T18:45:06Z",
-      "comment_updated_at": "2026-10-02T18:45:06Z",
-      "comment_body_sha256": "9e23c3225a59e9bc45e21ebdd78de5659719f47a6981f9f2997bcda3ecb50edf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154904,
-      "author": "linhongyu510",
-      "author_id": 204567536,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review: rev11 head 5682aec80e8. fixes the remaining p2 (completed-turn false-ack): visible-path membership was too weak -- a cached user k whose turn another manager completes with a same-branch assistant reply remains a visible-path ancestor and was wrongly degraded. added resolvetranscriptcanonicalcurrentturnentryidintransaction, a durable mirror of resolvecurrentturnentryid that drives the shared walksessioncurrentturn generator up from the append cursor (same traversability rules), returning the first non-traversable entry id; the dirty anchor path now degrades iff entryid equals that current turn. new regression g2 proves the old visible-path check stays red (k still on path) while the new exact-match rejects. anchor-dedup 9/9, tsgo:core 0, ratchet ok, deadexport 0, lint/fmt clean",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-16T22:20:59.955Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:154904:5959442150:2026-10-02T19:03:08Z:re_review",
       "comment_id": "5959442150",
@@ -41877,6 +41850,51 @@
         "kind": "pull_request",
         "branch": "fix/console-show-diagnostics-request-pending",
         "head_sha": "985ac034d56a0ed8caff4b9d1cb46dd78dde0f3e"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/ocm:402:6235915428:2026-10-17T15:39:50Z:re_review",
+      "comment_id": "6235915428",
+      "comment_version_key": "6235915428:2026-10-17T15:39:50Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/402#issuecomment-6235915428",
+      "comment_created_at": "2026-10-17T15:39:50Z",
+      "comment_updated_at": "2026-10-17T15:39:50Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/ocm",
+      "issue_number": 402,
+      "author": "shakkernerd",
+      "author_id": 165377636,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-17T15:44:37.602Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "maintenance-quiescence",
+        "head_sha": "ef1e3ac50b6ec95ad91c60b157a1d7ddc21eabbe"
       },
       "actions": [
         {
