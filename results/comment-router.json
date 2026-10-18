@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-10-18T18:57:31.019Z",
+  "updated_at": "2026-10-18T19:04:26.463Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:175536:6241949623:2026-10-17T22:07:17Z:re_review",
-      "comment_id": "6241949623",
-      "comment_version_key": "6241949623:2026-10-17T22:07:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/175536#issuecomment-6241949623",
-      "comment_created_at": "2026-10-17T22:07:17Z",
-      "comment_updated_at": "2026-10-17T22:07:17Z",
-      "comment_body_sha256": "de01a94ff4944b5214828c2f28d39f0ace6a415e6a22c2f96cbb986a5e0342be",
-      "repo": "openclaw/openclaw",
-      "issue_number": 175536,
-      "author": "waynegault",
-      "author_id": 39455578,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — added §4 to the body: the upgrade case with legacy devices present. a 2026.10.4-style install's colliding remap sources (`openclaw_meeting_audio.2`, `.3`) were recreated with the same pactl call, then `teamsmeetings setup --mode agent` run on top: all six checks ok, the legacy devices left untouched, and `guestname`/`defaultmode` unchanged. installing the old release to run its binary would have swapped the live gateway on this host, so the legacy device state is simulated rather than installed — stated in the body. §4 also notes that explicit `chrome.audio.commands` still win over the generated defaults, so only installs relying on the defaults are affected, and those are the ones that were broken",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-17T22:08:03.517Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/meeting-audio-pulse-source-name",
-        "head_sha": "91087b92ee57cc1759cd4ee8a9d4facb0ed9e9a4"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:175870:6241970493:2026-10-17T22:08:51Z:re_review",
       "comment_id": "6241970493",
@@ -34154,6 +34109,51 @@
       "status": "skipped",
       "processed_at": "2026-10-18T18:57:31.019Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166573:6253890156:2026-10-18T19:03:28Z:re_review",
+      "comment_id": "6253890156",
+      "comment_version_key": "6253890156:2026-10-18T19:03:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166573#issuecomment-6253890156",
+      "comment_created_at": "2026-10-18T19:03:28Z",
+      "comment_updated_at": "2026-10-18T19:03:28Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166573,
+      "author": "alkor2000",
+      "author_id": 131229172,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-18T19:04:25.209Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-cli-config-read-failure",
+        "head_sha": "0d03ec869c9a8439f77fbf466b05bc2c30cf32ab"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
