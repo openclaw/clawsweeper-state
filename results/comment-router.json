@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-19T15:03:27.967Z",
+  "updated_at": "2026-10-19T15:09:02.286Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:6157851825:2026-10-14T00:07:17Z:re_review",
-      "comment_id": "6157851825",
-      "comment_version_key": "6157851825:2026-10-14T00:07:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6157851825",
-      "comment_created_at": "2026-10-14T00:07:17Z",
-      "comment_updated_at": "2026-10-14T00:07:17Z",
-      "comment_body_sha256": "2153b4b7e27c68471ecea804df9fe45f636eae71cc717458556e2a1a751b24a3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please. synced branch with upstream/main (983f4a3bdb, 93 commits). resolved merge conflicts in `src/audit/audit-event-store.ts` (upstream refactored retention/fast-path insert + inlined row helpers; re-applied skill-selection companion-table hooks on top) and `src/audit/audit-events.test.ts` (took upstream bigint sequence guard). focused audit tests (39) + tsc clean. skill-selection contract preserved: async worker listauditeventsindatabase, companion table audit_skill_selection_events, workspace-bootstrap-privacy re-export, 4-field run-usage contract",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-18T12:46:47.008Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:6158905683:2026-10-14T01:34:38Z:re_review",
       "comment_id": "6158905683",
@@ -39917,6 +39890,51 @@
         "kind": "pull_request",
         "branch": "upd/upd-l1701",
         "head_sha": "91405918d5395d5afabf2072f35a80674d170b68"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:177407:6270482812:2026-10-19T15:07:55Z:re_review",
+      "comment_id": "6270482812",
+      "comment_version_key": "6270482812:2026-10-19T15:07:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/177407#issuecomment-6270482812",
+      "comment_created_at": "2026-10-19T15:07:55Z",
+      "comment_updated_at": "2026-10-19T15:07:55Z",
+      "comment_body_sha256": "fdcb10bd093bc868b9557dcca5df12b06e4a405ee4940279390ebec78a138067",
+      "repo": "openclaw/openclaw",
+      "issue_number": 177407,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-19T15:09:00.530Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/upd-l1701",
+        "head_sha": "9a1d12aa2593ac394f6982c53950c3ba5cc60e49"
       },
       "actions": [
         {
