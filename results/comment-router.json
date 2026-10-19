@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-19T10:51:36.824Z",
+  "updated_at": "2026-10-19T10:52:07.700Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5789045285:2026-09-23T04:27:00Z:re_review",
-      "comment_id": "5789045285",
-      "comment_version_key": "5789045285:2026-09-23T04:27:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5789045285",
-      "comment_created_at": "2026-09-23T04:27:00Z",
-      "comment_updated_at": "2026-09-23T04:27:00Z",
-      "comment_body_sha256": "93c8cfc23f650784843f08ed894e3255ba3b8808bb356fcb96d2f78c61bee028",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — merged upstream/main (ff16df86c → eec19fdb, 45 commits behind, clean auto-merge). skill-selection features intact (async worker listauditeventsindatabase, companion table audit_skill_selection_events, workspace-bootstrap-privacy re-export, 4-field run-usage contract). please re-review 🙏",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-18T10:42:46.756Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5789973405:2026-09-23T06:08:16Z:re_review",
       "comment_id": "5789973405",
@@ -38903,6 +38876,51 @@
         "kind": "pull_request",
         "branch": "openclaw/dashboard-asset-cohort-20261019",
         "head_sha": "b512aac5b9e57c93b7c51d094faa958cb6ff1041"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:172082:6265502106:2026-10-19T10:51:14Z:re_review",
+      "comment_id": "6265502106",
+      "comment_version_key": "6265502106:2026-10-19T10:51:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/172082#issuecomment-6265502106",
+      "comment_created_at": "2026-10-19T10:51:14Z",
+      "comment_updated_at": "2026-10-19T10:51:14Z",
+      "comment_body_sha256": "3e9bf425a16b44d882f45264a03fcc77ec4a27f45c099c8981f43a04d43fd736",
+      "repo": "openclaw/openclaw",
+      "issue_number": 172082,
+      "author": "KrasimirKralev",
+      "author_id": 263465593,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — rejection is narrowed to malformed or non-positive ratios per the review's recommendation (the cli now uses the runtime's own `parseaspectratiovalue`), so numeric ratios such as `7:5` reach the runtime normalizer unchanged; the shared-list move is dropped, and the assertion-safety baseline and mock-export ratchet failures are fixed",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-19T10:52:06.235Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-image-aspect-ratio",
+        "head_sha": "0db60118b3436685f1bcb2cffe3033608a7eed66"
       },
       "actions": [
         {
