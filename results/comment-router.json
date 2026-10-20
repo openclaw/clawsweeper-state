@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-20T02:35:58.193Z",
+  "updated_at": "2026-10-20T02:37:15.004Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:103845:5467275568:2026-08-30T07:00:25Z:re_review",
-      "comment_id": "5467275568",
-      "comment_version_key": "5467275568:2026-08-30T07:00:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/103845#issuecomment-5467275568",
-      "comment_created_at": "2026-08-30T07:00:25Z",
-      "comment_updated_at": "2026-08-30T07:00:25Z",
-      "comment_body_sha256": "54feb3dc1a6fa6fc5c4211c8f13c96808afb96a9e381807ef3b78f59344b1e36",
-      "repo": "openclaw/openclaw",
-      "issue_number": 103845,
-      "author": "lonexreb",
-      "author_id": 95570942,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — head `11d364eaf37`: the p1 destructive-path finding is fixed — the repair confirm now sets `requiresinteractiveconfirmation`, so noninteractive `doctor --fix` never auto-approves the ambiguous strip (it declines when prompting is impossible while the warning still prints); covered by the new prompter-contract test. live macos proof on a real managed gateway remains contributor-environment work as noted in the body",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-18T21:54:56.587Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:103845:5473830584:2026-08-31T04:43:43Z:re_review",
       "comment_id": "5473830584",
@@ -41064,6 +41037,51 @@
       "status": "skipped",
       "processed_at": "2026-10-20T02:35:58.193Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:172765:6282018887:2026-10-20T02:36:12Z:re_review",
+      "comment_id": "6282018887",
+      "comment_version_key": "6282018887:2026-10-20T02:36:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/172765#issuecomment-6282018887",
+      "comment_created_at": "2026-10-20T02:36:12Z",
+      "comment_updated_at": "2026-10-20T02:36:12Z",
+      "comment_body_sha256": "167906b2d10c9eab4961f0a932be84476d70b36576abe80302774fbce3f6ad04",
+      "repo": "openclaw/openclaw",
+      "issue_number": 172765,
+      "author": "xialonglee",
+      "author_id": 22994703,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — rebased onto `upstream/main` `07e3328ed3f` (head `148c80da731`, version 2026.10.5) and added the requested upgrade proof: in-place upgrade from published `openclaw@2026.10.4` to the candidate tarball, with config/workspace checksums unchanged, `gateway.port` still 19002, baseline healthcheck exit 1 with no `/healthz` request, candidate healthcheck exit 0 and a real `/healthz` request, and doctor exit 0. the compose survivor lane could not run on this host because the docker daemon cannot reach docker hub/debian mirrors; the exact `dist/docker-healthcheck.js` entry was exercised directly instead",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-20T02:37:13.503Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gap-docker-healthcheck-env-port",
+        "head_sha": "148c80da73153d06a619da5d971c10d06c60e607"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
