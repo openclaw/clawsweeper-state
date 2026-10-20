@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-20T02:12:22.045Z",
+  "updated_at": "2026-10-20T02:14:39.295Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:77184:5474046854:2026-08-31T05:15:06Z:re_review",
-      "comment_id": "5474046854",
-      "comment_version_key": "5474046854:2026-08-31T05:15:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/77184#issuecomment-5474046854",
-      "comment_created_at": "2026-08-31T05:15:06Z",
-      "comment_updated_at": "2026-08-31T05:15:06Z",
-      "comment_body_sha256": "22b780766c21d6c2f018363290812641225b58b193621c88649e3e4c114f7eff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 77184,
-      "author": "lonexreb",
-      "author_id": 95570942,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — head rebased on current main with the p2 docs finding fixed: the `plugin-sdk/command-status` row in `docs/plugins/sdk-subpaths.md` no longer implies a general plugin capability. it now states the supported acquisition path — dispatching the `status` gateway method from an authenticated plugin http route entitled with `contracts.gatewaymethoddispatch: [\"authenticated-request\"]`, a reviewed bundled/operator surface — and links the admin http rpc design page (https://docs.openclaw.ai/plugins/admin-http-rpc). the surface-budget conflict from the rebase is resolved additively (`4356`, +3 for the projections); `plugin-sdk:surface:check` and `check-changed` are clean, and the host-assignability test still passes. the remaining item is the maintainer decision on accepting the bounded public contract",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-18T21:41:05.017Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:175711:6255488112:2026-10-18T21:41:13Z:re_review",
       "comment_id": "6255488112",
@@ -41049,6 +41022,51 @@
         "kind": "pull_request",
         "branch": "native-plugin-index",
         "head_sha": "6530e12084cd324bfbbcb0367c841cb459d0025d"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-enterprise:2989:6281736508:2026-10-20T02:13:32Z:re_review",
+      "comment_id": "6281736508",
+      "comment_version_key": "6281736508:2026-10-20T02:13:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/2989#issuecomment-6281736508",
+      "comment_created_at": "2026-10-20T02:13:32Z",
+      "comment_updated_at": "2026-10-20T02:13:32Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 2989,
+      "author": "freeqaz",
+      "author_id": 4573221,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-20T02:14:37.840Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ux-p4",
+        "head_sha": "b8546c35d972cbf0ca19aa3465fdb4c089b1e108"
       },
       "actions": [
         {
