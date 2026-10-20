@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-20T19:56:56.602Z",
+  "updated_at": "2026-10-20T19:59:17.111Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89526:5390739183:2026-08-24T04:28:57Z:re_review",
-      "comment_id": "5390739183",
-      "comment_version_key": "5390739183:2026-08-24T04:28:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89526#issuecomment-5390739183",
-      "comment_created_at": "2026-08-24T04:28:57Z",
-      "comment_updated_at": "2026-08-24T04:28:57Z",
-      "comment_body_sha256": "845dd433ba2baf55256b574f84b6e626b9a8ad500d315a194daf2804c6b3f618",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89526,
-      "author": "amittell",
-      "author_id": 1388680,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-19T20:46:26.313Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89526:5399523280:2026-08-24T18:22:57Z:re_review",
       "comment_id": "5399523280",
@@ -40583,6 +40556,51 @@
         "kind": "pull_request",
         "branch": "fix/elevenlabs-tts-model-alias",
         "head_sha": "6330cbbe811486e04926d6f9deea577b6e758c4f"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:178493:6300177666:2026-10-20T19:58:17Z:re_review",
+      "comment_id": "6300177666",
+      "comment_version_key": "6300177666:2026-10-20T19:58:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/178493#issuecomment-6300177666",
+      "comment_created_at": "2026-10-20T19:58:17Z",
+      "comment_updated_at": "2026-10-20T19:58:17Z",
+      "comment_body_sha256": "24bf3e6546aafd3b01e058ace84f6d7961c49f94f8c9735846c1d516243444ec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 178493,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review — current head 0bcbb6738b090deb2e8b435312d7f82a908abd90 adds only the postgresql fixture synchronization repair. the original ci assertion was reproduced by a controlled in-flight watcher pass; explicitly queueing the transcript fixes it, and the complete uninstrumented postgresql file passes 7/7. extension-test typecheck, scoped lint/format and independent p0–p2 review pass. production is unchanged; prior released-version compatibility proof remains applicable with its original revision stated in the updated body",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-20T19:59:15.317Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/human-creators-current-delegation",
+        "head_sha": "0bcbb6738b090deb2e8b435312d7f82a908abd90"
       },
       "actions": [
         {
