@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-20T02:08:41.504Z",
+  "updated_at": "2026-10-20T02:12:22.045Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:77184:5461373482:2026-08-29T08:45:31Z:re_review",
-      "comment_id": "5461373482",
-      "comment_version_key": "5461373482:2026-08-29T08:45:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/77184#issuecomment-5461373482",
-      "comment_created_at": "2026-08-29T08:45:31Z",
-      "comment_updated_at": "2026-08-29T08:45:31Z",
-      "comment_body_sha256": "120b24c79f76c93a9aa3e0ad26ba9d725e0843cc0b317623ec850c834805a427",
-      "repo": "openclaw/openclaw",
-      "issue_number": 77184,
-      "author": "lonexreb",
-      "author_id": 95570942,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — the p1 finding is addressed by redesign: the raw `statussummary`/`sessionstatus`/`heartbeatstatus` re-exports are gone; the entrypoint now defines bounded sdk-owned projections (`statussessionrow`, `statussessionsprojection`, `statusheartbeat`) with a compile-time host-assignability contract in the test (no `unknown` casts). head `e06332c90de` is a single squashed commit rebased on current main; pr body carries the built-dist external strict consumer proof",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-18T21:41:05.017Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:77184:5474046854:2026-08-31T05:15:06Z:re_review",
       "comment_id": "5474046854",
@@ -41031,6 +41004,51 @@
         "kind": "pull_request",
         "branch": "pgprep/pgqual-dsn",
         "head_sha": "abd8eb30511a0ae23683bb364c0b1e6266be612c"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/ocm:513:6281652520:2026-10-20T02:06:39Z:re_review",
+      "comment_id": "6281652520",
+      "comment_version_key": "6281652520:2026-10-20T02:06:39Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/513#issuecomment-6281652520",
+      "comment_created_at": "2026-10-20T02:06:39Z",
+      "comment_updated_at": "2026-10-20T02:06:39Z",
+      "comment_body_sha256": "d7a2ddd4dd607ad06d6ecef8d4c497b07b779a42068f2db02110db707f33eae7",
+      "repo": "openclaw/ocm",
+      "issue_number": 513,
+      "author": "shakkernerd",
+      "author_id": 165377636,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-20T02:12:18.226Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "native-plugin-index",
+        "head_sha": "6530e12084cd324bfbbcb0367c841cb459d0025d"
       },
       "actions": [
         {
