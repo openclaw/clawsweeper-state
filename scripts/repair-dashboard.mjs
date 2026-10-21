@@ -518,8 +518,17 @@ function runLink(record) {
   return record.run_url ? link(record.run_id ?? "run", record.run_url) : "_none_";
 }
 
+function githubIssueOrPullLink(value) {
+  const url = String(value ?? "");
+  const match = url.match(/^https:\/\/github\.com\/[^/]+\/[^/]+\/(?:issues|pull)\/(\d+)$/);
+  return match ? link(`#${match[1]}`, url) : "";
+}
+
 function targetLink(record, action) {
+  const preferred = githubIssueOrPullLink(action.pr) || githubIssueOrPullLink(action.url);
+  if (preferred) return preferred;
   const target = String(action.target ?? "");
+  if (!target || target.startsWith("cluster:")) return "";
   const match = target.match(/^https:\/\/github\.com\/([^/]+\/[^/]+)\/(issues|pull)\/(\d+)/);
   if (match) return link(`#${match[3]}`, target);
   const shorthand = target.match(/^#(\d+)$/);
@@ -530,7 +539,7 @@ function targetLink(record, action) {
     const segment = repairActionTargetsPullRequest(action) ? "pull" : "issues";
     return link(target, `https://github.com/${repo}/${segment}/${shorthand[1]}`);
   }
-  return target ? link(target, target) : "";
+  return "";
 }
 
 function githubItemUrlForNumber(value, number) {
@@ -570,15 +579,9 @@ function ownerActionRow(row) {
 }
 
 function ownerItemLink(record, action) {
-  const target = targetLink(record, action);
-  if (target) return target;
-  for (const value of [action.pr, action.url]) {
-    const match = String(value ?? "").match(
-      /^https:\/\/github\.com\/[^/]+\/[^/]+\/(?:issues|pull)\/(\d+)$/,
-    );
-    if (match) return link(`#${match[1]}`, value);
-  }
-  return "";
+  const preferred = githubIssueOrPullLink(action.pr) || githubIssueOrPullLink(action.url);
+  if (preferred) return preferred;
+  return targetLink(record, action);
 }
 
 function repoLink(record) {
