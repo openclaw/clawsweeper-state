@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-23T02:55:26.752Z",
+  "updated_at": "2026-10-23T02:55:56.419Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163578:6287561804:2026-10-20T09:11:46Z:re_review",
-      "comment_id": "6287561804",
-      "comment_version_key": "6287561804:2026-10-20T09:11:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163578#issuecomment-6287561804",
-      "comment_created_at": "2026-10-20T09:11:46Z",
-      "comment_updated_at": "2026-10-20T09:11:46Z",
-      "comment_body_sha256": "da51886a3936dbe6a13d0566e36d36e7444f0d1d368d9ca11d67ce86341684f3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163578,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-21T23:33:11.125Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:173567:6329071201:2026-10-21T23:44:06Z:re_review",
       "comment_id": "6329071201",
@@ -40112,6 +40085,51 @@
         "kind": "pull_request",
         "branch": "fix/special-token-stream-rescan-k7r2",
         "head_sha": "1021ee2b4b1d748e5154f7d0ec04ae625f6bc878"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:172082:6265502106:2026-10-19T10:51:14Z:re_review",
+      "comment_id": "6265502106",
+      "comment_version_key": "6265502106:2026-10-19T10:51:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/172082#issuecomment-6265502106",
+      "comment_created_at": "2026-10-19T10:51:14Z",
+      "comment_updated_at": "2026-10-19T10:51:14Z",
+      "comment_body_sha256": "3e9bf425a16b44d882f45264a03fcc77ec4a27f45c099c8981f43a04d43fd736",
+      "repo": "openclaw/openclaw",
+      "issue_number": 172082,
+      "author": "KrasimirKralev",
+      "author_id": 263465593,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — rejection is narrowed to malformed or non-positive ratios per the review's recommendation (the cli now uses the runtime's own `parseaspectratiovalue`), so numeric ratios such as `7:5` reach the runtime normalizer unchanged; the shared-list move is dropped, and the assertion-safety baseline and mock-export ratchet failures are fixed",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-23T02:55:53.243Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-image-aspect-ratio",
+        "head_sha": "01c5d742c45e86aa28407480055c59406979fa37"
       },
       "actions": [
         {
