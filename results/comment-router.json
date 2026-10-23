@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-10-23T06:39:40.339Z",
+  "updated_at": "2026-10-23T06:39:50.565Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:180300:6333581088:2026-10-22T05:35:29Z:re_review",
-      "comment_id": "6333581088",
-      "comment_version_key": "6333581088:2026-10-22T05:35:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/180300#issuecomment-6333581088",
-      "comment_created_at": "2026-10-22T05:35:29Z",
-      "comment_updated_at": "2026-10-22T05:35:29Z",
-      "comment_body_sha256": "f4c44b43ae28f63767a6e9dc9ee6d4cb268dc9b8522b7430cc34c33d0be8bfb0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 180300,
-      "author": "Pick-cat",
-      "author_id": 266665499,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-22T05:45:35.047Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/control-ui-status-badge-a11y",
-        "head_sha": "a5af286636debd65d4f827ae32a2799b13345b56"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:180282:6333586576:2026-10-22T05:35:53Z:re_review",
       "comment_id": "6333586576",
@@ -40894,6 +40849,51 @@
         "kind": "pull_request",
         "branch": "fix/spawn-broker-monotonic-cleanup",
         "head_sha": "79e6608594b017e8b6df9cfcfcbd5f5c3ae32ca4"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:4733:6359012279:2026-10-23T06:34:18Z:re_review",
+      "comment_id": "6359012279",
+      "comment_version_key": "6359012279:2026-10-23T06:34:18Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4733#issuecomment-6359012279",
+      "comment_created_at": "2026-10-23T06:34:18Z",
+      "comment_updated_at": "2026-10-23T06:34:18Z",
+      "comment_body_sha256": "976a1b9a89e93cf094a11ca536c5da5453ff6a2d864746cd1d6f169e70abd8cc",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4733,
+      "author": "LeoLin990405",
+      "author_id": 101193087,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — both before-merge items are addressed on the current head 4fa967943 (ci fully green: swift-test-macos, lint, linux ×3, aggregate, gitguardian): (1) the p2 height-fingerprint finding is fixed in 4fa967943 —  now includes the localization signature and the rendered last-known text for the retained-error state, with a regression test for language/capture-age changes. (2) real shipped-app runtime evidence is now in the pr body: four states captured from the actual built codexbar.app on a github-hosted macos-26 runner — success, success→http-500 failure with retained usage + red error + 'showing last-known usage captured 1 minute ago.', initial failure without cached usage, and recovery — each with marker json from production  values and raw windowserver captures. hosting/provenance disclosure (fork actions auto-disabled → scratch public repo, identical workflow/tree) is included",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-23T06:39:49.348Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-card-stale-error",
+        "head_sha": "4fa96794354211efa6f31afee52f85de1dd35b9b"
       },
       "actions": [
         {
