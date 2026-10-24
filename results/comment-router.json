@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-10-24T23:29:53.887Z",
+  "updated_at": "2026-10-24T23:31:02.193Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:181705:6369405814:2026-10-23T16:15:14Z:re_review",
-      "comment_id": "6369405814",
-      "comment_version_key": "6369405814:2026-10-23T16:15:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/181705#issuecomment-6369405814",
-      "comment_created_at": "2026-10-23T16:15:14Z",
-      "comment_updated_at": "2026-10-23T16:15:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 181705,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-23T16:16:18.134Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/setup-authority-qualified-workspace",
-        "head_sha": "b5eb9861ef59f99f23f781baad16f5c263ac28d8"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:181692:6369448687:2026-10-23T16:17:18Z:re_review",
       "comment_id": "6369448687",
@@ -41432,6 +41387,51 @@
         "kind": "pull_request",
         "branch": "fix/markdown-inline-fence-info",
         "head_sha": "67d05e32ddb990cceae9705177edda38968c1be0"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:182057:6390894643:2026-10-24T23:30:04Z:re_review",
+      "comment_id": "6390894643",
+      "comment_version_key": "6390894643:2026-10-24T23:30:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/182057#issuecomment-6390894643",
+      "comment_created_at": "2026-10-24T23:30:04Z",
+      "comment_updated_at": "2026-10-24T23:30:04Z",
+      "comment_body_sha256": "245c57e602340e6bad271d0d6fe1ec6ba17d4cd185552afcae11fe9b686055a9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 182057,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — head bdf08c7b1e87 replaces the duplicated stopped-clock rows with actual post-start wall-clock steps: the 500 ms extendable barrier is installed and observed pending, then the clock moves by -30 s or +30 s, and monotonic time advances past the budget. the old source fails respectively by late and early release; the fixed source and the complete test file pass. the existing real gateway before/after evidence remains unchanged",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-24T23:31:00.867Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-controller-settlement-deadline-monotonic-216",
+        "head_sha": "bdf08c7b1e87911dedca1a5c046bf900267dda3b"
       },
       "actions": [
         {
