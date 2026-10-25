@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-10-25T14:44:21.450Z",
+  "updated_at": "2026-10-25T14:46:58.575Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:179473:6383362218:2026-10-24T10:56:52Z:re_review",
-      "comment_id": "6383362218",
-      "comment_version_key": "6383362218:2026-10-24T10:56:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/179473#issuecomment-6383362218",
-      "comment_created_at": "2026-10-24T10:56:52Z",
-      "comment_updated_at": "2026-10-24T10:56:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 179473,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-24T10:57:52.169Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/simple-secret-contract-default-account",
-        "head_sha": "20ed114f5804832d06f0fd7cc8e155fdbdcdc2e9"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:182460:6383370851:2026-10-24T10:57:45Z:re_review",
       "comment_id": "6383370851",
@@ -39350,6 +39305,51 @@
       "status": "skipped",
       "processed_at": "2026-10-25T14:44:21.450Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:183635:6399063226:2026-10-25T14:45:59Z:re_review",
+      "comment_id": "6399063226",
+      "comment_version_key": "6399063226:2026-10-25T14:45:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/183635#issuecomment-6399063226",
+      "comment_created_at": "2026-10-25T14:45:59Z",
+      "comment_updated_at": "2026-10-25T14:45:59Z",
+      "comment_body_sha256": "a039b7c1de21eba86b32167b054f8e02efd22536ddbe5dc25bd98d80e73c87e0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 183635,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — real running-gateway behavior proof added to the pr body (shipped `startgatewayserver` + real authenticated `gatewayclient` over the real ws transport, driving the shipped `gatewaychatrequests` class; stack-matched wall-clock skew shows pre-fix write budget 390000→post-fix 300000 and chat.history retries 1→3)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-25T14:46:56.970Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bug-224-tui-gateway-chat-deadline-wall-clock",
+        "head_sha": "9c6581da05faead6243ab6ed0565e4034ae0a4cb"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
