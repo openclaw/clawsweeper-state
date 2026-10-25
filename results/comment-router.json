@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-25T23:06:05.507Z",
+  "updated_at": "2026-10-25T23:06:22.128Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:177508:6275893963:2026-10-19T19:50:07Z:re_review",
-      "comment_id": "6275893963",
-      "comment_version_key": "6275893963:2026-10-19T19:50:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/177508#issuecomment-6275893963",
-      "comment_created_at": "2026-10-19T19:50:07Z",
-      "comment_updated_at": "2026-10-19T19:50:07Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 177508,
-      "author": "Canvinus",
-      "author_id": 44225021,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-24T18:44:00.147Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:177508:6287266320:2026-10-20T08:54:59Z:re_review",
       "comment_id": "6287266320",
@@ -38913,6 +38886,51 @@
         "kind": "pull_request",
         "branch": "fix/whatsapp-login-qr-deadline-wall-clock",
         "head_sha": "66f9fa5d3cfbd0cef0e4c537ca56642de393b73e"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:183635:6404655367:2026-10-25T23:05:21Z:re_review",
+      "comment_id": "6404655367",
+      "comment_version_key": "6404655367:2026-10-25T23:05:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/183635#issuecomment-6404655367",
+      "comment_created_at": "2026-10-25T23:05:21Z",
+      "comment_updated_at": "2026-10-25T23:05:21Z",
+      "comment_body_sha256": "60b8fc8b59abfa1c30403365c96e50fc583e09a90f4a563f6b04ef3e5ede2c68",
+      "repo": "openclaw/openclaw",
+      "issue_number": 183635,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — upgraded the running-gateway proof to the shipped tui entry `gatewaychatclient`: `sendchat()` now uses valid chat params with real successful delivery (`status:\"started\"`), and `loadhistory()` runs through the internal shipped `gatewayclient` over the real websocket. wall-clock skew is still process-local (stack-matched `date.now` step); host clock and gateway unmodified. see the inline raw log in the body",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-25T23:06:20.286Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bug-224-tui-gateway-chat-deadline-wall-clock",
+        "head_sha": "18d23cea921adb8326a53e311eed646e533b3783"
       },
       "actions": [
         {
