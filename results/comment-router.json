@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-26T20:06:43.772Z",
+  "updated_at": "2026-10-26T20:07:26.563Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:103845:5467275568:2026-08-30T07:00:25Z:re_review",
-      "comment_id": "5467275568",
-      "comment_version_key": "5467275568:2026-08-30T07:00:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/103845#issuecomment-5467275568",
-      "comment_created_at": "2026-08-30T07:00:25Z",
-      "comment_updated_at": "2026-08-30T07:00:25Z",
-      "comment_body_sha256": "54feb3dc1a6fa6fc5c4211c8f13c96808afb96a9e381807ef3b78f59344b1e36",
-      "repo": "openclaw/openclaw",
-      "issue_number": 103845,
-      "author": "lonexreb",
-      "author_id": 95570942,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — head `11d364eaf37`: the p1 destructive-path finding is fixed — the repair confirm now sets `requiresinteractiveconfirmation`, so noninteractive `doctor --fix` never auto-approves the ambiguous strip (it declines when prompting is impossible while the warning still prints); covered by the new prompter-contract test. live macos proof on a real managed gateway remains contributor-environment work as noted in the body",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-25T19:32:14.439Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:103845:5473830584:2026-08-31T04:43:43Z:re_review",
       "comment_id": "5473830584",
@@ -40055,6 +40028,51 @@
         "kind": "pull_request",
         "branch": "steipete/coldload-partition-retention-metrics",
         "head_sha": "8f37644d740f834bee091ed355e3aef67b07e5e0"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-windows-packaging:170:6426018267:2026-10-26T20:01:30Z:re_review",
+      "comment_id": "6426018267",
+      "comment_version_key": "6426018267:2026-10-26T20:01:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-packaging/pull/170#issuecomment-6426018267",
+      "comment_created_at": "2026-10-26T20:01:30Z",
+      "comment_updated_at": "2026-10-26T20:01:30Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw-windows-packaging",
+      "issue_number": 170,
+      "author": "paulcam206",
+      "author_id": 16614499,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-26T20:07:24.173Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/gateway-isolation-plugin-entrypoint",
+        "head_sha": "407ba8b3cea1fe5367dc9c1a813c207615299e9f"
       },
       "actions": [
         {
