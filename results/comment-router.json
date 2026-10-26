@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-10-26T10:27:14.750Z",
+  "updated_at": "2026-10-26T10:29:13.234Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:183327:6394547759:2026-10-25T06:48:24Z:re_review",
-      "comment_id": "6394547759",
-      "comment_version_key": "6394547759:2026-10-25T06:48:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/183327#issuecomment-6394547759",
-      "comment_created_at": "2026-10-25T06:48:24Z",
-      "comment_updated_at": "2026-10-25T06:48:24Z",
-      "comment_body_sha256": "9f07a2b00a6f912529cd9492fae36c59438e084607bf18d31d80b040e4401515",
-      "repo": "openclaw/openclaw",
-      "issue_number": 183327,
-      "author": "lonexreb",
-      "author_id": 95570942,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — same head `a392b5be8b8`, no code change. the pr body now carries the requested real-behavior proof: the built cli (`openclaw database port --family agent --to postgres`) run against an isolated state dir and a disposable postgresql 16 database, with the catalog queried in the same second the command returned: all 47 tables per namespace show `last_analyze` set by the port, `cache_entries` has `reltuples = 10000` and 6 `pg_stats` rows with `last_autoanalyze` still null, and `explain` estimates 10,000 rows. the only two `reltuples = -1` tables per namespace are `memory_index_chunks` / `memory_index_sources`, which the post-port memory rebuild truncates after the port analyzed them; per the product note the body now says *related: #183307* instead of closing it",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-25T06:49:24.110Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/183307-postgres-port-analyze",
-        "head_sha": "a392b5be8b8cd8b2d15770e649c317d7e7c2d232"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:183291:6394548117:2026-10-25T06:48:27Z:re_review",
       "comment_id": "6394548117",
@@ -38827,6 +38782,51 @@
         "kind": "pull_request",
         "branch": "fix/access-program-guard-oauth-refresh",
         "head_sha": "e3d9538e738c54ebb77251ce1f063b878f5814a7"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:182156:6413790165:2026-10-26T10:28:13Z:re_review",
+      "comment_id": "6413790165",
+      "comment_version_key": "6413790165:2026-10-26T10:28:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/182156#issuecomment-6413790165",
+      "comment_created_at": "2026-10-26T10:28:13Z",
+      "comment_updated_at": "2026-10-26T10:28:13Z",
+      "comment_body_sha256": "89bf7682072ad36ded3c2e8e89ef232490f32e16ad8d5b790fd961cc55267016",
+      "repo": "openclaw/openclaw",
+      "issue_number": 182156,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-26T10:29:11.544Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-actor-registry-independent-20261023",
+        "head_sha": "255f812df2406eb1417d785766eccaa94e404fa9"
       },
       "actions": [
         {
