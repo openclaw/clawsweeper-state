@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-26T20:09:06.078Z",
+  "updated_at": "2026-10-26T20:09:27.867Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:103845:5537697602:2026-09-04T08:15:18Z:re_review",
-      "comment_id": "5537697602",
-      "comment_version_key": "5537697602:2026-09-04T08:15:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/103845#issuecomment-5537697602",
-      "comment_created_at": "2026-09-04T08:15:18Z",
-      "comment_updated_at": "2026-09-04T08:15:18Z",
-      "comment_body_sha256": "512ffa82518f51b6b34688ba4755766b3bfc68925608dfd9a846636fffc8f809",
-      "repo": "openclaw/openclaw",
-      "issue_number": 103845,
-      "author": "lonexreb",
-      "author_id": 95570942,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — head `6365ed8cac3` (rebased on current main): the real-behavior blocker is closed. the pr body now carries a full managed-macos proof executed on a real launchagent gateway service installed from this head's packaged tarball under an isolated profile: corruption seeded in the generated env file (and shown surviving `gateway install --force`), the interactive doctor detection + shape-gated prompt exercised through a real pty, the rewrite applied, the correctly-named `gateway restart` command shown, and the healed `aws_region=us-east-1` value read directly from the relaunched live service process environment. three `doctor --fix` runs on the same corrupted service never auto-stripped the value — live proof of the `requiresinteractiveconfirmation` contract the earlier p1 asked for. the proof also surfaced that `--fix` engages gateway maintenance which skips this repair's section, so the note's old `doctor --fix` pointer was unreachable on a managed service; the same push corrects the note to name the interactive `openclaw doctor` path",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-25T19:32:14.439Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:103845:5693685709:2026-09-16T07:29:00Z:re_review",
       "comment_id": "5693685709",
@@ -40106,6 +40079,33 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:183681:6401232219:2026-10-25T18:06:24Z:re_review",
+      "comment_id": "6401232219",
+      "comment_version_key": "6401232219:2026-10-25T18:06:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/183681#issuecomment-6401232219",
+      "comment_created_at": "2026-10-25T18:06:24Z",
+      "comment_updated_at": "2026-10-25T18:06:24Z",
+      "comment_body_sha256": "1c86ace1641b0e52d9acae752d7895211a75e9d2c5b0ff65f018083a3ac313b0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 183681,
+      "author": "SebTardif",
+      "author_id": 1413412,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-26T20:09:27.867Z",
+      "target": null
     }
   ]
 }
