@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-10-27T04:19:41.991Z",
+  "updated_at": "2026-10-27T04:20:44.372Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:182987:6408163306:2026-10-26T04:21:41Z:re_review",
-      "comment_id": "6408163306",
-      "comment_version_key": "6408163306:2026-10-26T04:21:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/182987#issuecomment-6408163306",
-      "comment_created_at": "2026-10-26T04:21:41Z",
-      "comment_updated_at": "2026-10-26T04:21:41Z",
-      "comment_body_sha256": "19845dfae137f8baa143220bd98128a87814e1a88241b86fa7f4e41098f99bef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 182987,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-26T04:22:40.098Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/reasoning-effort",
-        "head_sha": "113f6bfe71d459bc806c680e218f7884e76285f6"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/ocm:697:6408146505:2026-10-26T04:20:19Z:re_review",
       "comment_id": "6408146505",
@@ -41065,6 +41020,51 @@
         "kind": "pull_request",
         "branch": "fix/183439-postgres-keyword-tokens",
         "head_sha": "325b7296a2c04d69f9d3b1e60b44dea8644c5328"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:185288:6433654226:2026-10-27T04:19:48Z:re_review",
+      "comment_id": "6433654226",
+      "comment_version_key": "6433654226:2026-10-27T04:19:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/185288#issuecomment-6433654226",
+      "comment_created_at": "2026-10-27T04:19:48Z",
+      "comment_updated_at": "2026-10-27T04:19:48Z",
+      "comment_body_sha256": "1474897e7b4f2e1d8924fd340da1ad61930a9d64127a9469d85317df16cec10c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 185288,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — body updated with a real-transport clock-skew proof (real in-process gateway + real production gatewayclient issuing real agent.wait rpcs, with a 30s wall-clock rewind injected inside waitforagentfollowuprun). post-fix budget stays bounded at 20000ms; pre-fix inflates to 50000ms under the same rewind. head unchanged (dc2173a20bb); only evidence/body updated",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-27T04:20:43.325Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bash-exec-approval-followup-deadline-monotonic-155",
+        "head_sha": "dc2173a20bbf0536e0ed6e8d1201277ab793b05e"
       },
       "actions": [
         {
