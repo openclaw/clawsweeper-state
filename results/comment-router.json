@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-10-27T06:06:16.347Z",
+  "updated_at": "2026-10-27T06:06:36.775Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-enterprise:2633:6429539713:2026-10-26T23:12:58Z:re_review",
-      "comment_id": "6429539713",
-      "comment_version_key": "6429539713:2026-10-26T23:12:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/2633#issuecomment-6429539713",
-      "comment_created_at": "2026-10-26T23:12:58Z",
-      "comment_updated_at": "2026-10-26T23:12:58Z",
-      "comment_body_sha256": "139e8271693490ff12b2a9cc288982263049b61ae881d959114a2401639ed5db",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 2633,
-      "author": "stevenlee-oai",
-      "author_id": 213687449,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-26T23:14:14.959Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dev/stevenlee/oce-gateway-policy-p0",
-        "head_sha": "fac7d121c3c582afb53ca49c7d4579e04b5e5ea5"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:184432:6429552062:2026-10-26T23:13:48Z:re_review",
       "comment_id": "6429552062",
@@ -35246,6 +35201,51 @@
         "kind": "pull_request",
         "branch": "codex/automation-yield-ends-turn",
         "head_sha": "35634ac39a126308cd3b5c8c7bef7723a2821799"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:184711:6435043591:2026-10-27T06:05:43Z:re_review",
+      "comment_id": "6435043591",
+      "comment_version_key": "6435043591:2026-10-27T06:05:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/184711#issuecomment-6435043591",
+      "comment_created_at": "2026-10-27T06:05:43Z",
+      "comment_updated_at": "2026-10-27T06:05:43Z",
+      "comment_body_sha256": "7f536b370b4feebd2d3e566eb05475880a6b91e6ea03236b9a96aa28cd5cbc27",
+      "repo": "openclaw/openclaw",
+      "issue_number": 184711,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — proof is now a shipped entry point, not an in-process harness. each case runs a real `openclaw agent --local` turn with the real memory-lancedb plugin (autorecall), a seeded lancedb store, and the plugin's real openai sdk issuing http to a local openai-compatible endpoint; a `--import` preload steps `date.now()` between the deadline seed and the budget read",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-27T06:06:35.458Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-lancedb-recall-deadline-wall-clock",
+        "head_sha": "d13908523343a9842aaf6fd1d1c7fc193c294376"
       },
       "actions": [
         {
