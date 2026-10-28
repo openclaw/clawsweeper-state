@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-10-28T12:30:13.731Z",
+  "updated_at": "2026-10-28T12:31:00.995Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:184509:6444296008:2026-10-27T14:14:24Z:re_review",
-      "comment_id": "6444296008",
-      "comment_version_key": "6444296008:2026-10-27T14:14:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/184509#issuecomment-6444296008",
-      "comment_created_at": "2026-10-27T14:14:24Z",
-      "comment_updated_at": "2026-10-27T14:14:24Z",
-      "comment_body_sha256": "25fb29ca742a9f25b6e9fa70e153b5536f7087020595dc0fe0334d986e691e29",
-      "repo": "openclaw/openclaw",
-      "issue_number": 184509,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-27T14:15:40.051Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/guest-access-08-aggregates-20261026",
-        "head_sha": "51dedf36f8ab1e9170a07dcc7875ab405a8db0f1"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:184511:6444305920:2026-10-27T14:14:46Z:re_review",
       "comment_id": "6444305920",
@@ -40537,6 +40492,51 @@
         "kind": "pull_request",
         "branch": "fix/msteams-api-messages-alias",
         "head_sha": "4dec63f061d9d62c5478db8758dc94753f39213f"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:184736:6469012741:2026-10-28T12:30:00Z:re_review",
+      "comment_id": "6469012741",
+      "comment_version_key": "6469012741:2026-10-28T12:30:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/184736#issuecomment-6469012741",
+      "comment_created_at": "2026-10-28T12:30:00Z",
+      "comment_updated_at": "2026-10-28T12:30:00Z",
+      "comment_body_sha256": "8cd0f592764f7f331114a7a29034f3ca145212a7abf790e93cbc397fad99179f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 184736,
+      "author": "masatohoshino",
+      "author_id": 246810661,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review: rebased onto main after https://github.com/openclaw/openclaw/pull/186340 merged. this pr dropped its own paused-socket keepalive guard and test, because main now has the same ones; the backpressure change is unchanged. the pr body now has this head and base",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-28T12:30:59.569Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fw/signal-ws-127383",
+        "head_sha": "10cfb9fb062dbc578654ad029bb56c0ed503b450"
       },
       "actions": [
         {
