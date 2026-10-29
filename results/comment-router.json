@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-10-29T21:15:05.805Z",
+  "updated_at": "2026-10-29T21:20:08.231Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:186828:6474672873:2026-10-28T16:30:44Z:re_review",
-      "comment_id": "6474672873",
-      "comment_version_key": "6474672873:2026-10-28T16:30:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/186828#issuecomment-6474672873",
-      "comment_created_at": "2026-10-28T16:30:44Z",
-      "comment_updated_at": "2026-10-28T16:30:44Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 186828,
-      "author": "shakkernerd",
-      "author_id": 165377636,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-28T16:32:19.911Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "draft-conversation-copy",
-        "head_sha": "39bb42e61507acd4d086551f1ab1314b5eb43e0f"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:177272:6474836161:2026-10-28T16:37:53Z:re_review",
       "comment_id": "6474836161",
@@ -41566,6 +41521,51 @@
         {
           "action": "comment",
           "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-enterprise:4045:6508575805:2026-10-29T21:19:11Z:re_review",
+      "comment_id": "6508575805",
+      "comment_version_key": "6508575805:2026-10-29T21:19:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/4045#issuecomment-6508575805",
+      "comment_created_at": "2026-10-29T21:19:11Z",
+      "comment_updated_at": "2026-10-29T21:19:11Z",
+      "comment_body_sha256": "576319c84b960dfca5dc2929604f8e6abf66924e898e0db2198a838559a7665d",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 4045,
+      "author": "cooktheryan",
+      "author_id": 3812500,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review rfc head `5aaae14b6343660602ef9bbaa72ebc14c7b02a03`",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "claimed",
+      "processed_at": "2026-10-29T21:20:08.231Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "rfc/agent-author-rbac",
+        "head_sha": "5aaae14b6343660602ef9bbaa72ebc14c7b02a03"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "claimed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "pending",
           "label": null,
           "job_path": null
         }
