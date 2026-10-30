@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-30T16:11:09.271Z",
+  "updated_at": "2026-10-30T16:12:41.881Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:181910:6378346123:2026-10-24T01:45:40Z:re_review",
-      "comment_id": "6378346123",
-      "comment_version_key": "6378346123:2026-10-24T01:45:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/181910#issuecomment-6378346123",
-      "comment_created_at": "2026-10-24T01:45:40Z",
-      "comment_updated_at": "2026-10-24T01:45:40Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 181910,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-29T04:46:33.466Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:181910:6455770690:2026-10-27T23:05:25Z:re_review",
       "comment_id": "6455770690",
@@ -42611,6 +42584,51 @@
         {
           "action": "comment",
           "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:188473:6527491080:2026-10-30T16:11:37Z:re_review",
+      "comment_id": "6527491080",
+      "comment_version_key": "6527491080:2026-10-30T16:11:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/188473#issuecomment-6527491080",
+      "comment_created_at": "2026-10-30T16:11:37Z",
+      "comment_updated_at": "2026-10-30T16:11:37Z",
+      "comment_body_sha256": "2620e6068b448b4ae0814c68f078a43e6186b77a5fcc1e143a091cdf12bd36d0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 188473,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-30T16:12:39.967Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ci-artifact-expiry-verification-20261030",
+        "head_sha": "efc1bab7ac7ac03b76f6a230671ac984b7df098c"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
           "label": null,
           "job_path": null
         }
