@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-10-31T03:15:09.388Z",
+  "updated_at": "2026-10-31T03:17:24.003Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1911:6496736637:2026-10-29T12:31:15Z:re_review",
-      "comment_id": "6496736637",
-      "comment_version_key": "6496736637:2026-10-29T12:31:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1911#issuecomment-6496736637",
-      "comment_created_at": "2026-10-29T12:31:15Z",
-      "comment_updated_at": "2026-10-29T12:31:15Z",
-      "comment_body_sha256": "096eff7437b481a4d447d62f518cef11860e68f4a3ef3409da44a661c3eb0347",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1911,
-      "author": "bkudiess",
-      "author_id": 7658216,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-29T12:37:11.758Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bkudiess-split-same-window-settings",
-        "head_sha": "a7071d531b7079a594ba84668ffc99508e4fb5a3"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:186791:6496898361:2026-10-29T12:38:52Z:re_review",
       "comment_id": "6496898361",
@@ -42118,6 +42073,51 @@
       "status": "skipped",
       "processed_at": "2026-10-31T03:15:09.387Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:188820:6538293894:2026-10-31T03:16:25Z:re_review",
+      "comment_id": "6538293894",
+      "comment_version_key": "6538293894:2026-10-31T03:16:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/188820#issuecomment-6538293894",
+      "comment_created_at": "2026-10-31T03:16:25Z",
+      "comment_updated_at": "2026-10-31T03:16:25Z",
+      "comment_body_sha256": "39272ff9f5228a1d08a332b3ac3e7ef818fdbdd7a353f346de3e99b174182b1d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 188820,
+      "author": "xydt-juyaohui",
+      "author_id": 266015826,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review -- 1337be9 addresses the p3 docs finding (the overview now states the 999500 boundary) and drops the redundant 999999 row. a live-gateway footer capture is not obtainable from this checkout: @openclaw/fs-safe@0.26.7 here does not export overwritefilehandlewithauthority, which src/agents/host-file-write.ts imports, so the gateway aborts during sidecar startup. the evidence section records that attempt and the exact mismatch. the owner decision on replacing the #164684 boundary is still open",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-31T03:17:22.736Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/usage-bar-num-unit-rollover",
+        "head_sha": "1337be926163354989ca5fef0c114784c0388bff"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
