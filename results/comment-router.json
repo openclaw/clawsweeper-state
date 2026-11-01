@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-11-01T13:21:53.002Z",
+  "updated_at": "2026-11-01T13:22:06.600Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:188739:6536178872:2026-10-31T00:03:20Z:re_review",
-      "comment_id": "6536178872",
-      "comment_version_key": "6536178872:2026-10-31T00:03:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/188739#issuecomment-6536178872",
-      "comment_created_at": "2026-10-31T00:03:20Z",
-      "comment_updated_at": "2026-10-31T00:03:20Z",
-      "comment_body_sha256": "b3d92045bf8097a48533f37e66b64c7a268fe2243a1995fdb9a5f4d5fd2be4da",
-      "repo": "openclaw/openclaw",
-      "issue_number": 188739,
-      "author": "wr-web",
-      "author_id": 55612496,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review: ci still failed `test-lines` with the allocation. `main` is already 465 lines over the ceiling, so any net-positive test growth fails regardless of allocations. in 17cd72ed the allocation is dropped and the artifact-name check is folded into the existing skip assertion as a one-line change, so test-line growth is net 0. regression: 4/4 fail against main's retirement code and 4/4 pass with this change",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-31T00:04:13.456Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/snapshot-reclaim-artifact-name",
-        "head_sha": "17cd72ed18e6361fea4bd4ee60be33f620c79aba"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawsweeper:2132:6536144660:2026-10-31T00:00:37Z:re_review",
       "comment_id": "6536144660",
@@ -40703,6 +40658,51 @@
         "kind": "pull_request",
         "branch": "feat/issue-190244-talk-whitespace-deltas",
         "head_sha": "4ed63fd8a61f48ccda89ed11379894b95c191b1c"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:190348:6558519694:2026-11-01T13:21:11Z:re_review",
+      "comment_id": "6558519694",
+      "comment_version_key": "6558519694:2026-11-01T13:21:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/190348#issuecomment-6558519694",
+      "comment_created_at": "2026-11-01T13:21:11Z",
+      "comment_updated_at": "2026-11-01T13:21:11Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 190348,
+      "author": "shuisadev",
+      "author_id": 350713691,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-01T13:22:05.478Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/telegram-fix-streaming-default",
+        "head_sha": "5a69221fc282dbae12d153342e774ba0b72d2bf3"
       },
       "actions": [
         {
