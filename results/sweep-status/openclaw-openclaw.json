@@ -22,18 +22,18 @@
   "apply_health": null,
   "last_close_apply_health": {
     "schema_version": 1,
-    "generated_at": "2026-11-03T22:43:57.909Z",
+    "generated_at": "2026-11-03T23:18:28.135Z",
     "target_repo": "openclaw/openclaw",
     "mode": "close",
-    "status": "ok",
-    "summary": "90 examined; 31/600 action records; 0 closed, 1 comments synced, 30 skipped; cursor at #128175.",
-    "examined": 90,
-    "action_records": 31,
-    "processed": 31,
+    "status": "needs_attention",
+    "summary": "89 examined; 30/600 action records; 0 closed, 0 comments synced, 30 skipped; cursor at #155238. Attention: kept_open, skipped_changed_since_review.",
+    "examined": 89,
+    "action_records": 30,
+    "processed": 30,
     "processed_limit": 600,
     "close_limit": 40,
     "closed": 0,
-    "comment_synced": 1,
+    "comment_synced": 0,
     "skipped": 30,
     "skip_reasons": {
       "kept_open": 26,
@@ -51,9 +51,9 @@
         }
       },
       "comment_sync": {
-        "processed": 1,
+        "processed": 0,
         "closed": 0,
-        "comment_synced": 1,
+        "comment_synced": 0,
         "skipped": 0,
         "skip_reasons": {}
       }
@@ -97,21 +97,24 @@
         "cooldown_eligible_total": 82,
         "inconsistent_or_stale": 0
       },
-      "window_size": 90,
+      "window_size": 89,
       "estimated_full_cycle_windows": 1,
       "estimated_full_cycle_minutes": 15,
       "scheduled_interval_minutes": 15,
-      "label": "82 currently actionable close candidates (2 confirmed proposals, 80 guarded retries, 0/216 promotion probes admitted; 0 require proof; 82 cooldown-eligible backlog (0 promotions); 0 inconsistent or stale records excluded) at 90 records per latest cursor advance: about 1 window; scheduled cadence alone would take roughly 15 min at 15-minute intervals, while successful windows can continue sooner."
+      "label": "82 currently actionable close candidates (2 confirmed proposals, 80 guarded retries, 0/216 promotion probes admitted; 0 require proof; 82 cooldown-eligible backlog (0 promotions); 0 inconsistent or stale records excluded) at 89 records per latest cursor advance: about 1 window; scheduled cadence alone would take roughly 15 min at 15-minute intervals, while successful windows can continue sooner."
     },
-    "attention_reasons": [],
+    "attention_reasons": [
+      "kept_open",
+      "skipped_changed_since_review"
+    ],
     "cursor_required": true,
     "cursor": {
       "path": "results/apply-cursors/openclaw-openclaw.json",
-      "next_after_number": 128175,
-      "next_after_apply_checked_at": "2026-11-03T22:42:45.042Z",
-      "updated_at": "2026-11-03T22:42:49.357Z"
+      "next_after_number": 155238,
+      "next_after_apply_checked_at": "2026-11-03T23:17:15.228Z",
+      "updated_at": "2026-11-03T23:17:19.719Z"
     },
-    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/41728355177"
+    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/41732378783"
   },
   "updated_at": "2026-11-03T23:18:30.256Z"
 }
