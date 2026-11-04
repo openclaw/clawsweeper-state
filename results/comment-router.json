@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-11-04T00:57:30.450Z",
+  "updated_at": "2026-11-04T01:02:37.118Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:188544:6580480475:2026-11-02T15:04:42Z:re_review",
-      "comment_id": "6580480475",
-      "comment_version_key": "6580480475:2026-11-02T15:04:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/188544#issuecomment-6580480475",
-      "comment_created_at": "2026-11-02T15:04:42Z",
-      "comment_updated_at": "2026-11-02T15:04:42Z",
-      "comment_body_sha256": "7ca7392c99bf3dde2dde759fa074bc02bf69d432271a317d5a6ad0ed8a01f55b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 188544,
-      "author": "yy19971996",
-      "author_id": 71487835,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-11-02T15:06:30.540Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/188534-stale-models-json-apikey",
-        "head_sha": "c5a251637340fd771248c3240dac53028e8fec52"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:190968:6580535966:2026-11-02T15:07:08Z:re_review",
       "comment_id": "6580535966",
@@ -39955,6 +39910,51 @@
         "kind": "pull_request",
         "branch": "fix/189440-read-optional-false",
         "head_sha": "9b7d6de6a0ee4b65ec838d1c08f8e0e8b4b1ed37"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:192034:6619615280:2026-11-04T01:01:31Z:re_review",
+      "comment_id": "6619615280",
+      "comment_version_key": "6619615280:2026-11-04T01:01:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/192034#issuecomment-6619615280",
+      "comment_created_at": "2026-11-04T01:01:31Z",
+      "comment_updated_at": "2026-11-04T01:01:31Z",
+      "comment_body_sha256": "15a8e16585cbca3dd7db65363918344ba02572c31a7e92df152e7f5c89161466",
+      "repo": "openclaw/openclaw",
+      "issue_number": 192034,
+      "author": "wangmiao0668000666",
+      "author_id": 290215524,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — head 5417426779f resolves the p2 finding: the resolver now reads the actual branch identity via `git branch --show-current` (same owner as session-diff.runtime.ts), which is immune to a same-name tag and preserves literal `heads/`-prefixed branch names. added in-suite real-git controls covering four discriminating checkouts (tagged mainline hidden, literal heads/main kept, tagged feature shows real name, detached hidden)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-04T01:02:35.446Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dev-install-tag",
+        "head_sha": "5417426779fdef2bd6cc4e9eee4fd45a8334bd62"
       },
       "actions": [
         {
