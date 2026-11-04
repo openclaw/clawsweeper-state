@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-11-04T03:57:03.931Z",
+  "updated_at": "2026-11-04T04:01:29.750Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:188739:6536178872:2026-10-31T00:03:20Z:re_review",
-      "comment_id": "6536178872",
-      "comment_version_key": "6536178872:2026-10-31T00:03:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/188739#issuecomment-6536178872",
-      "comment_created_at": "2026-10-31T00:03:20Z",
-      "comment_updated_at": "2026-10-31T00:03:20Z",
-      "comment_body_sha256": "b3d92045bf8097a48533f37e66b64c7a268fe2243a1995fdb9a5f4d5fd2be4da",
-      "repo": "openclaw/openclaw",
-      "issue_number": 188739,
-      "author": "wr-web",
-      "author_id": 55612496,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review: ci still failed `test-lines` with the allocation. `main` is already 465 lines over the ceiling, so any net-positive test growth fails regardless of allocations. in 17cd72ed the allocation is dropped and the artifact-name check is folded into the existing skip assertion as a one-line change, so test-line growth is net 0. regression: 4/4 fail against main's retirement code and 4/4 pass with this change",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-11-02T18:53:12.452Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:180710:6370477139:2026-10-23T17:11:03Z:re_review",
       "comment_id": "6370477139",
@@ -40170,6 +40143,51 @@
         "kind": "pull_request",
         "branch": "codex/talk-unicode-overlap-20261104",
         "head_sha": "046ec4cd58329ddc5e128d1d974ce823ace265dc"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:192458:6622175085:2026-11-04T04:00:34Z:re_review",
+      "comment_id": "6622175085",
+      "comment_version_key": "6622175085:2026-11-04T04:00:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/192458#issuecomment-6622175085",
+      "comment_created_at": "2026-11-04T04:00:34Z",
+      "comment_updated_at": "2026-11-04T04:00:34Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 192458,
+      "author": "jerome-queck",
+      "author_id": 218933877,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-04T04:01:28.375Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/xai-gif-within-limits",
+        "head_sha": "0d79e58b131d4978d093c6bc395dd094ddad2aaf"
       },
       "actions": [
         {
