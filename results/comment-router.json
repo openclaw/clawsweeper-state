@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-11-04T16:47:27.651Z",
+  "updated_at": "2026-11-04T16:50:41.785Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-enterprise:4024:6594470534:2026-11-03T03:11:25Z:re_review",
-      "comment_id": "6594470534",
-      "comment_version_key": "6594470534:2026-11-03T03:11:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/4024#issuecomment-6594470534",
-      "comment_created_at": "2026-11-03T03:11:25Z",
-      "comment_updated_at": "2026-11-03T03:11:25Z",
-      "comment_body_sha256": "f364963d19d52034b289a35ae1189a752fd6384b3f2fd369a1fd9b2a9a9e7933",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 4024,
-      "author": "jhjaggars",
-      "author_id": 24389,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — head 7259e4739. the earlier hold flagged credentials-in-url literals in the diff, and the first fix only changed the branch tip; the branch history has now been rewritten so no commit carries the literal at all: the two synthetic user:pass urls are assembled at test runtime in the commits that introduced them (url.userpassword in the go test). a scan of the branch's commits with the pinned trufflehog version now reports zero findings. the branch was also rebased onto current main and the external-gateway backend selection was corrected for main's authenticatedopenshell refactor",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-11-03T03:12:48.608Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openshell-oidc-backend-auth",
-        "head_sha": "7259e4739759c89fb5c377c416f91543c3f5a75b"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:191332:6594479025:2026-11-03T03:12:04Z:re_review",
       "comment_id": "6594479025",
@@ -41529,6 +41484,51 @@
         "kind": "pull_request",
         "branch": "fix-codex-login-manual-wording",
         "head_sha": "6d279b834d6acea1018ffd4f28eae6bd2e98c1cf"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:192896:6636510308:2026-11-04T16:49:40Z:re_review",
+      "comment_id": "6636510308",
+      "comment_version_key": "6636510308:2026-11-04T16:49:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/192896#issuecomment-6636510308",
+      "comment_created_at": "2026-11-04T16:49:40Z",
+      "comment_updated_at": "2026-11-04T16:49:40Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 192896,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-04T16:50:40.233Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/infer-interrupt-sweep-192818",
+        "head_sha": "54221c9eaa45d3a022090153598118ccf03586ca"
       },
       "actions": [
         {
