@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-11-04T09:04:20.666Z",
+  "updated_at": "2026-11-04T09:04:37.377Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:2990:6542900333:2026-10-31T11:41:23Z:re_review",
-      "comment_id": "6542900333",
-      "comment_version_key": "6542900333:2026-10-31T11:41:23Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/2990#issuecomment-6542900333",
-      "comment_created_at": "2026-10-31T11:41:23Z",
-      "comment_updated_at": "2026-10-31T11:41:23Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/crabbox",
-      "issue_number": 2990,
-      "author": "paulcam206",
-      "author_id": 16614499,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-11-02T23:25:40.090Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:191500:6591104154:2026-11-02T23:26:57Z:re_review",
       "comment_id": "6591104154",
@@ -40670,6 +40643,51 @@
         "kind": "pull_request",
         "branch": "roboclaw/native-postgres-readonly-20261104",
         "head_sha": "9c44af6dcc1f7ba8a7b51fdd9923312211962d3e"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:178622:6626926651:2026-11-04T09:03:18Z:re_review",
+      "comment_id": "6626926651",
+      "comment_version_key": "6626926651:2026-11-04T09:03:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/178622#issuecomment-6626926651",
+      "comment_created_at": "2026-11-04T09:03:18Z",
+      "comment_updated_at": "2026-11-04T09:03:18Z",
+      "comment_body_sha256": "73cd225f93e6342e6ea4a942e4c523c95f7c148e3f1908e1487c75c543aa14b9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 178622,
+      "author": "HeZ2z",
+      "author_id": 142383180,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — real behavior proof for this head: real isolated gateway with discord+codex loaded, typed /codex command path through the real plugin dispatcher and binding store, three full sigterm stop/start cycles (bind ws-a survived; detach gone; rebind ws-b survived). discrimination check: the identical harness against the same artifact with the fix reverted fails at bind (0 rows), so the evidence is green only with the fix. boundaries stated above: loopback discord transport instead of the live network, and the approval click seeded through the product's own approval writer",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-04T09:04:36.140Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pr-178330b-discord-binding",
+        "head_sha": "db0bdc00ab3e1540ceae53bbfef3e906493aaf96"
       },
       "actions": [
         {
