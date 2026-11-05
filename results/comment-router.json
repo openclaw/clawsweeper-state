@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-11-05T17:16:40.596Z",
+  "updated_at": "2026-11-05T17:18:34.049Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:178622:6626926651:2026-11-04T09:03:18Z:re_review",
-      "comment_id": "6626926651",
-      "comment_version_key": "6626926651:2026-11-04T09:03:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/178622#issuecomment-6626926651",
-      "comment_created_at": "2026-11-04T09:03:18Z",
-      "comment_updated_at": "2026-11-04T09:03:18Z",
-      "comment_body_sha256": "73cd225f93e6342e6ea4a942e4c523c95f7c148e3f1908e1487c75c543aa14b9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 178622,
-      "author": "HeZ2z",
-      "author_id": 142383180,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — real behavior proof for this head: real isolated gateway with discord+codex loaded, typed /codex command path through the real plugin dispatcher and binding store, three full sigterm stop/start cycles (bind ws-a survived; detach gone; rebind ws-b survived). discrimination check: the identical harness against the same artifact with the fix reverted fails at bind (0 rows), so the evidence is green only with the fix. boundaries stated above: loopback discord transport instead of the live network, and the approval click seeded through the product's own approval writer",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-11-04T09:04:36.140Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pr-178330b-discord-binding",
-        "head_sha": "db0bdc00ab3e1540ceae53bbfef3e906493aaf96"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:178622:6626939693:2026-11-04T09:03:52Z:re_review",
       "comment_id": "6626939693",
@@ -40049,6 +40004,51 @@
         "kind": "pull_request",
         "branch": "fix/telegram-rich-message-media-limit",
         "head_sha": "cac84a8fe91e07fef1401bd2faf65bc585e3f62c"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:193564:6664428922:2026-11-05T17:17:25Z:re_review",
+      "comment_id": "6664428922",
+      "comment_version_key": "6664428922:2026-11-05T17:17:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/193564#issuecomment-6664428922",
+      "comment_created_at": "2026-11-05T17:17:25Z",
+      "comment_updated_at": "2026-11-05T17:17:25Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 193564,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-05T17:18:32.705Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/drain-retry-floor",
+        "head_sha": "ec9817a8db0040c681437286fca6d47c84e1a80b"
       },
       "actions": [
         {
