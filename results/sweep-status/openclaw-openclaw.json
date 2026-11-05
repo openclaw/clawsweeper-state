@@ -3,9 +3,9 @@
   "slug": "openclaw-openclaw",
   "display_name": "OpenClaw",
   "target_repo": "openclaw/openclaw",
-  "state": "Planning review",
-  "detail": "Planner is scanning GitHub for the next review candidates. Selected candidates will be offered to the shared review queue.",
-  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/41944644153",
+  "state": "Apply in progress",
+  "detail": "Checkpoint 1 finished. Fresh closes in checkpoint: 0. Total fresh closes in this run: 0/40. Candidates examined: 86. Action records: 30, including durable review comment syncs.",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/41942094899",
   "planned_count": null,
   "planned_capacity": null,
   "planned_shards": null,
@@ -19,41 +19,40 @@
   "failed_review_retry_exhaustions": null,
   "bot_owned_proof_decisions_requested": null,
   "bot_owned_proof_dispatches": null,
-  "apply_health": null,
-  "last_close_apply_health": {
+  "apply_health": {
     "schema_version": 1,
-    "generated_at": "2026-11-05T00:26:00.141Z",
+    "generated_at": "2026-11-05T00:56:39.784Z",
     "target_repo": "openclaw/openclaw",
     "mode": "close",
-    "status": "needs_attention",
-    "summary": "84 examined; 30/600 action records; 0 closed, 0 comments synced, 30 skipped; cursor at #151980. Attention: kept_open, skipped_changed_since_review.",
-    "examined": 84,
+    "status": "ok",
+    "summary": "86 examined; 30/600 action records; 0 closed, 1 comments synced, 29 skipped; cursor at #141271.",
+    "examined": 86,
     "action_records": 30,
     "processed": 30,
     "processed_limit": 600,
     "close_limit": 40,
     "closed": 0,
-    "comment_synced": 0,
-    "skipped": 30,
+    "comment_synced": 1,
+    "skipped": 29,
     "skip_reasons": {
-      "kept_open": 26,
-      "skipped_changed_since_review": 4
+      "kept_open": 28,
+      "skipped_changed_since_review": 1
     },
     "lanes": {
       "closure": {
-        "processed": 30,
+        "processed": 29,
         "closed": 0,
         "comment_synced": 0,
-        "skipped": 30,
+        "skipped": 29,
         "skip_reasons": {
-          "kept_open": 26,
-          "skipped_changed_since_review": 4
+          "kept_open": 28,
+          "skipped_changed_since_review": 1
         }
       },
       "comment_sync": {
-        "processed": 0,
+        "processed": 1,
         "closed": 0,
-        "comment_synced": 0,
+        "comment_synced": 1,
         "skipped": 0,
         "skip_reasons": {}
       }
@@ -61,7 +60,7 @@
     "next_actions": [
       {
         "reason": "kept_open",
-        "count": 26,
+        "count": 28,
         "bucket": "inspect",
         "owner": "maintainer",
         "retryable": false,
@@ -71,7 +70,7 @@
       },
       {
         "reason": "skipped_changed_since_review",
-        "count": 4,
+        "count": 1,
         "bucket": "review_refresh",
         "owner": "clawsweeper",
         "retryable": true,
@@ -81,40 +80,130 @@
       }
     ],
     "next_action_buckets": {
-      "inspect": 26,
-      "review_refresh": 4
+      "inspect": 28,
+      "review_refresh": 1
     },
     "cycle": {
       "basis": "scheduled_close_cursor",
-      "apply_ready_count": 83,
+      "apply_ready_count": 87,
       "candidate_counts": {
-        "confirmed_proposal": 3,
+        "confirmed_proposal": 5,
         "guarded_retry": 77,
         "proof_required": 0,
-        "promotion_total": 237,
-        "promotion_eligible": 3,
-        "promotion_cooldown_eligible": 3,
-        "cooldown_eligible_total": 83,
+        "promotion_total": 236,
+        "promotion_eligible": 5,
+        "promotion_cooldown_eligible": 5,
+        "cooldown_eligible_total": 87,
         "inconsistent_or_stale": 0
       },
-      "window_size": 84,
-      "estimated_full_cycle_windows": 1,
-      "estimated_full_cycle_minutes": 15,
+      "window_size": 86,
+      "estimated_full_cycle_windows": 2,
+      "estimated_full_cycle_minutes": 30,
       "scheduled_interval_minutes": 15,
-      "label": "83 currently actionable close candidates (3 confirmed proposals, 77 guarded retries, 3/237 promotion probes admitted; 0 require proof; 83 cooldown-eligible backlog (3 promotions); 0 inconsistent or stale records excluded) at 84 records per latest cursor advance: about 1 window; scheduled cadence alone would take roughly 15 min at 15-minute intervals, while successful windows can continue sooner."
+      "label": "87 currently actionable close candidates (5 confirmed proposals, 77 guarded retries, 5/236 promotion probes admitted; 0 require proof; 87 cooldown-eligible backlog (5 promotions); 0 inconsistent or stale records excluded) at 86 records per latest cursor advance: about 2 windows; scheduled cadence alone would take roughly 30 min at 15-minute intervals, while successful windows can continue sooner."
     },
-    "attention_reasons": [
-      "kept_open",
-      "skipped_changed_since_review"
-    ],
+    "attention_reasons": [],
     "cursor_required": true,
     "cursor": {
       "path": "results/apply-cursors/openclaw-openclaw.json",
-      "next_after_number": 151980,
-      "next_after_apply_checked_at": "2026-11-02T10:01:30.565Z",
-      "updated_at": "2026-11-05T00:25:05.143Z"
+      "next_after_number": 141271,
+      "next_after_apply_checked_at": "2026-11-05T00:55:49.067Z",
+      "updated_at": "2026-11-05T00:55:54.564Z"
     },
-    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/41936808421"
+    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/41942094899"
   },
-  "updated_at": "2026-11-05T00:54:32.079Z"
+  "last_close_apply_health": {
+    "schema_version": 1,
+    "generated_at": "2026-11-05T00:56:39.784Z",
+    "target_repo": "openclaw/openclaw",
+    "mode": "close",
+    "status": "ok",
+    "summary": "86 examined; 30/600 action records; 0 closed, 1 comments synced, 29 skipped; cursor at #141271.",
+    "examined": 86,
+    "action_records": 30,
+    "processed": 30,
+    "processed_limit": 600,
+    "close_limit": 40,
+    "closed": 0,
+    "comment_synced": 1,
+    "skipped": 29,
+    "skip_reasons": {
+      "kept_open": 28,
+      "skipped_changed_since_review": 1
+    },
+    "lanes": {
+      "closure": {
+        "processed": 29,
+        "closed": 0,
+        "comment_synced": 0,
+        "skipped": 29,
+        "skip_reasons": {
+          "kept_open": 28,
+          "skipped_changed_since_review": 1
+        }
+      },
+      "comment_sync": {
+        "processed": 1,
+        "closed": 0,
+        "comment_synced": 1,
+        "skipped": 0,
+        "skip_reasons": {}
+      }
+    },
+    "next_actions": [
+      {
+        "reason": "kept_open",
+        "count": 28,
+        "bucket": "inspect",
+        "owner": "maintainer",
+        "retryable": false,
+        "label": "Inspect skip",
+        "summary": "Apply reported an unmapped skip bucket.",
+        "next_step": "Inspect the workflow run and add a deterministic mapping if this repeats."
+      },
+      {
+        "reason": "skipped_changed_since_review",
+        "count": 1,
+        "bucket": "review_refresh",
+        "owner": "clawsweeper",
+        "retryable": true,
+        "label": "Refresh review",
+        "summary": "The item changed after the review that proposed closing it.",
+        "next_step": "Queue a fresh ClawSweeper review before any close retry."
+      }
+    ],
+    "next_action_buckets": {
+      "inspect": 28,
+      "review_refresh": 1
+    },
+    "cycle": {
+      "basis": "scheduled_close_cursor",
+      "apply_ready_count": 87,
+      "candidate_counts": {
+        "confirmed_proposal": 5,
+        "guarded_retry": 77,
+        "proof_required": 0,
+        "promotion_total": 236,
+        "promotion_eligible": 5,
+        "promotion_cooldown_eligible": 5,
+        "cooldown_eligible_total": 87,
+        "inconsistent_or_stale": 0
+      },
+      "window_size": 86,
+      "estimated_full_cycle_windows": 2,
+      "estimated_full_cycle_minutes": 30,
+      "scheduled_interval_minutes": 15,
+      "label": "87 currently actionable close candidates (5 confirmed proposals, 77 guarded retries, 5/236 promotion probes admitted; 0 require proof; 87 cooldown-eligible backlog (5 promotions); 0 inconsistent or stale records excluded) at 86 records per latest cursor advance: about 2 windows; scheduled cadence alone would take roughly 30 min at 15-minute intervals, while successful windows can continue sooner."
+    },
+    "attention_reasons": [],
+    "cursor_required": true,
+    "cursor": {
+      "path": "results/apply-cursors/openclaw-openclaw.json",
+      "next_after_number": 141271,
+      "next_after_apply_checked_at": "2026-11-05T00:55:49.067Z",
+      "updated_at": "2026-11-05T00:55:54.564Z"
+    },
+    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/41942094899"
+  },
+  "updated_at": "2026-11-05T00:56:40.086Z"
 }
