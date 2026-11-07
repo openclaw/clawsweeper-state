@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-11-07T04:57:48.008Z",
+  "updated_at": "2026-11-07T04:58:08.405Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/birdclaw:252:6519295534:2026-10-30T09:17:44Z:re_review",
-      "comment_id": "6519295534",
-      "comment_version_key": "6519295534:2026-10-30T09:17:44Z",
-      "comment_url": "https://github.com/steipete/birdclaw/pull/252#issuecomment-6519295534",
-      "comment_created_at": "2026-10-30T09:17:44Z",
-      "comment_updated_at": "2026-10-30T09:17:44Z",
-      "comment_body_sha256": "af04c8e205e45e8798bafc2cec351f6ed09a15848131dfbe48addb86d4473d2e",
-      "repo": "steipete/birdclaw",
-      "issue_number": 252,
-      "author": "TheAngryPit",
-      "author_id": 7040636,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-11-05T16:26:38.059Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:steipete/birdclaw:252:6611283016:2026-11-03T17:45:51Z:re_review",
       "comment_id": "6611283016",
@@ -40128,6 +40101,51 @@
         "kind": "pull_request",
         "branch": "fix/android-pairing-recovery-148693",
         "head_sha": "2afbb2ec0f0bbda0c317e6d6a940d2883fe270e5"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:184736:6702521078:2026-11-07T04:57:05Z:re_review",
+      "comment_id": "6702521078",
+      "comment_version_key": "6702521078:2026-11-07T04:57:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/184736#issuecomment-6702521078",
+      "comment_created_at": "2026-11-07T04:57:05Z",
+      "comment_updated_at": "2026-11-07T04:57:05Z",
+      "comment_body_sha256": "bb709af22725ea68b72491f32d8bbfb987f693e48bea0a71d4034ac138dcae7c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 184736,
+      "author": "masatohoshino",
+      "author_id": 246810661,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review: the design changed from pausing the socket to persisting first. the client keeps reading, received events go to the durable queue in batched transactions with nothing dropped, shared admission keeps each lane in arrival order, and the pr body has new before/after, crash and real-container measurements",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-07T04:58:06.983Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fw/signal-ws-127383",
+        "head_sha": "377edf16faf988cb962551947cfb002c17db0fc2"
       },
       "actions": [
         {
