@@ -3,9 +3,9 @@
   "slug": "openclaw-openclaw",
   "display_name": "OpenClaw",
   "target_repo": "openclaw/openclaw",
-  "state": "Planning review",
-  "detail": "Planner is scanning GitHub for the next review candidates. Selected candidates will be offered to the shared review queue.",
-  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/42392249869",
+  "state": "Apply comments synced",
+  "detail": "Comment-only apply checkpoint 1 finished. Synced durable review comments: 12. Result records: 17. Item numbers: 6757,7490,8061,8285,8508,8673,9544,9637,9865,9912,10687,11977,12008,13219,13615,14785,16670,17840,20237,24196,25222,26037,28300,30381,38327,38721,39127,39476,39599,40001,40982,44134,44309,44925,45233,48003,48920,50093,50490,51911. Next cursor: 13615.",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/42390176755",
   "planned_count": null,
   "planned_capacity": null,
   "planned_shards": null,
@@ -19,7 +19,90 @@
   "failed_review_retry_exhaustions": null,
   "bot_owned_proof_decisions_requested": null,
   "bot_owned_proof_dispatches": null,
-  "apply_health": null,
+  "apply_health": {
+    "schema_version": 1,
+    "generated_at": "2026-11-07T16:41:17.909Z",
+    "target_repo": "openclaw/openclaw",
+    "mode": "comment_sync",
+    "status": "ok",
+    "summary": "15 examined; 17/40 action records; 0 closed, 12 comments synced, 5 skipped; cursor at #13615.",
+    "examined": 15,
+    "action_records": 17,
+    "processed": 17,
+    "processed_limit": 40,
+    "close_limit": 40,
+    "closed": 0,
+    "comment_synced": 12,
+    "skipped": 5,
+    "skip_reasons": {
+      "kept_open": 3,
+      "skipped_runtime_budget": 2
+    },
+    "lanes": {
+      "closure": {
+        "processed": 0,
+        "closed": 0,
+        "comment_synced": 0,
+        "skipped": 0,
+        "skip_reasons": {}
+      },
+      "comment_sync": {
+        "processed": 17,
+        "closed": 0,
+        "comment_synced": 12,
+        "skipped": 5,
+        "skip_reasons": {
+          "kept_open": 3,
+          "skipped_runtime_budget": 2
+        }
+      }
+    },
+    "next_actions": [
+      {
+        "reason": "kept_open",
+        "count": 3,
+        "bucket": "inspect",
+        "owner": "maintainer",
+        "retryable": false,
+        "label": "Inspect skip",
+        "summary": "Apply reported an unmapped skip bucket.",
+        "next_step": "Inspect the workflow run and add a deterministic mapping if this repeats."
+      },
+      {
+        "reason": "skipped_runtime_budget",
+        "count": 2,
+        "bucket": "run_budget",
+        "owner": "clawsweeper",
+        "retryable": true,
+        "label": "Runtime budget",
+        "summary": "The apply lane stopped because it reached its bounded runtime.",
+        "next_step": "Let the next scheduled run continue; tune runtime or batch size if this repeats."
+      }
+    ],
+    "next_action_buckets": {
+      "inspect": 3,
+      "run_budget": 2
+    },
+    "cycle": {
+      "basis": "not_close_cursor",
+      "apply_ready_count": null,
+      "candidate_counts": null,
+      "window_size": 15,
+      "estimated_full_cycle_windows": null,
+      "estimated_full_cycle_minutes": null,
+      "scheduled_interval_minutes": null,
+      "label": "Cycle estimate is only reported for scheduled close cursor windows."
+    },
+    "attention_reasons": [],
+    "cursor_required": true,
+    "cursor": {
+      "path": "results/comment-sync-cursors/openclaw-openclaw.json",
+      "next_after_number": 13615,
+      "next_after_apply_checked_at": null,
+      "updated_at": "2026-11-07T16:40:46.169Z"
+    },
+    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/42390176755"
+  },
   "last_close_apply_health": {
     "schema_version": 1,
     "generated_at": "2026-11-07T16:30:44.666Z",
@@ -116,5 +199,5 @@
     },
     "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/42390043502"
   },
-  "updated_at": "2026-11-07T16:39:37.204Z"
+  "updated_at": "2026-11-07T16:41:18.111Z"
 }
