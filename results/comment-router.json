@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-11-07T01:16:57.154Z",
+  "updated_at": "2026-11-07T01:30:24.734Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:193501:6659302281:2026-11-05T13:32:57Z:re_review",
-      "comment_id": "6659302281",
-      "comment_version_key": "6659302281:2026-11-05T13:32:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/193501#issuecomment-6659302281",
-      "comment_created_at": "2026-11-05T13:32:57Z",
-      "comment_updated_at": "2026-11-05T13:32:57Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 193501,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-11-05T13:34:05.175Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/drain-hotloop",
-        "head_sha": "a8cba8d79d9f2fd7797ec57e765c4c652fe40bac"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:179380:6659342428:2026-11-05T13:34:53Z:re_review",
       "comment_id": "6659342428",
@@ -40554,6 +40509,51 @@
         "kind": "pull_request",
         "branch": "audit/postgres-store-conformance-20261107",
         "head_sha": "606d784f53f0a6b9931437c6a5c198124e537850"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:194384:6700353016:2026-11-07T01:29:21Z:re_review",
+      "comment_id": "6700353016",
+      "comment_version_key": "6700353016:2026-11-07T01:29:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/194384#issuecomment-6700353016",
+      "comment_created_at": "2026-11-07T01:29:21Z",
+      "comment_updated_at": "2026-11-07T01:29:21Z",
+      "comment_body_sha256": "88c43f03c9876ba5dbbcfe95fb1c3b0ea12860b6a8161827c2c05fd2259db641",
+      "repo": "openclaw/openclaw",
+      "issue_number": 194384,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — final head e24ebd1e5baf89bcfbb308b9c60e3ec21c964869. runtime files are unchanged from the reviewed/tested patch. final test-value review restores the original json unit file and relies on the existing actual cron regression, already passed on postgresql 16/17/18 and sqlite; net test growth is zero. final local autoreview is complete with no actionable p0-p2 findings. updated evidence and remaining limits are in the pr body",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-07T01:30:23.444Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "audit/postgres-store-conformance-20261107",
+        "head_sha": "e24ebd1e5baf89bcfbb308b9c60e3ec21c964869"
       },
       "actions": [
         {
