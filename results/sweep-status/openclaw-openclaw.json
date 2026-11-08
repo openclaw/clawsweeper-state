@@ -3,9 +3,9 @@
   "slug": "openclaw-openclaw",
   "display_name": "OpenClaw",
   "target_repo": "openclaw/openclaw",
-  "state": "Planning review",
-  "detail": "Planner is scanning GitHub for the next review candidates. Selected candidates will be offered to the shared review queue.",
-  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/42450875405",
+  "state": "Apply comments synced",
+  "detail": "Comment-only apply checkpoint 1 finished. Synced durable review comments: 2. Result records: 6. Item numbers: 150348,150544,150588,150599,150635,150641,150688,151009,151099,151173,151178,151242,151648,151852,151923,151962,152131,152222,152245,152698,152778,152916,153042,153396,153430,153453,153924,153952,153955,154033,154093,154524,154706,154785,154962,155039,155137,155152,155154,155163. Next cursor: 150688.",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/42448698783",
   "planned_count": null,
   "planned_capacity": null,
   "planned_shards": null,
@@ -19,7 +19,90 @@
   "failed_review_retry_exhaustions": null,
   "bot_owned_proof_decisions_requested": null,
   "bot_owned_proof_dispatches": null,
-  "apply_health": null,
+  "apply_health": {
+    "schema_version": 1,
+    "generated_at": "2026-11-08T05:32:07.378Z",
+    "target_repo": "openclaw/openclaw",
+    "mode": "comment_sync",
+    "status": "ok",
+    "summary": "7 examined; 6/40 action records; 0 closed, 2 comments synced, 4 skipped; cursor at #150688.",
+    "examined": 7,
+    "action_records": 6,
+    "processed": 6,
+    "processed_limit": 40,
+    "close_limit": 40,
+    "closed": 0,
+    "comment_synced": 2,
+    "skipped": 4,
+    "skip_reasons": {
+      "kept_open": 2,
+      "skipped_runtime_budget": 2
+    },
+    "lanes": {
+      "closure": {
+        "processed": 0,
+        "closed": 0,
+        "comment_synced": 0,
+        "skipped": 0,
+        "skip_reasons": {}
+      },
+      "comment_sync": {
+        "processed": 6,
+        "closed": 0,
+        "comment_synced": 2,
+        "skipped": 4,
+        "skip_reasons": {
+          "kept_open": 2,
+          "skipped_runtime_budget": 2
+        }
+      }
+    },
+    "next_actions": [
+      {
+        "reason": "skipped_runtime_budget",
+        "count": 2,
+        "bucket": "run_budget",
+        "owner": "clawsweeper",
+        "retryable": true,
+        "label": "Runtime budget",
+        "summary": "The apply lane stopped because it reached its bounded runtime.",
+        "next_step": "Let the next scheduled run continue; tune runtime or batch size if this repeats."
+      },
+      {
+        "reason": "kept_open",
+        "count": 2,
+        "bucket": "inspect",
+        "owner": "maintainer",
+        "retryable": false,
+        "label": "Inspect skip",
+        "summary": "Apply reported an unmapped skip bucket.",
+        "next_step": "Inspect the workflow run and add a deterministic mapping if this repeats."
+      }
+    ],
+    "next_action_buckets": {
+      "inspect": 2,
+      "run_budget": 2
+    },
+    "cycle": {
+      "basis": "not_close_cursor",
+      "apply_ready_count": null,
+      "candidate_counts": null,
+      "window_size": 7,
+      "estimated_full_cycle_windows": null,
+      "estimated_full_cycle_minutes": null,
+      "scheduled_interval_minutes": null,
+      "label": "Cycle estimate is only reported for scheduled close cursor windows."
+    },
+    "attention_reasons": [],
+    "cursor_required": true,
+    "cursor": {
+      "path": "results/comment-sync-cursors/openclaw-openclaw.json",
+      "next_after_number": 150688,
+      "next_after_apply_checked_at": null,
+      "updated_at": "2026-11-08T05:31:56.757Z"
+    },
+    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/42448698783"
+  },
   "last_close_apply_health": {
     "schema_version": 1,
     "generated_at": "2026-11-08T05:22:20.370Z",
@@ -113,5 +196,5 @@
     },
     "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/42448412459"
   },
-  "updated_at": "2026-11-08T05:29:58.331Z"
+  "updated_at": "2026-11-08T05:32:07.615Z"
 }
