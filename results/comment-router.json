@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-11-09T06:55:01.907Z",
+  "updated_at": "2026-11-09T06:55:24.495Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:189816:6707509668:2026-11-07T13:24:16Z:re_review",
-      "comment_id": "6707509668",
-      "comment_version_key": "6707509668:2026-11-07T13:24:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/189816#issuecomment-6707509668",
-      "comment_created_at": "2026-11-07T13:24:16Z",
-      "comment_updated_at": "2026-11-07T13:24:16Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 189816,
-      "author": "A1M4N3",
-      "author_id": 40472365,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-11-07T13:25:06.917Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/whatsapp-edit-action",
-        "head_sha": "5b4ea5bb4e6a99c3cfbd895b258203bd71a1a9c5"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:194514:6707545969:2026-11-07T13:27:54Z:re_review",
       "comment_id": "6707545969",
@@ -40520,6 +40475,51 @@
         "kind": "pull_request",
         "branch": "fix/stability-mac-job-budget-20261109",
         "head_sha": "053acf2916707fff1af9d72069aeb39ab6bf55a1"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:195760:6734156955:2026-11-09T06:54:23Z:re_review",
+      "comment_id": "6734156955",
+      "comment_version_key": "6734156955:2026-11-09T06:54:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/195760#issuecomment-6734156955",
+      "comment_created_at": "2026-11-09T06:54:23Z",
+      "comment_updated_at": "2026-11-09T06:54:23Z",
+      "comment_body_sha256": "80fe45655bbbcdbf27d08e47c9950b36cbaa61c0d23604f6fb3b23d669a357de",
+      "repo": "openclaw/openclaw",
+      "issue_number": 195760,
+      "author": "huwei-xydt",
+      "author_id": 298529157,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review: added a real behavior proof section — a shipped-entry-point (chat.final) reproduction through the control ui with live dom diagnostics: the page-wide exact-text locator resolves to 2 elements (visible .chat-bubble + .chat-transcript-announcement.sr-only) and its wait fails with the strict-mode violation, while the .chat-bubble-scoped locator resolves to exactly 1 and its wait succeeds",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-09T06:55:22.733Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chat-pending-handoff-locator-scope",
+        "head_sha": "7512e32d0dfbbc2ec043d2f229c8fe4c6b6748cd"
       },
       "actions": [
         {
