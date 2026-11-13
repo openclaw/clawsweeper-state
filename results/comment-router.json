@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-11-13T17:01:28.266Z",
+  "updated_at": "2026-11-13T17:01:46.110Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:2202:6816838711:2026-11-12T06:47:47Z:re_review",
-      "comment_id": "6816838711",
-      "comment_version_key": "6816838711:2026-11-12T06:47:47Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/2202#issuecomment-6816838711",
-      "comment_created_at": "2026-11-12T06:47:47Z",
-      "comment_updated_at": "2026-11-12T06:47:47Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 2202,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-11-12T06:52:43.185Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/authority-chain-no-inflight-race",
-        "head_sha": "8cc30a44a9d04b457c57728e1af93a43f9eda56d"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:197424:6816925037:2026-11-12T06:52:32Z:re_review",
       "comment_id": "6816925037",
@@ -40161,6 +40116,51 @@
         "kind": "pull_request",
         "branch": "codex/convert-retire_broker",
         "head_sha": "1e9d974995a708580cad9785c770112bcfd89aa3"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:198320:6859532561:2026-11-13T17:00:52Z:re_review",
+      "comment_id": "6859532561",
+      "comment_version_key": "6859532561:2026-11-13T17:00:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/198320#issuecomment-6859532561",
+      "comment_created_at": "2026-11-13T17:00:52Z",
+      "comment_updated_at": "2026-11-13T17:00:52Z",
+      "comment_body_sha256": "e546ae703c59d46e411dc9de1b8e1d9afc5d5a363c8a1ddcbeccfe62d79ee18b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 198320,
+      "author": "huwei-xydt",
+      "author_id": 298529157,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review: added real running-product behavior proof — executed the production upload resolver (the exact function the shipped `openclaw browser upload <paths...>` cli action calls before any hook) against a path matching neither accepted root. green output names both accepted sources (uploads directory + inbound media directory); red output (pre-fix resolver) names only inbound. output contains no ips/keys/endpoints. added to pr body under 'real behavior proof'. also noting: the [p2] test-line allocation finding is stale — main's ratchet was redesigned (#197602) to a net-delta gate with allowance=400, and this pr's net test-line delta is +37 < 400, so no allocation record is required",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-13T17:01:44.489Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/browser-upload-path-error",
+        "head_sha": "a3f3d52c1bcf6d50f8c71389cba2500b675d0ed7"
       },
       "actions": [
         {
