@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-11-14T23:51:40.621Z",
+  "updated_at": "2026-11-14T23:53:40.077Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:198265:6856294065:2026-11-13T14:45:33Z:re_review",
-      "comment_id": "6856294065",
-      "comment_version_key": "6856294065:2026-11-13T14:45:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/198265#issuecomment-6856294065",
-      "comment_created_at": "2026-11-13T14:45:33Z",
-      "comment_updated_at": "2026-11-13T14:45:33Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 198265,
-      "author": "Linux2010",
-      "author_id": 35169750,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-11-13T14:46:49.636Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/194164-boot-default-memory-manager",
-        "head_sha": "acf207c4b4f5fd03e6a51b5278951d675e6675d7"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:198284:6856344197:2026-11-13T14:47:22Z:re_review",
       "comment_id": "6856344197",
@@ -39348,6 +39303,51 @@
         "kind": "pull_request",
         "branch": "fix/gateway-call-read-signal",
         "head_sha": "ce7129e889de1afc93963c07cddef748e00ba4ad"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:6886168631:2026-11-14T23:52:39Z:re_review",
+      "comment_id": "6886168631",
+      "comment_version_key": "6886168631:2026-11-14T23:52:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6886168631",
+      "comment_created_at": "2026-11-14T23:52:39Z",
+      "comment_updated_at": "2026-11-14T23:52:39Z",
+      "comment_body_sha256": "583c80630a252f8e8ce4e45c14a4ac74fe5529d8c2689b24078678d5b5584bfd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review please — round 3 fixes are in (head 1e502cd5e72, 0 behind upstream/main). addressed: historical catalog hashes preserved byte-identical (new withlegacyskillselectioncompanionabsent transform, catalogs regenerated), input-truncation marking before digest suffix, canonical audit decoder reused, unrelated bootstrap extraction reverted, stale sequence cache invalidated, stale gateway validators regenerated (gateway 21/21 green), test hygiene, plus a pre-companion upgrade regression test. live-gateway proof in the pr body (round 3 section): real tool-boundary skill read → running gateway → shipped cli readback. focused suites green (catalog 203/203, audit 37, commands 36, gateway 21, skill-selection incl. new tests), tsgo:core clean, oxfmt clean",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-14T23:53:38.575Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "1e502cd5e7236c6c8a16552bc7c54317cc25af9e"
       },
       "actions": [
         {
