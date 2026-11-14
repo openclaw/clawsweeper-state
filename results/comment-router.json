@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-11-14T03:07:12.492Z",
+  "updated_at": "2026-11-14T03:09:13.880Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:191562:6632204439:2026-11-04T13:43:13Z:re_review",
-      "comment_id": "6632204439",
-      "comment_version_key": "6632204439:2026-11-04T13:43:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/191562#issuecomment-6632204439",
-      "comment_created_at": "2026-11-04T13:43:13Z",
-      "comment_updated_at": "2026-11-04T13:43:13Z",
-      "comment_body_sha256": "bc3967060418f1c1444b7c0625309e79a94bc0741ee3b31428a5425d41169978",
-      "repo": "openclaw/openclaw",
-      "issue_number": 191562,
-      "author": "Linux2010",
-      "author_id": 35169750,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-11-12T16:02:47.126Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:191562:6639722814:2026-11-04T19:14:22Z:re_review",
       "comment_id": "6639722814",
@@ -40423,6 +40396,51 @@
         "kind": "pull_request",
         "branch": "fix/context-bounded-control-ui",
         "head_sha": "672a6169dd29347c3856a866dd74ae02c0d476ba"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:197973:6870723747:2026-11-14T03:08:15Z:re_review",
+      "comment_id": "6870723747",
+      "comment_version_key": "6870723747:2026-11-14T03:08:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/197973#issuecomment-6870723747",
+      "comment_created_at": "2026-11-14T03:08:15Z",
+      "comment_updated_at": "2026-11-14T03:08:15Z",
+      "comment_body_sha256": "d927bc6650bf0d83779f81b1e1d4022ed65e8ed4c7289f54ca65e525a5b823e8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 197973,
+      "author": "wangmiao0668000666",
+      "author_id": 290215524,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — head 26fb0ce28f1 now carries the full real-behavior proof in the body: shipped interactive cli terminal trace from a physical whitespace-suffixed checkout (/tmp/oc-proof-doctor/leg2-head/openclaw-src ) inside a real tty (tmux) with isolated openclaw_state_dir/openclaw_config_path and a real git identity, comparing current-main red (76024435027d — 'this install is not a git checkout' / package-manager guidance) against this head green (git update prompt offered, fast-forward actually available). the vitest red/green at the classification boundary stands as well",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-14T03:09:12.531Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-git-root",
+        "head_sha": "26fb0ce28f1299730c38da163bc4ffba6eb56e6f"
       },
       "actions": [
         {
