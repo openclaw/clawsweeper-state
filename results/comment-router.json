@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-11-15T02:15:28.792Z",
+  "updated_at": "2026-11-15T02:18:02.400Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:192034:6619615280:2026-11-04T01:01:31Z:re_review",
-      "comment_id": "6619615280",
-      "comment_version_key": "6619615280:2026-11-04T01:01:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/192034#issuecomment-6619615280",
-      "comment_created_at": "2026-11-04T01:01:31Z",
-      "comment_updated_at": "2026-11-04T01:01:31Z",
-      "comment_body_sha256": "15a8e16585cbca3dd7db65363918344ba02572c31a7e92df152e7f5c89161466",
-      "repo": "openclaw/openclaw",
-      "issue_number": 192034,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — head 5417426779f resolves the p2 finding: the resolver now reads the actual branch identity via `git branch --show-current` (same owner as session-diff.runtime.ts), which is immune to a same-name tag and preserves literal `heads/`-prefixed branch names. added in-suite real-git controls covering four discriminating checkouts (tagged mainline hidden, literal heads/main kept, tagged feature shows real name, detached hidden)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-11-13T16:32:42.573Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:192034:6620020725:2026-11-04T01:27:58Z:re_review",
       "comment_id": "6620020725",
@@ -39166,6 +39139,51 @@
         "kind": "pull_request",
         "branch": "fix/cli-state-store-guard-cancel",
         "head_sha": "ced6cc5c05138b73c90f892b8da375173cf377a0"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150641:6887827898:2026-11-15T02:17:09Z:re_review",
+      "comment_id": "6887827898",
+      "comment_version_key": "6887827898:2026-11-15T02:17:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150641#issuecomment-6887827898",
+      "comment_created_at": "2026-11-15T02:17:09Z",
+      "comment_updated_at": "2026-11-15T02:17:09Z",
+      "comment_body_sha256": "362043276ee212818849e640a925702733e5eefa168699dc246f7e6df0345b67",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150641,
+      "author": "he-yufeng",
+      "author_id": 40085740,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-15T02:18:01.245Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/transcript-usage-estimate-active-window",
+        "head_sha": "e860cb816a9b3c32d8894a77be942e17e2dfb03d"
       },
       "actions": [
         {
