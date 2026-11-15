@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-11-15T00:44:58.545Z",
+  "updated_at": "2026-11-15T00:51:18.012Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:198302:6857122105:2026-11-13T15:15:43Z:re_review",
-      "comment_id": "6857122105",
-      "comment_version_key": "6857122105:2026-11-13T15:15:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/198302#issuecomment-6857122105",
-      "comment_created_at": "2026-11-13T15:15:43Z",
-      "comment_updated_at": "2026-11-13T15:15:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 198302,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-11-13T15:17:03.577Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/rri508-initial-binding",
-        "head_sha": "2dce362c929017c06959d0a25829b83fefd8330b"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:198319:6857227631:2026-11-13T15:20:16Z:re_review",
       "comment_id": "6857227631",
@@ -39328,6 +39283,51 @@
         "kind": "pull_request",
         "branch": "fix/allowlist-policy-repair-swallows-store-read-error",
         "head_sha": "99f9428af97dba894567f24d8f0fea186bd2c352"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:6886827840:2026-11-15T00:47:08Z:re_review",
+      "comment_id": "6886827840",
+      "comment_version_key": "6886827840:2026-11-15T00:47:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6886827840",
+      "comment_created_at": "2026-11-15T00:47:08Z",
+      "comment_updated_at": "2026-11-15T00:47:08Z",
+      "comment_body_sha256": "49e0bec252fdef91b4f20ea5731d80b46380c33af336fbf9e153650b76320aad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review please — round 6 is in (head a71b0be6d94, 0 behind upstream/main). fixed the reviewer's version finding: the compat fixture now targets the true published v2026.11.3 (schema v22, verified against the release tag; predecessor(22) reproduces its audit/settings tables byte-identically). the test migrates 22→40 with settings + legacy audit row intact, lazy companion creation, continued sequencing. removed the last flagged low-value variant. suites green (storage 8/8 incl. rollback + v22 upgrade, gateway 21/21, tsgo:core + oxfmt clean)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-15T00:51:14.092Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "a71b0be6d9435bc9707e8ed25ad2543355062e8d"
       },
       "actions": [
         {
