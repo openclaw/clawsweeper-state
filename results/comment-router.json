@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-11-16T09:43:34.668Z",
+  "updated_at": "2026-11-16T09:44:17.805Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:6254789813:2026-10-18T20:30:53Z:re_review",
-      "comment_id": "6254789813",
-      "comment_version_key": "6254789813:2026-10-18T20:30:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6254789813",
-      "comment_created_at": "2026-10-18T20:30:53Z",
-      "comment_updated_at": "2026-10-18T20:30:53Z",
-      "comment_body_sha256": "85c3e004b888b2df150ff6d3deea3b734e2f532b9b5c07bc5176b0436b6c4167",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review after syncing with `upstream/main` (`cd7ebe9be1`, 35 commits, merge without conflicts)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-11-14T21:20:06.236Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:6255978276:2026-10-18T22:32:10Z:re_review",
       "comment_id": "6255978276",
@@ -38820,6 +38793,51 @@
         "kind": "pull_request",
         "branch": "steipete/fix-restart-announce-item-conflict",
         "head_sha": "8d8d2509ffb3b064ae4be05ca67668920da39253"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:200058:6912889062:2026-11-16T09:43:11Z:re_review",
+      "comment_id": "6912889062",
+      "comment_version_key": "6912889062:2026-11-16T09:43:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/200058#issuecomment-6912889062",
+      "comment_created_at": "2026-11-16T09:43:11Z",
+      "comment_updated_at": "2026-11-16T09:43:11Z",
+      "comment_body_sha256": "3b4db20d397700290300ab50b0aea257b8f8e48813e518b6eaf034468a15fefd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 200058,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review please assess the new raw agent-bound request and envelope receipts in https://github.com/openclaw/openclaw/pull/200058#issuecomment-6912879481. the observed defect is upstream of the model response: real signal inbound processing through an isolated gateway and real openclaw agent dispatch reaches the recording endpoint, with no context-builder or dispatch substitutions. signal-cli envelopes use the documented native format and synthetic identities. the exact request proves placeholder loss/restoration independently of a live model reply; visibility, plain quotes, current mentions and current-message targeting controls are included",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-16T09:44:16.504Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bugloop-signal-quote-195074",
+        "head_sha": "a797bd6ae0c4793523e0519c56ffc2eb6522257d"
       },
       "actions": [
         {
