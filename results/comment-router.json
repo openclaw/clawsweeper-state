@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-11-16T15:08:20.288Z",
+  "updated_at": "2026-11-16T15:10:31.544Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:6886827840:2026-11-15T00:47:08Z:re_review",
-      "comment_id": "6886827840",
-      "comment_version_key": "6886827840:2026-11-15T00:47:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6886827840",
-      "comment_created_at": "2026-11-15T00:47:08Z",
-      "comment_updated_at": "2026-11-15T00:47:08Z",
-      "comment_body_sha256": "49e0bec252fdef91b4f20ea5731d80b46380c33af336fbf9e153650b76320aad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — round 6 is in (head a71b0be6d94, 0 behind upstream/main). fixed the reviewer's version finding: the compat fixture now targets the true published v2026.11.3 (schema v22, verified against the release tag; predecessor(22) reproduces its audit/settings tables byte-identically). the test migrates 22→40 with settings + legacy audit row intact, lazy companion creation, continued sequencing. removed the last flagged low-value variant. suites green (storage 8/8 incl. rollback + v22 upgrade, gateway 21/21, tsgo:core + oxfmt clean)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-11-15T00:51:14.092Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "a71b0be6d9435bc9707e8ed25ad2543355062e8d"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:183594:6398122831:2026-10-25T13:16:38Z:re_review",
       "comment_id": "6398122831",
@@ -39351,6 +39306,51 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-main-thread-sync-lock-create-20260919",
         "head_sha": "225aaebe7329cccbb76363ff8f72e231cefc4890"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:198937:6920289349:2026-11-16T15:09:30Z:re_review",
+      "comment_id": "6920289349",
+      "comment_version_key": "6920289349:2026-11-16T15:09:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/198937#issuecomment-6920289349",
+      "comment_created_at": "2026-11-16T15:09:30Z",
+      "comment_updated_at": "2026-11-16T15:09:30Z",
+      "comment_body_sha256": "3c8d02fac65d4a612c0ce3741acaae3baa799c5b056ef539b2ed7ecca2c7e242",
+      "repo": "openclaw/openclaw",
+      "issue_number": 198937,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-16T15:10:30.343Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/loc-reduction-w1-gateway-recut-2-20261114",
+        "head_sha": "d3cf39fc151801056ded86ba51a039c1f70653fe"
       },
       "actions": [
         {
