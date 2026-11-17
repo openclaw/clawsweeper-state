@@ -3,9 +3,9 @@
   "slug": "openclaw-openclaw",
   "display_name": "OpenClaw",
   "target_repo": "openclaw/openclaw",
-  "state": "Apply comments synced",
-  "detail": "Comment-only apply checkpoint 1 finished. Synced durable review comments: 5. Result records: 6. Item numbers: 200301,195470,200303,200304,200306,200310. Next cursor: 200310.",
-  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/43981231242",
+  "state": "Planning review",
+  "detail": "Planner is scanning GitHub for the next review candidates. Selected candidates will be offered to the shared review queue.",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/43985215927",
   "planned_count": null,
   "planned_capacity": null,
   "planned_shards": null,
@@ -19,77 +19,7 @@
   "failed_review_retry_exhaustions": null,
   "bot_owned_proof_decisions_requested": null,
   "bot_owned_proof_dispatches": null,
-  "apply_health": {
-    "schema_version": 1,
-    "generated_at": "2026-11-17T00:14:51.532Z",
-    "target_repo": "openclaw/openclaw",
-    "mode": "comment_sync",
-    "status": "ok",
-    "summary": "5 examined; 6/40 action records; 0 closed, 5 comments synced, 1 skipped; cursor at #200310.",
-    "examined": 5,
-    "action_records": 6,
-    "processed": 6,
-    "processed_limit": 40,
-    "close_limit": 40,
-    "closed": 0,
-    "comment_synced": 5,
-    "skipped": 1,
-    "skip_reasons": {
-      "skipped_already_closed": 1
-    },
-    "lanes": {
-      "closure": {
-        "processed": 0,
-        "closed": 0,
-        "comment_synced": 0,
-        "skipped": 0,
-        "skip_reasons": {}
-      },
-      "comment_sync": {
-        "processed": 6,
-        "closed": 0,
-        "comment_synced": 5,
-        "skipped": 1,
-        "skip_reasons": {
-          "skipped_already_closed": 1
-        }
-      }
-    },
-    "next_actions": [
-      {
-        "reason": "skipped_already_closed",
-        "count": 1,
-        "bucket": "already_resolved",
-        "owner": "none",
-        "retryable": false,
-        "label": "Already resolved",
-        "summary": "The item was not open by the time apply checked it.",
-        "next_step": "No action is needed unless this bucket dominates repeated runs."
-      }
-    ],
-    "next_action_buckets": {
-      "already_resolved": 1
-    },
-    "cycle": {
-      "basis": "not_close_cursor",
-      "apply_ready_count": null,
-      "candidate_counts": null,
-      "window_size": 5,
-      "estimated_full_cycle_windows": null,
-      "estimated_full_cycle_minutes": null,
-      "scheduled_interval_minutes": null,
-      "label": "Cycle estimate is only reported for scheduled close cursor windows."
-    },
-    "attention_reasons": [],
-    "cursor_required": true,
-    "cursor": {
-      "path": "results/comment-sync-cursors/openclaw-openclaw.json",
-      "next_after_number": 200310,
-      "next_after_apply_checked_at": null,
-      "updated_at": "2026-11-17T00:14:42.083Z"
-    },
-    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/43981231242"
-  },
+  "apply_health": null,
   "last_close_apply_health": {
     "schema_version": 1,
     "generated_at": "2026-11-17T00:06:28.938Z",
@@ -215,5 +145,5 @@
     },
     "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/43980853257"
   },
-  "updated_at": "2026-11-17T00:14:51.757Z"
+  "updated_at": "2026-11-17T00:14:55.717Z"
 }
