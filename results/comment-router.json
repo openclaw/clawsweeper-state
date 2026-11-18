@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T16:23:51.042Z",
+  "updated_at": "2026-11-18T16:24:38.884Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/openclaw:200008:6932497595:2026-11-16T23:26:42Z:re_review",
@@ -38429,56 +38429,11 @@
       "expected_head_sha": null,
       "finding_id": null,
       "status": "executed",
-      "processed_at": "2026-11-18T16:22:14.559Z",
+      "processed_at": "2026-11-18T16:24:32.750Z",
       "target": {
         "kind": "pull_request",
         "branch": "steipete/perf-micro-cron-cleanup-removes-live-session-worktree-20260919",
         "head_sha": "2ee0ecf28bdd4f9e943659761261a3578592aef1"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:201086:6984505715:2026-11-18T16:21:59Z:re_review",
-      "comment_id": "6984505715",
-      "comment_version_key": "6984505715:2026-11-18T16:21:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/201086#issuecomment-6984505715",
-      "comment_created_at": "2026-11-18T16:21:59Z",
-      "comment_updated_at": "2026-11-18T16:21:59Z",
-      "comment_body_sha256": "4e8f7e2395d0ee1eb2477cbc3b12ec699f8eb3b374e86d257ae500fc8ae063bc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 201086,
-      "author": "ruel225",
-      "author_id": 300765114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — both findings from the revision 2 review are addressed in 061d23b18c: the driver now observes strict-cleanup completion within a deadline instead of treating a fixed 300 ms delay as exit proof, and the helper-only stat-scan real test plus its test-only production export are removed (the owner-level kernel regression already demonstrates proc-stat discovery). local verification: subreaper suite 9/9 green including the namespace e2e, oxlint and oxfmt clean, tsgo clean for the touched files",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-11-18T16:23:04.225Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subreaper-proc-children-fallback",
-        "head_sha": "061d23b18ca5dc0e869676b3983492a1b66c5a72"
       },
       "actions": [
         {
@@ -38519,11 +38474,56 @@
       "expected_head_sha": null,
       "finding_id": null,
       "status": "executed",
-      "processed_at": "2026-11-18T16:23:06.359Z",
+      "processed_at": "2026-11-18T16:24:32.750Z",
       "target": {
         "kind": "pull_request",
         "branch": "codex/issue-197083-legacy-lease",
         "head_sha": "25528a7e28dd4f891e08a1ac18150ba6ec4e9a67"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:201086:6984505715:2026-11-18T16:21:59Z:re_review",
+      "comment_id": "6984505715",
+      "comment_version_key": "6984505715:2026-11-18T16:21:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/201086#issuecomment-6984505715",
+      "comment_created_at": "2026-11-18T16:21:59Z",
+      "comment_updated_at": "2026-11-18T16:21:59Z",
+      "comment_body_sha256": "4e8f7e2395d0ee1eb2477cbc3b12ec699f8eb3b374e86d257ae500fc8ae063bc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 201086,
+      "author": "ruel225",
+      "author_id": 300765114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — both findings from the revision 2 review are addressed in 061d23b18c: the driver now observes strict-cleanup completion within a deadline instead of treating a fixed 300 ms delay as exit proof, and the helper-only stat-scan real test plus its test-only production export are removed (the owner-level kernel regression already demonstrates proc-stat discovery). local verification: subreaper suite 9/9 green including the namespace e2e, oxlint and oxfmt clean, tsgo clean for the touched files",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-18T16:24:32.750Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/subreaper-proc-children-fallback",
+        "head_sha": "061d23b18ca5dc0e869676b3983492a1b66c5a72"
       },
       "actions": [
         {
@@ -38564,7 +38564,7 @@
       "expected_head_sha": null,
       "finding_id": null,
       "status": "executed",
-      "processed_at": "2026-11-18T16:23:49.554Z",
+      "processed_at": "2026-11-18T16:24:32.750Z",
       "target": {
         "kind": "pull_request",
         "branch": "pr/location-update-clean",
