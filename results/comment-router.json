@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-11-18T03:41:45.074Z",
+  "updated_at": "2026-11-18T03:41:47.072Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:200058:6912889062:2026-11-16T09:43:11Z:re_review",
-      "comment_id": "6912889062",
-      "comment_version_key": "6912889062:2026-11-16T09:43:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/200058#issuecomment-6912889062",
-      "comment_created_at": "2026-11-16T09:43:11Z",
-      "comment_updated_at": "2026-11-16T09:43:11Z",
-      "comment_body_sha256": "3b4db20d397700290300ab50b0aea257b8f8e48813e518b6eaf034468a15fefd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 200058,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review please assess the new raw agent-bound request and envelope receipts in https://github.com/openclaw/openclaw/pull/200058#issuecomment-6912879481. the observed defect is upstream of the model response: real signal inbound processing through an isolated gateway and real openclaw agent dispatch reaches the recording endpoint, with no context-builder or dispatch substitutions. signal-cli envelopes use the documented native format and synthetic identities. the exact request proves placeholder loss/restoration independently of a live model reply; visibility, plain quotes, current mentions and current-message targeting controls are included",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-11-16T09:44:16.504Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bugloop-signal-quote-195074",
-        "head_sha": "a797bd6ae0c4793523e0519c56ffc2eb6522257d"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:193205:6912889361:2026-11-16T09:43:12Z:re_review",
       "comment_id": "6912889361",
@@ -38824,6 +38779,51 @@
         "kind": "pull_request",
         "branch": "openclaw/lucky-claw",
         "head_sha": "b8d40c262f49990d2354ab424da0584b41ddc571"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:200869:6968323249:2026-11-18T03:40:57Z:re_review",
+      "comment_id": "6968323249",
+      "comment_version_key": "6968323249:2026-11-18T03:40:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/200869#issuecomment-6968323249",
+      "comment_created_at": "2026-11-18T03:40:57Z",
+      "comment_updated_at": "2026-11-18T03:40:57Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 200869,
+      "author": "etzelm",
+      "author_id": 16581152,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-18T03:41:45.941Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/update-validation",
+        "head_sha": "b9d1882fab51b8c1aabb4a61ad2b64ec977ea1e1"
       },
       "actions": [
         {
