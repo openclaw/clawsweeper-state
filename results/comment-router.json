@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-11-18T22:31:35.944Z",
+  "updated_at": "2026-11-18T22:36:36.559Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:6157851825:2026-10-14T00:07:17Z:re_review",
-      "comment_id": "6157851825",
-      "comment_version_key": "6157851825:2026-10-14T00:07:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6157851825",
-      "comment_created_at": "2026-10-14T00:07:17Z",
-      "comment_updated_at": "2026-10-14T00:07:17Z",
-      "comment_body_sha256": "2153b4b7e27c68471ecea804df9fe45f636eae71cc717458556e2a1a751b24a3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please. synced branch with upstream/main (983f4a3bdb, 93 commits). resolved merge conflicts in `src/audit/audit-event-store.ts` (upstream refactored retention/fast-path insert + inlined row helpers; re-applied skill-selection companion-table hooks on top) and `src/audit/audit-events.test.ts` (took upstream bigint sequence guard). focused audit tests (39) + tsc clean. skill-selection contract preserved: async worker listauditeventsindatabase, companion table audit_skill_selection_events, workspace-bootstrap-privacy re-export, 4-field run-usage contract",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-11-17T00:43:37.134Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:6158905683:2026-10-14T01:34:38Z:re_review",
       "comment_id": "6158905683",
@@ -39651,6 +39624,51 @@
         "kind": "pull_request",
         "branch": "test/loc-reduction-w2-recut-3-20261114",
         "head_sha": "bec8f27e6c708117637043e524d352393972f463"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:201486:6993654997:2026-11-18T22:35:37Z:re_review",
+      "comment_id": "6993654997",
+      "comment_version_key": "6993654997:2026-11-18T22:35:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/201486#issuecomment-6993654997",
+      "comment_created_at": "2026-11-18T22:35:37Z",
+      "comment_updated_at": "2026-11-18T22:35:37Z",
+      "comment_body_sha256": "6c088f14cfe0254d66941d753df27f0cdc5f1dc9b216e62dba8cfb73ee9a45ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 201486,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-18T22:36:34.919Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-state-read-command-byte-walk-20260919",
+        "head_sha": "f1e7fce8b872ee3e607c3d082cb3ec6c77c10e22"
       },
       "actions": [
         {
