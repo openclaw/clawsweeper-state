@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-11-19T10:57:29.877Z",
+  "updated_at": "2026-11-19T10:58:31.247Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:200517:6963658779:2026-11-17T23:08:03Z:re_review",
-      "comment_id": "6963658779",
-      "comment_version_key": "6963658779:2026-11-17T23:08:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/200517#issuecomment-6963658779",
-      "comment_created_at": "2026-11-17T23:08:03Z",
-      "comment_updated_at": "2026-11-17T23:08:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 200517,
-      "author": "ericcurtin",
-      "author_id": 1694275,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-11-17T23:09:03.823Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/input-dialog-ime-enter",
-        "head_sha": "01a0fa0f113858f0bb7b62f11074dc95c62cde5a"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:199543:6963659860:2026-11-17T23:08:06Z:re_review",
       "comment_id": "6963659860",
@@ -38389,6 +38344,45 @@
         {
           "action": "comment",
           "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:201748:7007117057:2026-11-19T10:57:43Z:retired",
+      "comment_id": "7007117057",
+      "comment_version_key": "7007117057:2026-11-19T10:57:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/201748#issuecomment-7007117057",
+      "comment_created_at": "2026-11-19T10:57:43Z",
+      "comment_updated_at": "2026-11-19T10:57:43Z",
+      "comment_body_sha256": "c363c932c93d61c84444e964dd113b34842f806c5bf230912d5236f1000cfcc2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 201748,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review. please review exact head 8e4c5e6f66420834a06dd0cb79ada0dc78aeb321: the candidate callbacks now have their own capture boundary, and the complete retention regression passes on node and the pinned bun runtime in both test orders. the regression now shares the existing isolated remote-inference suite; all four ci inventory cases pass",
+      "intent": "retired",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-19T10:58:31.247Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/catalog-replacement-callback-retention-20261119",
+        "head_sha": "8e4c5e6f66420834a06dd0cb79ada0dc78aeb321"
+      },
+      "actions": [
+        {
+          "action": "comment",
+          "status": "executed",
           "label": null,
           "job_path": null
         }
