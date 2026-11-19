@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-11-19T00:12:45.231Z",
+  "updated_at": "2026-11-19T00:15:17.551Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:6886632636:2026-11-15T00:31:41Z:re_review",
-      "comment_id": "6886632636",
-      "comment_version_key": "6886632636:2026-11-15T00:31:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6886632636",
-      "comment_created_at": "2026-11-15T00:31:41Z",
-      "comment_updated_at": "2026-11-15T00:31:41Z",
-      "comment_body_sha256": "1d86c4e154a1074a47dc9a87e5e0671dde060ab816b87526500ce87241fd3290",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — round 5 is in (head 4fd73e177bc, 0 behind upstream/main). no open code findings remain; this round documents the buffered-start settlement intent in code (paired pr #178220 contract preserved) and retargets the compat regression test at the true v2026.11.3 layout (verified release is schema v39 without the companion table; fixture opens at v40 with settings + audit rows intact, lazy companion creation, continued sequencing). suites green (storage 7/7, audit+commands 45/45, gateway 21/21, tsgo:core + oxfmt clean)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-11-17T00:43:37.134Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:6886827840:2026-11-15T00:47:08Z:re_review",
       "comment_id": "6886827840",
@@ -40377,6 +40350,51 @@
         {
           "action": "comment",
           "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:195275:6995535020:2026-11-19T00:14:11Z:re_review",
+      "comment_id": "6995535020",
+      "comment_version_key": "6995535020:2026-11-19T00:14:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/195275#issuecomment-6995535020",
+      "comment_created_at": "2026-11-19T00:14:11Z",
+      "comment_updated_at": "2026-11-19T00:14:11Z",
+      "comment_body_sha256": "973f9d60b81af87ebe67aaae2571aee53b4b2c7244299afb3a34b869fb5a0d13",
+      "repo": "openclaw/openclaw",
+      "issue_number": 195275,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-19T00:15:16.572Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pb-a86/settle-delivery-authority",
+        "head_sha": "fb2e6eb3cb574a6588b354afffb0d6b01a1f1140"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
           "label": null,
           "job_path": null
         }
