@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-11-20T03:33:39.894Z",
+  "updated_at": "2026-11-20T03:36:10.678Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:197395:6843857333:2026-11-13T04:22:22Z:re_review",
-      "comment_id": "6843857333",
-      "comment_version_key": "6843857333:2026-11-13T04:22:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/197395#issuecomment-6843857333",
-      "comment_created_at": "2026-11-13T04:22:22Z",
-      "comment_updated_at": "2026-11-13T04:22:22Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 197395,
-      "author": "daniel-lxs",
-      "author_id": 57051444,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-11-18T16:50:15.078Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:197395:6868354853:2026-11-14T00:20:01Z:re_review",
       "comment_id": "6868354853",
@@ -37650,6 +37623,51 @@
       "status": "skipped",
       "processed_at": "2026-11-20T03:33:39.894Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:202143:7029538123:2026-11-20T03:35:12Z:re_review",
+      "comment_id": "7029538123",
+      "comment_version_key": "7029538123:2026-11-20T03:35:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/202143#issuecomment-7029538123",
+      "comment_created_at": "2026-11-20T03:35:12Z",
+      "comment_updated_at": "2026-11-20T03:35:12Z",
+      "comment_body_sha256": "a4a8efdf21271093587bdfbb489fcec6087a5bc6a71748f6259e093be3d40795",
+      "repo": "openclaw/openclaw",
+      "issue_number": 202143,
+      "author": "wangmiao0668000666",
+      "author_id": 290215524,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — added the requested real-behavior proof: a shipped `openclaw doctor --lint --only core/doctor/skills-readiness` terminal session on a head build (openclaw 2026.11.5, runtime build profile), 29/31 findings use the corrected missing-binary hint while the 2 env-only skills keep the `--fix` guidance; and the base control on the release cli (openclaw 2026.11.1) shows all 31/31 recommending `--fix`. both sessions ran in an isolated home. evidence and the \"before merge\" item are reflected in the body",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-20T03:36:09.670Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-skills-readiness-hint",
+        "head_sha": "dd30f97ee02aa56da924b023cbd82afcd03b241c"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
