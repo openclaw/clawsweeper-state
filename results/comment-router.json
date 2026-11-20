@@ -1,49 +1,6 @@
 {
-  "updated_at": "2026-11-20T04:34:40.476Z",
+  "updated_at": "2026-11-20T04:35:19.331Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:201247:6986476371:2026-11-18T17:36:56Z:re_review",
-      "comment_id": "6986476371",
-      "comment_version_key": "6986476371:2026-11-18T17:36:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/201247#issuecomment-6986476371",
-      "comment_created_at": "2026-11-18T17:36:56Z",
-      "comment_updated_at": "2026-11-18T17:36:56Z",
-      "comment_body_sha256": "3526fcf0223990cacc6dc0663e2cee0bebe9a0fc9319ac9740fb9f4e80a9fa0e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 201247,
-      "author": "e-jung",
-      "author_id": 8334081,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-11-18T17:38:04.584Z",
-      "target": {
-        "kind": "issue"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:201064:6986475745:2026-11-18T17:36:54Z:re_review",
       "comment_id": "6986475745",
@@ -37849,6 +37806,51 @@
         "kind": "pull_request",
         "branch": "fix/macos-wrapper-not-managed",
         "head_sha": "38ef51597780cb46a928725a0f25d67ae5ec64c4"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:201815:7030511976:2026-11-20T04:34:26Z:re_review",
+      "comment_id": "7030511976",
+      "comment_version_key": "7030511976:2026-11-20T04:34:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/201815#issuecomment-7030511976",
+      "comment_created_at": "2026-11-20T04:34:26Z",
+      "comment_updated_at": "2026-11-20T04:34:26Z",
+      "comment_body_sha256": "efc07ef9367fd3f4f11a9fec0a55d3d40dd0f48ad1d7cca920b2827835cb0eb2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 201815,
+      "author": "ruel225",
+      "author_id": 300765114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — shipped-gateway real-behavior proof added to the pr body: an after-fix capture through the shipped gateway/plugin entry point (head 3bc6aa03db) with otel_metric_export_interval=1e309 shows the plugin loading, metrics exports at the documented 60000 ms default (59942/59998 ms observed), zero timeoutoverflowwarning lines and no rapid export loop; a before-fix contrast on unmodified main captured the timeoutoverflowwarning and 5631 millisecond-cadence exports over ~2 minutes. pr body updated with the full capture details",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-20T04:35:18.119Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/otel-nonfinite-duration-fallback",
+        "head_sha": "3bc6aa03dbe7302cb04e5cc9fc1bf9a098cad93d"
       },
       "actions": [
         {
