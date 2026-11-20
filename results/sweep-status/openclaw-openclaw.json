@@ -3,9 +3,9 @@
   "slug": "openclaw-openclaw",
   "display_name": "OpenClaw",
   "target_repo": "openclaw/openclaw",
-  "state": "Planning review",
-  "detail": "Planner is scanning GitHub for the next review candidates. Selected candidates will be offered to the shared review queue.",
-  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/44796904502",
+  "state": "Apply comments synced",
+  "detail": "Comment-only apply checkpoint 1 finished. Synced durable review comments: 5. Result records: 9. Item numbers: 201100,199621,201140,201146,201148,201151,201154,201164,201188,201189,201198,201225,201228,201230,201231,201232,201235,201260,201263,201266,201269,201274,201275,201276,201277,201278,201279,201280,201281,201282,201283,201284,201285,201287,201288,201290,201292,201295,201296,201300. Next cursor: 201154.",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/44793209701",
   "planned_count": null,
   "planned_capacity": null,
   "planned_shards": null,
@@ -19,7 +19,90 @@
   "failed_review_retry_exhaustions": null,
   "bot_owned_proof_decisions_requested": null,
   "bot_owned_proof_dispatches": null,
-  "apply_health": null,
+  "apply_health": {
+    "schema_version": 1,
+    "generated_at": "2026-11-20T18:59:58.478Z",
+    "target_repo": "openclaw/openclaw",
+    "mode": "comment_sync",
+    "status": "ok",
+    "summary": "6 examined; 9/40 action records; 0 closed, 5 comments synced, 4 skipped; cursor at #201154.",
+    "examined": 6,
+    "action_records": 9,
+    "processed": 9,
+    "processed_limit": 40,
+    "close_limit": 40,
+    "closed": 0,
+    "comment_synced": 5,
+    "skipped": 4,
+    "skip_reasons": {
+      "skipped_changed_since_review": 2,
+      "skipped_runtime_budget": 2
+    },
+    "lanes": {
+      "closure": {
+        "processed": 0,
+        "closed": 0,
+        "comment_synced": 0,
+        "skipped": 0,
+        "skip_reasons": {}
+      },
+      "comment_sync": {
+        "processed": 9,
+        "closed": 0,
+        "comment_synced": 5,
+        "skipped": 4,
+        "skip_reasons": {
+          "skipped_changed_since_review": 2,
+          "skipped_runtime_budget": 2
+        }
+      }
+    },
+    "next_actions": [
+      {
+        "reason": "skipped_runtime_budget",
+        "count": 2,
+        "bucket": "run_budget",
+        "owner": "clawsweeper",
+        "retryable": true,
+        "label": "Runtime budget",
+        "summary": "The apply lane stopped because it reached its bounded runtime.",
+        "next_step": "Let the next scheduled run continue; tune runtime or batch size if this repeats."
+      },
+      {
+        "reason": "skipped_changed_since_review",
+        "count": 2,
+        "bucket": "review_refresh",
+        "owner": "clawsweeper",
+        "retryable": true,
+        "label": "Refresh review",
+        "summary": "The item changed after the review that proposed closing it.",
+        "next_step": "Queue a fresh ClawSweeper review before any close retry."
+      }
+    ],
+    "next_action_buckets": {
+      "review_refresh": 2,
+      "run_budget": 2
+    },
+    "cycle": {
+      "basis": "not_close_cursor",
+      "apply_ready_count": null,
+      "candidate_counts": null,
+      "window_size": 6,
+      "estimated_full_cycle_windows": null,
+      "estimated_full_cycle_minutes": null,
+      "scheduled_interval_minutes": null,
+      "label": "Cycle estimate is only reported for scheduled close cursor windows."
+    },
+    "attention_reasons": [],
+    "cursor_required": true,
+    "cursor": {
+      "path": "results/comment-sync-cursors/openclaw-openclaw.json",
+      "next_after_number": 201154,
+      "next_after_apply_checked_at": null,
+      "updated_at": "2026-11-20T18:59:48.919Z"
+    },
+    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/44793209701"
+  },
   "last_close_apply_health": {
     "schema_version": 1,
     "generated_at": "2026-11-20T18:50:52.221Z",
@@ -131,5 +214,5 @@
     },
     "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/44792466085"
   },
-  "updated_at": "2026-11-20T18:59:24.735Z"
+  "updated_at": "2026-11-20T18:59:58.661Z"
 }
