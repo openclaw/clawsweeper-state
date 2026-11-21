@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-11-21T18:26:23.068Z",
+  "updated_at": "2026-11-21T18:31:13.870Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:201815:7030511976:2026-11-20T04:34:26Z:re_review",
-      "comment_id": "7030511976",
-      "comment_version_key": "7030511976:2026-11-20T04:34:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/201815#issuecomment-7030511976",
-      "comment_created_at": "2026-11-20T04:34:26Z",
-      "comment_updated_at": "2026-11-20T04:34:26Z",
-      "comment_body_sha256": "efc07ef9367fd3f4f11a9fec0a55d3d40dd0f48ad1d7cca920b2827835cb0eb2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 201815,
-      "author": "ruel225",
-      "author_id": 300765114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — shipped-gateway real-behavior proof added to the pr body: an after-fix capture through the shipped gateway/plugin entry point (head 3bc6aa03db) with otel_metric_export_interval=1e309 shows the plugin loading, metrics exports at the documented 60000 ms default (59942/59998 ms observed), zero timeoutoverflowwarning lines and no rapid export loop; a before-fix contrast on unmodified main captured the timeoutoverflowwarning and 5631 millisecond-cadence exports over ~2 minutes. pr body updated with the full capture details",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-11-20T04:35:18.119Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/otel-nonfinite-duration-fallback",
-        "head_sha": "3bc6aa03dbe7302cb04e5cc9fc1bf9a098cad93d"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:202220:7030520912:2026-11-20T04:35:02Z:re_review",
       "comment_id": "7030520912",
@@ -38390,6 +38345,51 @@
         "kind": "pull_request",
         "branch": "fix/feishu-drive-root-folder",
         "head_sha": "5820cde01913d0278fd1d2125e159351897db787"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:202960:7067302320:2026-11-21T18:30:14Z:re_review",
+      "comment_id": "7067302320",
+      "comment_version_key": "7067302320:2026-11-21T18:30:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/202960#issuecomment-7067302320",
+      "comment_created_at": "2026-11-21T18:30:14Z",
+      "comment_updated_at": "2026-11-21T18:30:14Z",
+      "comment_body_sha256": "899efa04435bca36f835959e61b20c52dea032511f59c32900997d9f307c7bac",
+      "repo": "openclaw/openclaw",
+      "issue_number": 202960,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-21T18:31:12.542Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-2699-round5",
+        "head_sha": "381949bf9b9da21a082bec88b3d0b392da4acdef"
       },
       "actions": [
         {
