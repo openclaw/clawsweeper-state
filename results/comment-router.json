@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-11-23T20:32:14.561Z",
+  "updated_at": "2026-11-23T20:37:47.251Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:6887028664:2026-11-15T01:03:49Z:re_review",
-      "comment_id": "6887028664",
-      "comment_version_key": "6887028664:2026-11-15T01:03:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6887028664",
-      "comment_created_at": "2026-11-15T01:03:49Z",
-      "comment_updated_at": "2026-11-15T01:03:49Z",
-      "comment_body_sha256": "c2c753f80c8eaf0b64460cee0bf3ff602b9a7503806cbda82c6f1fea83ec7ce9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — round 7 proof is in (head a71b0be6d94 unchanged, 0 behind upstream/main; no code changes since the 4/6 review, proof only). adds the requested product upgrade run: genuine published-v2026.11.3 product code wrote the db (schema v22), the fresh pr build gateway booted it (migrated 22→40, rows intact), a production-path skill observation landed via lazy companion ddl (shared sequence 4), and the shipped cli read back both release and new rows through the running new gateway. full redacted transcript in the pr body round 7 section. remaining known limits: real-agent/model trigger environment-blocked (documented), default-collection policy awaits the maintainer decision",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-11-21T12:37:26.719Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:6897616741:2026-11-15T16:27:13Z:re_review",
       "comment_id": "6897616741",
@@ -38175,6 +38148,51 @@
         "kind": "pull_request",
         "branch": "steipete/fix-completion-notices-and-yield-settlement-20261121",
         "head_sha": "8ca03c0e527c1c3d66c9589e183634f705d89431"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/Tachikoma:127:7113206906:2026-11-23T20:32:17Z:re_review",
+      "comment_id": "7113206906",
+      "comment_version_key": "7113206906:2026-11-23T20:32:17Z",
+      "comment_url": "https://github.com/openclaw/Tachikoma/pull/127#issuecomment-7113206906",
+      "comment_created_at": "2026-11-23T20:32:17Z",
+      "comment_updated_at": "2026-11-23T20:32:17Z",
+      "comment_body_sha256": "37255d7ed7cef6fb2804358e95d5a0477edf0d5ce9866c1ae07d74c51bb92f90",
+      "repo": "openclaw/Tachikoma",
+      "issue_number": 127,
+      "author": "SebTardif",
+      "author_id": 1413412,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-23T20:37:44.259Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/realtime-snake-case-event-fields",
+        "head_sha": "3bd64598f86756eb4e892697bf12f3897d20206b"
       },
       "actions": [
         {
