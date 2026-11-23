@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-11-23T20:38:34.230Z",
+  "updated_at": "2026-11-23T20:40:46.748Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:6901859585:2026-11-15T21:45:05Z:re_review",
-      "comment_id": "6901859585",
-      "comment_version_key": "6901859585:2026-11-15T21:45:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6901859585",
-      "comment_created_at": "2026-11-15T21:45:05Z",
-      "comment_updated_at": "2026-11-15T21:45:05Z",
-      "comment_body_sha256": "16dfb7dae6d8deddde207693d0fd2969a5408cf5d6dec0a3dff98b6cc4d8d20e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — round 8 is in (head d541860e07a, 0 behind upstream/main). fixes the last p2: schema readiness is now bound to the owning sqlite transaction (rollback/invalidate clear the established flag + warm count), so a rolled-back lazy ddl recreates instead of failing with no such table. new regression test recreates companion schema after lazy creation rolls back. suites green (skill-selection 8/8 incl. rollback-schema + v22 upgrade, hidden+runtime 17/17, gateway 21/21, tsgo:core + oxfmt clean). round 7 22→40 boot + live-gateway cli proof stands; real-agent/model trigger remains environment-blocked as documented. owner decision on default collection still open",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-11-21T12:37:26.719Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:6902393018:2026-11-15T22:26:29Z:re_review",
       "comment_id": "6902393018",
@@ -38247,6 +38220,51 @@
         "kind": "pull_request",
         "branch": "fix/realtime-client-event-wire",
         "head_sha": "e4da2b989bdcb1660c4586ba8ff0b0b046a8b55e"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:202147:7113377702:2026-11-23T20:39:41Z:re_review",
+      "comment_id": "7113377702",
+      "comment_version_key": "7113377702:2026-11-23T20:39:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/202147#issuecomment-7113377702",
+      "comment_created_at": "2026-11-23T20:39:41Z",
+      "comment_updated_at": "2026-11-23T20:39:41Z",
+      "comment_body_sha256": "20bec0c6d933893dbac8fd82fb488e0ce2b2749db20cf13995edaef1e425b2bf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 202147,
+      "author": "turutupa",
+      "author_id": 44581951,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-23T20:40:44.849Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/local-models-proactive-check",
+        "head_sha": "6851849b939829894ce8c4985770e418bfc17b80"
       },
       "actions": [
         {
