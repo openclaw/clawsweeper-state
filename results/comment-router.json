@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-11-23T20:28:50.763Z",
+  "updated_at": "2026-11-23T20:32:14.561Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:6886827840:2026-11-15T00:47:08Z:re_review",
-      "comment_id": "6886827840",
-      "comment_version_key": "6886827840:2026-11-15T00:47:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6886827840",
-      "comment_created_at": "2026-11-15T00:47:08Z",
-      "comment_updated_at": "2026-11-15T00:47:08Z",
-      "comment_body_sha256": "49e0bec252fdef91b4f20ea5731d80b46380c33af336fbf9e153650b76320aad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — round 6 is in (head a71b0be6d94, 0 behind upstream/main). fixed the reviewer's version finding: the compat fixture now targets the true published v2026.11.3 (schema v22, verified against the release tag; predecessor(22) reproduces its audit/settings tables byte-identically). the test migrates 22→40 with settings + legacy audit row intact, lazy companion creation, continued sequencing. removed the last flagged low-value variant. suites green (storage 8/8 incl. rollback + v22 upgrade, gateway 21/21, tsgo:core + oxfmt clean)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-11-21T12:37:26.719Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:6887028664:2026-11-15T01:03:49Z:re_review",
       "comment_id": "6887028664",
@@ -38157,6 +38130,51 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-main-thread-inprocess-spawn-20260919",
         "head_sha": "0fea1f088fa7465004d876000b524f2483e93271"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:203222:7113182004:2026-11-23T20:31:12Z:re_review",
+      "comment_id": "7113182004",
+      "comment_version_key": "7113182004:2026-11-23T20:31:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/203222#issuecomment-7113182004",
+      "comment_created_at": "2026-11-23T20:31:12Z",
+      "comment_updated_at": "2026-11-23T20:31:12Z",
+      "comment_body_sha256": "42608185ddf608445afdd7a69df1fe72139945862986107f79d2b07eb007f88b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 203222,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-23T20:32:13.008Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-completion-notices-and-yield-settlement-20261121",
+        "head_sha": "8ca03c0e527c1c3d66c9589e183634f705d89431"
       },
       "actions": [
         {
