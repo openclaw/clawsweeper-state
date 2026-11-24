@@ -22,9 +22,9 @@ Last source update: Nov 24, 2026, 18:20 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply comments synced | Nov 24, 2026, 18:20 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/45451048427) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Nov 24, 2026, 18:20 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/45451048427) |
 | [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Nov 24, 2026, 18:20 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/45457854791) |
-| [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Nov 24, 2026, 17:21 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/45447034353) |
+| [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Nov 24, 2026, 18:20 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/45457857646) |
 
 ### Repositories
 
