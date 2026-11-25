@@ -3,9 +3,9 @@
   "slug": "openclaw-openclaw",
   "display_name": "OpenClaw",
   "target_repo": "openclaw/openclaw",
-  "state": "Planning review",
-  "detail": "Planner is scanning GitHub for the next review candidates. Selected candidates will be offered to the shared review queue.",
-  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/45573619040",
+  "state": "Apply comments synced",
+  "detail": "Comment-only apply checkpoint 1 finished. Synced durable review comments: 5. Result records: 8. Item numbers: 205100,188305,205102,205104,205105,205106,205114,205120,205123,205125,205126,205130,205142,205156,205160,205161,205165,205168,205169,205171,205172,205173,205174,205175,205176,205178,205179,205181,205183,205185,205187,205188,205189,205190,205191,205193,205195,205196,205197,205200. Next cursor: 205106.",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/45569905618",
   "planned_count": null,
   "planned_capacity": null,
   "planned_shards": null,
@@ -19,7 +19,90 @@
   "failed_review_retry_exhaustions": null,
   "bot_owned_proof_decisions_requested": null,
   "bot_owned_proof_dispatches": null,
-  "apply_health": null,
+  "apply_health": {
+    "schema_version": 1,
+    "generated_at": "2026-11-25T08:15:22.143Z",
+    "target_repo": "openclaw/openclaw",
+    "mode": "comment_sync",
+    "status": "ok",
+    "summary": "5 examined; 8/40 action records; 0 closed, 5 comments synced, 3 skipped; cursor at #205106.",
+    "examined": 5,
+    "action_records": 8,
+    "processed": 8,
+    "processed_limit": 40,
+    "close_limit": 40,
+    "closed": 0,
+    "comment_synced": 5,
+    "skipped": 3,
+    "skip_reasons": {
+      "skipped_runtime_budget": 2,
+      "skipped_stale_review_comment_sync": 1
+    },
+    "lanes": {
+      "closure": {
+        "processed": 0,
+        "closed": 0,
+        "comment_synced": 0,
+        "skipped": 0,
+        "skip_reasons": {}
+      },
+      "comment_sync": {
+        "processed": 8,
+        "closed": 0,
+        "comment_synced": 5,
+        "skipped": 3,
+        "skip_reasons": {
+          "skipped_runtime_budget": 2,
+          "skipped_stale_review_comment_sync": 1
+        }
+      }
+    },
+    "next_actions": [
+      {
+        "reason": "skipped_runtime_budget",
+        "count": 2,
+        "bucket": "run_budget",
+        "owner": "clawsweeper",
+        "retryable": true,
+        "label": "Runtime budget",
+        "summary": "The apply lane stopped because it reached its bounded runtime.",
+        "next_step": "Let the next scheduled run continue; tune runtime or batch size if this repeats."
+      },
+      {
+        "reason": "skipped_stale_review_comment_sync",
+        "count": 1,
+        "bucket": "review_refresh",
+        "owner": "clawsweeper",
+        "retryable": true,
+        "label": "Refresh review state",
+        "summary": "The durable review comment is newer than the local review report.",
+        "next_step": "Queue a fresh review instead of overwriting the newer durable comment."
+      }
+    ],
+    "next_action_buckets": {
+      "review_refresh": 1,
+      "run_budget": 2
+    },
+    "cycle": {
+      "basis": "not_close_cursor",
+      "apply_ready_count": null,
+      "candidate_counts": null,
+      "window_size": 5,
+      "estimated_full_cycle_windows": null,
+      "estimated_full_cycle_minutes": null,
+      "scheduled_interval_minutes": null,
+      "label": "Cycle estimate is only reported for scheduled close cursor windows."
+    },
+    "attention_reasons": [],
+    "cursor_required": true,
+    "cursor": {
+      "path": "results/comment-sync-cursors/openclaw-openclaw.json",
+      "next_after_number": 205106,
+      "next_after_apply_checked_at": null,
+      "updated_at": "2026-11-25T08:15:11.688Z"
+    },
+    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/45569905618"
+  },
   "last_close_apply_health": {
     "schema_version": 1,
     "generated_at": "2026-11-25T08:05:30.157Z",
@@ -131,5 +214,5 @@
     },
     "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/45567783327"
   },
-  "updated_at": "2026-11-25T08:13:05.475Z"
+  "updated_at": "2026-11-25T08:15:22.439Z"
 }
