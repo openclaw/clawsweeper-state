@@ -181,6 +181,13 @@ test("ledger loading rejects privacy-unsafe values outside attributes", () => {
     "error:/home/alice/project",
     "endpoint:fd00::1",
     "tcp:fe80::1",
+    "fe80::1/64",
+    "fd00::1/64",
+    "fc00::/7",
+    "tcp:fe80::1/10",
+    "tcp:::1/128",
+    "host:fe80::1/64",
+    "endpoint:fd00::1/64",
     "host:localhost",
     "host:localhost.",
     "host:cache.internal.local:443",
@@ -232,6 +239,7 @@ test("ledger loading accepts embedded public hosts and IPv6-looking machine valu
   for (const status of [
     "host:github.com",
     "endpoint:2606:4700:4700::1111",
+    "endpoint:2606:4700:4700::1111/48",
     "https://github.com/openclaw/clawsweeper/actions/runs/123",
   ]) {
     assert.doesNotThrow(() =>
