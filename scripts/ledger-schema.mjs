@@ -395,7 +395,7 @@ function privateHost(value) {
     allowSingleLegacyIpv4: Boolean(labeledHost),
   });
   if (!host) return false;
-  if (host === "localhost" || host.endsWith(".local")) return true;
+  if (host === "localhost" || host.endsWith(".localhost") || host.endsWith(".local")) return true;
   if (isIP(host) === 6) {
     const mapped = ipv4MappedAddress(host);
     if (mapped) return privateIpv4(mapped);

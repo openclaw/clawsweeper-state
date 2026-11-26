@@ -183,6 +183,12 @@ test("ledger loading rejects privacy-unsafe values outside attributes", () => {
     "tcp:fe80::1",
     "host:localhost",
     "host:localhost.",
+    "https://foo.localhost",
+    "https://foo.localhost/admin",
+    "https://foo.localhost:8443/x",
+    "https://app.localhost.",
+    "host:foo.localhost",
+    "host:foo.localhost:80",
     "host:cache.internal.local:443",
     "host:0:0:0:0:0:0:0:1",
     "host:127.1",
@@ -233,6 +239,8 @@ test("ledger loading accepts embedded public hosts and IPv6-looking machine valu
     "host:github.com",
     "endpoint:2606:4700:4700::1111",
     "https://github.com/openclaw/clawsweeper/actions/runs/123",
+    "https://assets.localhost.example.com",
+    "host:notlocalhost",
   ]) {
     assert.doesNotThrow(() =>
       actionEvent({
