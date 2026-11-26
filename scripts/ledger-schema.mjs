@@ -414,6 +414,8 @@ function normalizedHost(value, options = {}) {
   let host = String(value).trim().toLowerCase();
   if (!host) return "";
   host = host.replace(/^\[|\]$/g, "").replace(/\.+$/, "");
+  const ipv6Prefix = /^(.+)\/\d+$/.exec(host);
+  if (ipv6Prefix && isIP(ipv6Prefix[1]) === 6) host = ipv6Prefix[1];
   const addressFamily = isIP(host);
   const legacyIpv4 =
     /^(?:0x[0-9a-f]+|\d+)(?:\.(?:0x[0-9a-f]+|\d+)){1,3}$/i.test(host) ||
