@@ -3,9 +3,9 @@
   "slug": "openclaw-openclaw",
   "display_name": "OpenClaw",
   "target_repo": "openclaw/openclaw",
-  "state": "Planning review",
-  "detail": "Planner is scanning GitHub for the next review candidates. Selected candidates will be offered to the shared review queue.",
-  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/45797873196",
+  "state": "Apply comments synced",
+  "detail": "Comment-only apply checkpoint 1 finished. Synced durable review comments: 20. Result records: 26. Item numbers: 113318,113321,113374,113701,113704,114211,115256,115328,115653,116165,116175,116176,116691,116893,117262,119052,119455,119720,120241,120245,120978,121128,121823,121921,121953,122554,122577,123327,123354,123548,123886,123933,124540,125333,125707,125913,125942,125969,126246,126360. Next cursor: 121953.",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/45794040064",
   "planned_count": null,
   "planned_capacity": null,
   "planned_shards": null,
@@ -19,7 +19,90 @@
   "failed_review_retry_exhaustions": null,
   "bot_owned_proof_decisions_requested": null,
   "bot_owned_proof_dispatches": null,
-  "apply_health": null,
+  "apply_health": {
+    "schema_version": 1,
+    "generated_at": "2026-11-26T10:11:59.328Z",
+    "target_repo": "openclaw/openclaw",
+    "mode": "comment_sync",
+    "status": "ok",
+    "summary": "25 examined; 26/40 action records; 0 closed, 20 comments synced, 6 skipped; cursor at #121953.",
+    "examined": 25,
+    "action_records": 26,
+    "processed": 26,
+    "processed_limit": 40,
+    "close_limit": 40,
+    "closed": 0,
+    "comment_synced": 20,
+    "skipped": 6,
+    "skip_reasons": {
+      "kept_open": 4,
+      "skipped_runtime_budget": 2
+    },
+    "lanes": {
+      "closure": {
+        "processed": 0,
+        "closed": 0,
+        "comment_synced": 0,
+        "skipped": 0,
+        "skip_reasons": {}
+      },
+      "comment_sync": {
+        "processed": 26,
+        "closed": 0,
+        "comment_synced": 20,
+        "skipped": 6,
+        "skip_reasons": {
+          "kept_open": 4,
+          "skipped_runtime_budget": 2
+        }
+      }
+    },
+    "next_actions": [
+      {
+        "reason": "kept_open",
+        "count": 4,
+        "bucket": "inspect",
+        "owner": "maintainer",
+        "retryable": false,
+        "label": "Inspect skip",
+        "summary": "Apply reported an unmapped skip bucket.",
+        "next_step": "Inspect the workflow run and add a deterministic mapping if this repeats."
+      },
+      {
+        "reason": "skipped_runtime_budget",
+        "count": 2,
+        "bucket": "run_budget",
+        "owner": "clawsweeper",
+        "retryable": true,
+        "label": "Runtime budget",
+        "summary": "The apply lane stopped because it reached its bounded runtime.",
+        "next_step": "Let the next scheduled run continue; tune runtime or batch size if this repeats."
+      }
+    ],
+    "next_action_buckets": {
+      "inspect": 4,
+      "run_budget": 2
+    },
+    "cycle": {
+      "basis": "not_close_cursor",
+      "apply_ready_count": null,
+      "candidate_counts": null,
+      "window_size": 25,
+      "estimated_full_cycle_windows": null,
+      "estimated_full_cycle_minutes": null,
+      "scheduled_interval_minutes": null,
+      "label": "Cycle estimate is only reported for scheduled close cursor windows."
+    },
+    "attention_reasons": [],
+    "cursor_required": true,
+    "cursor": {
+      "path": "results/comment-sync-cursors/openclaw-openclaw.json",
+      "next_after_number": 121953,
+      "next_after_apply_checked_at": null,
+      "updated_at": "2026-11-26T10:11:34.997Z"
+    },
+    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/45794040064"
+  },
   "last_close_apply_health": {
     "schema_version": 1,
     "generated_at": "2026-11-26T10:02:15.935Z",
@@ -117,5 +200,5 @@
     },
     "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/45791525186"
   },
-  "updated_at": "2026-11-26T10:08:42.675Z"
+  "updated_at": "2026-11-26T10:11:59.632Z"
 }
