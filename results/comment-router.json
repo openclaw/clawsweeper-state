@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-11-28T03:09:21.089Z",
+  "updated_at": "2026-11-28T03:11:57.714Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:204344:7130556682:2026-11-24T11:47:36Z:re_review",
-      "comment_id": "7130556682",
-      "comment_version_key": "7130556682:2026-11-24T11:47:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/204344#issuecomment-7130556682",
-      "comment_created_at": "2026-11-24T11:47:36Z",
-      "comment_updated_at": "2026-11-24T11:47:36Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 204344,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-11-26T14:47:27.632Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:204344:7132684799:2026-11-24T13:20:15Z:re_review",
       "comment_id": "7132684799",
@@ -40715,6 +40688,51 @@
         "kind": "pull_request",
         "branch": "fix/update-boot-plugin-advisories-20261128",
         "head_sha": "f88e9c733173b19f96b96c640504e0f9ef4dc8a6"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:207139:7232860106:2026-11-28T03:10:59Z:re_review",
+      "comment_id": "7232860106",
+      "comment_version_key": "7232860106:2026-11-28T03:10:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/207139#issuecomment-7232860106",
+      "comment_created_at": "2026-11-28T03:10:59Z",
+      "comment_updated_at": "2026-11-28T03:10:59Z",
+      "comment_body_sha256": "323a8235ead3515479440a5d99f87005c607b3d54981c0cbabe890bcb1af560b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 207139,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — exact head 343cc4cde0a7954f84af9f9ebd9f30e2fa94de91. both prior findings are repaired; the unchanged identity guard, all 92 updater cases, all 16 gateway rpc cases, seven type jobs and scoped core lint pass. the existing four-field lock json is preserved; the passing store regression writes pre-provider json with a real exited pid and reclaims, reads and releases it. compatibility proof and remaining execution limits are in the pr body",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-11-28T03:11:56.113Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-prepare-lock-ownership-20261128",
+        "head_sha": "343cc4cde0a7954f84af9f9ebd9f30e2fa94de91"
       },
       "actions": [
         {
